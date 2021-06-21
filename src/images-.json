@@ -1,0 +1,21 @@
+[
+    {
+        "img1": "./img/instgram.png",
+        "img2": "./img/country.png",
+        "img3": "./img/currency.png",
+        "img4": "./img/do.png",
+        "img5": "./img/log.png",
+        "img6": "./img/morse.png",
+        "img7": "./img/numbers.png",
+        "img8": "./img/pass.png",
+        "img9": "./img/shapes.png",
+        "img10": "./img/shop.png",
+        "img11": "./img/stopwatch.png",
+        "img12": "./img/week.png",
+        "img13":"./img/xo.png",
+        "img14": "./img/youtube.png",
+        "img15": "/img/digiwatch.png",
+        "imgme": "./img/ahmed.png"
+    
+    }
+]

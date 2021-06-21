@@ -1,0 +1,175 @@
+@media (min-width: 1200px){
+.footer-father{
+    height: 16vh;
+    width: 100vw;
+    display: block;
+    background-color:black;
+    position: relative;
+    bottom: 0;
+    margin: 43% auto;
+}
+.icon-father{
+    position: relative;
+    left: 90vw;
+    top: 6vh;
+}
+.icon{
+    color: white;
+    font-size: 2rem;
+    list-style: none;
+    text-decoration: none;
+}
+.reference{
+    width: 66vw;
+    height: 6vh;
+    color:white;
+    @include flex-row-between;
+    margin-bottom: 2vh;
+}
+.date{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: white;
+}
+.heart{
+    color:red;
+    animation: heart 1s infinite ease-in-out;
+    height: 4vh;
+    width: 4vw;
+    position: relative;
+    left: 4vh;
+}
+
+@keyframes heart{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(0.5);
+    }
+}
+}
+
+@media (max-width: 1200px){ 
+    .footer-father{
+        height: 16vh;
+    width: 100vw;
+    display: block;
+    background-color:black;
+    position: relative;
+    bottom: 0;
+    margin: 68% auto;
+    }
+    .icon-father{
+        position: relative;
+        left: 80vw;
+        top: 6vh;
+    }
+    .icon{
+        color: white;
+        font-size: 1.5rem;
+        list-style: none;
+        text-decoration: none;
+    }
+    .reference{
+        width: 44vw;
+        height: 1vh;
+        color:white;
+        @include flex-row-between;
+    margin-bottom: 2vh;    
+    }
+    h1, h2{
+        font-size: 1.5rem;
+        width: 21vw;
+        height: 2vh;
+        position: relative;
+        left: 8vw;
+    }
+    h2{
+        position: relative;
+        left: 20vw;
+    }
+    .date{
+        background-color: transparent;
+        border: none;
+        outline: none;
+        color: white;
+    }
+    .heart{
+        color:red;
+        animation: heart 1s infinite ease-in-out;
+        height: 4vh;
+        width: 4vw;
+        position: relative;
+        left: 4vh;
+    }
+    
+    @keyframes heart{
+        0%{
+            transform: scale(1);
+        }
+        50%{
+            transform: scale(0.5);
+        }
+    }
+}
+@media (max-width: 700px){
+    .footer-father{
+        height: 16vh;
+        width: 100vw;
+        display: block;
+        background-color:black;
+        margin: 100% auto;
+    }
+    .icon-father{
+        position: relative;
+        left: 90vw;
+        top: 6vh;
+    }
+    .icon{
+        color: white;
+        font-size: 1rem;
+        list-style: none;
+        text-decoration: none;
+        position: relative;
+        right: 8vw;
+    }
+    .reference{
+        width: 44vw;
+        height: 1vh;
+        color:white;
+        @include flex-row-between;
+    }
+    h1, h2{
+        font-size: 1rem;
+        width: 8vw;
+        height: 2vh;
+        position: relative;
+        left: 8vw;
+    }
+    .date{
+        background-color: transparent;
+        border: none;
+        outline: none;
+        color: white;
+    
+    }
+    .heart{
+        color:red;
+        animation: heart 1s infinite ease-in-out;
+        height: 4vh;
+        width: 4vw;
+        position: relative;
+        left: 1vh;
+    }
+    
+    @keyframes heart{
+        0%{
+            transform: scale(1);
+        }
+        50%{
+            transform: scale(0.5);
+        }
+    }
+}

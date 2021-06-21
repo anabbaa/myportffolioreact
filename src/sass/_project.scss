@@ -1,0 +1,82 @@
+
+    .slide{
+        margin: auto;
+        position: relative;
+        width:   500px;
+        overflow: hidden;
+        top: 16vh;
+    }
+    
+    .slide .slider{
+        height: 500px;
+        position: relative;
+        float: left;
+        animation: slider 45s infinite ease-in-out;
+    }
+    .slide .slider:hover{
+        animation-play-state: paused;
+    }
+    
+    .slide .slider .sliderl{
+        padding: 0;
+        width: 7500px;
+        position: relative;
+        display: inline-block;
+    }
+    
+    @keyframes slider  {
+        0%{
+            left: 0;
+        }
+        10%{
+    left: -500px;
+        }
+        15%{
+            left: -1000px;
+    
+        }
+        20%{
+            left:-1500px;
+        }
+        30%{
+            left:-2000px;
+    
+        }
+        35%{
+            left: -2500px;
+    
+        }
+        40%{
+            left: -3000px;
+        }
+        50%{
+            left: -3500px;
+    
+        }
+        60%{left: -4000px;
+    
+            
+        }
+        70%{
+            left: -4500px;
+    
+        }
+        80%{
+            left: -5000px;
+        }
+        85%{
+            left: -5500px;
+        }
+        
+        90%{
+            left: -6000px;
+    
+        }
+        95%{
+            left: -6500px;
+    
+        }
+        100%{
+            left: -7000px;
+        }   
+    }

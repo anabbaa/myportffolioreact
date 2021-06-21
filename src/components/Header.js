@@ -1,36 +1,30 @@
-import React, {useState} from "react";
+import { Link } from "react-router-dom";
+
 const Header = ()=>{
-    const [userInpur, setUserInput] = useState();
-    function menue (){
 
-    }
     return (
-        <div className="head">
-            <div className="hamburger-menue " onClick={menue}>
-                <div className="hamburger-menue-div first-line"></div>
-                <div className="hamburger-menue-div second-line"></div>
-                <div className="hamburger-menue-div third-line"></div>
-            </div>
-
-            <div class="drop-menu-father">
-                <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">About me</a></li>
-                    <li><a href="">Projectss</a></li>
-                    <li><a href="">Contacts</a></li>
-                </ul>
-               </div > 
-
-
-
-        </div>
+   
+   <div className="head">
+<nav className="nav">
+    <ul className="nav-ul">
+      <Link className="a" to="/">
+        <li className="nav-li">Home</li>
+      </Link>
+      <Link className="a" to="/Aboutme">
+        <li className="nav-li">About me</li>
+      </Link>
+      <Link className="a" to="/Projects">
+        <li className="nav-li">Projects</li>
+      </Link>
+      <Link className="a" to="/Contact">
+        <li className="nav-li">Contact me</li>
+      </Link>
+      <Link className="a" to="/Footer">
+        <li className="nav-li">My Contacts</li>
+      </Link>
+      </ul>
+    </nav>
+    </div>
     )
 }
-
-
-
-
-
-
-
 export default Header;

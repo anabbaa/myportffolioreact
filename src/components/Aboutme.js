@@ -1,11 +1,13 @@
 import React from "react";
-import img from "../imag/ahmed.png"
-const Aboutme = ()=>{
+import { Link } from "react-router-dom";
+const Aboutme = ({data})=>{
+    console.log(process.env);
     return (
-        <div>
-            <img src= {img} alt="" />
-            <h1>AHMED NABBAA</h1>
-            <p>
+        <React.Fragment>
+        <div className="about-father">
+            <img className="me" src={`${process.env.PUBLIC_URL}/${data[0].imgme}`} alt="ahmed" />
+            <h1 className="header-about">AHMED NABBAA</h1>
+            <p className="about-text">
 Hi my name is Ahmed Nabbaa i come from Syria i live in Germany now. I have 
 studied English liturature in Syria but now iam going to change all my entire life
  by enreing the life of coding thanks to DCI institue in Germany who gives
@@ -16,6 +18,8 @@ studied English liturature in Syria but now iam going to change all my entire li
 See you soon my guys ofcourse in the market.
             </p>
         </div>
+        <Link className="back-soon" to="/home" style={{textDecoration: "none"}}>Back</Link>
+        </React.Fragment>
     );
 };
 export default Aboutme;

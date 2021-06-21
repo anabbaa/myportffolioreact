@@ -1,0 +1,123 @@
+@media (min-width: 1921px){
+.about-father{
+    position: relative;
+    top: 2vh;
+}
+
+.me{
+    width: 12vw;
+    height: 12vh;
+    border-radius: 50%;
+    position: relative;
+    left: 43%;
+    top: 6vh;
+}
+.about-text{
+    font-family: 'Oswald', sans-serif;
+    font-size: 2rem;
+    text-align: left;
+    line-height: 4rem;
+    text-indent: 10px;
+    margin-left: 2vw;
+    background-color: black;
+    color: white;
+    margin-top: 6vh;
+    word-break: break-all;
+}
+p::first-letter{
+    color: red;
+    font-size: 4rem;
+    margin-left: 2vw;
+}
+.header-about{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 2rem;
+    margin-top: 7vh;
+    text-align: center;
+    color: lightgray;
+    text-shadow: 20px 20px 1px  black ;
+}
+}
+@media (max-width: 1920px){
+.about-father{
+    position: relative;
+    top: 2vh;
+}
+.me{
+    width: 12vw;
+    height: 12vh;
+    border-radius: 50%;
+    position: relative;
+    left: 43%;
+    top: 6vh;
+}
+.about-text{
+    font-family: 'Oswald', sans-serif;
+    font-size: 2rem;
+    text-align: left;
+    line-height: 4rem;
+    text-indent: 10px;
+    margin-left: 2vw;
+    background-color: black;
+    color: white;
+    margin-top: 6vh;
+    word-break: break-all;
+
+}
+p::first-letter{
+    color: red;
+    font-size: 4rem;
+    margin-left: 2vw;
+}
+.header-about{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 2rem;
+    margin-top: 7vh;
+    text-align: center;
+    color: lightgray;
+    text-shadow: 20px 20px 1px  black ;
+}
+}
+@media (max-width: 700px){
+    
+.about-father{
+    position: relative;
+    top: 2vh;
+}
+
+.me{
+    width: 12vw;
+    height: 12vh;
+    border-radius: 50%;
+    position: relative;
+    left: 43%;
+    top: 6vh;
+}
+.about-text{
+    font-family: 'Oswald', sans-serif;
+    font-size: 2rem;
+    text-align: left;
+    line-height: 4rem;
+    text-indent: 10px;
+    margin-left: 2vw;
+    background-color: black;
+    color: white;
+    margin-top: 6vh;
+    word-break: break-all;
+
+}
+p::first-letter{
+    color: red;
+    font-size: 4rem;
+    margin-left: 2vw;
+}
+.header-about{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 2rem;
+    text-align: center;
+    color: lightgray;
+    text-shadow: 20px 20px 1px  black ;
+    position: relative;
+    top: -2vh;
+}
+}

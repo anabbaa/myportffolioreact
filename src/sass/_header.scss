@@ -1,0 +1,136 @@
+@media (min-width: 1921px){
+    .head{
+        height: 12vh;
+        width: 100vw;
+        background-color: lightgray;
+        position: relative;
+        @include flex-row-start;
+        &:before{
+            position: absolute;
+            content: "";
+            top: 33%;
+            right: 50%;
+            left: 20%;
+            bottom: 0;
+            border-radius: 50%;
+            height: 12vh;
+            width: 66vw;
+            background-color: lightgray;   
+        }
+    }
+    
+    .nav{
+        width: 90%;
+        position: relative;
+        left: 26vw;
+        text-decoration: none;
+    }
+    .nav-ul{
+        display: flex;
+        list-style: none;
+        text-decoration: none;
+    }
+    .nav-li{     
+        display: inline;
+           margin: 2rem;
+        list-style: none;
+        color: black;
+    font-size: 2rem;
+    font-family: 'Bebas Neue', cursive;
+    }
+    .a{
+        list-style: none;
+        text-decoration: none;
+    }
+}
+@media (max-width: 1921px){
+        .head{
+        height: 12vh;
+        width: 100vw;
+        background-color: lightgray;
+        position: relative;
+        @include flex-row-start;
+        &:before{
+            position: absolute;
+            content: "";
+            top: 33%;
+            right: 50%;
+            left: 20%;
+            bottom: 0;
+            border-radius: 50%;
+            height: 12vh;
+            width: 66vw;
+            background-color: lightgray;   
+        }
+    }
+    
+    .nav{
+        width: 95%;
+        position: relative;
+        left: 33vw;
+        text-decoration: none;
+    }
+    .nav-ul{
+        display: flex;
+        list-style: none;
+        text-decoration: none;
+    }
+    .nav-li{     
+        display: inline;
+           margin: 1rem;
+        list-style: none;
+        color: black;
+    font-size: 2rem;
+    font-family: 'Bebas Neue', cursive;
+    }
+    .a{
+        list-style: none;
+        text-decoration: none;
+    }
+}
+@media (max-width: 700px){
+    .head{
+        height: 12vh;
+        width: 100vw;
+        background-color: lightgray;
+        position: relative;
+        @include flex-row-start;
+        &:before{
+            position: absolute;
+            content: "";
+            top: 33%;
+            right: 50%;
+            left: 20%;
+            bottom: 0;
+            border-radius: 50%;
+            height: 12vh;
+            width: 66vw;
+            background-color: lightgray;   
+        }
+    }
+    
+    .nav{
+        width: 90%;
+        position: relative;
+        left: 22vw;
+        text-decoration: none;
+    }
+    .nav-ul{
+        display: flex;
+        list-style: none;
+        text-decoration: none;
+    }
+    .nav-li{     
+        display: inline;
+           margin: 1rem;
+        list-style: none;
+        color: black;
+    font-size: 1rem;
+    font-family: 'Bebas Neue', cursive;
+        
+    }
+    .a{
+        list-style: none;
+        text-decoration: none;
+    }
+}

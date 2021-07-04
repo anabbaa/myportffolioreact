@@ -1,6 +1,5 @@
 
-@media (min-width: 1921px){
-
+@media (min-width: 1024px){
 .contact-father{
     @include flex-column-between;
     margin: auto;
@@ -27,11 +26,8 @@ background-color: rgb(0, 174, 255);
 font-size: 1.5rem;
 text-align: center;
 }
-
-
 }
-@media (max-width: 1920px){ 
-
+@media (max-width: 1024px){ 
 .contact-father{
     @include flex-column-between;
     margin: auto;
@@ -56,13 +52,10 @@ width: 8vw;
 background-color: rgb(0, 174, 255);
 font-size: 1.5rem;
 text-align: center;
-
-
 }
 }
 
 @media (max-width: 700px){
-
 .contact-father{
     @include flex-column-between;
     margin: auto;
@@ -87,7 +80,5 @@ width: 16vw;
 background-color: rgb(0, 174, 255);
 font-size: 1.5rem;
 text-align: center;
-
-
 }
 }

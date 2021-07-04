@@ -2,11 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const Contact=()=>{
-
-
     const handleSubmit = (e) => {
         e.preventDefault();
-    
       };
     return (
         <React.Fragment>

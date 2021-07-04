@@ -1,11 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
-const Aboutme = ({data})=>{
+const Aboutme = ({datame})=>{
     console.log(process.env);
     return (
         <React.Fragment>
         <div className="about-father">
-            <img className="me" src={`${process.env.PUBLIC_URL}/${data[0].imgme}`} alt="ahmed" />
+            <img className="me" src={`${process.env.PUBLIC_URL}/${datame[0].imgme}`} alt="ahmed" />
             <h1 className="header-about">AHMED NABBAA</h1>
             <p className="about-text">
 Hi my name is Ahmed Nabbaa i come from Syria i live in Germany now. I have 

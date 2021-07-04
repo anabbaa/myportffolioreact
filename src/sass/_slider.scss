@@ -1,0 +1,162 @@
+.container {  
+    width: 75vw;
+    height: 55vh;
+    border: 2px solid lightgray;
+    text-align: center;
+    background-color: black;
+    margin: auto;
+    margin: 10% auto;
+    @include responsive (tab){
+      height: 50vh;
+    }
+    
+  }
+  .right-button
+   {
+      background-color:transparent;
+      border:none;
+    position: relative;
+    top: 36vh;
+    left: 90vw;
+    &::before{
+      content: "<";
+      width: 0;
+      height: 0;
+      color: white;
+      top: 0;
+      left: 1vw;
+      position: absolute;
+      font-size: 6rem;
+      cursor: pointer;
+  }
+  
+  &:hover{
+    transform: scale(1.1);
+        }
+        @include responsive (tab){
+          left: 72vw;   
+          top: 31vh;
+  
+      &::before{
+          font-size: 3rem;
+      }
+      
+      &:hover{
+        transform: scale(1.1);
+            }
+          }
+          @include responsive (mobile){
+            left: 70vw;   
+            top: 28vh;
+  
+        &::before{
+            font-size: 3rem;
+        }
+        
+        &:hover{
+          transform: scale(1.1);
+              }
+            }
+            @include responsive (tab){
+top: 27vh;
+            }}
+
+.left-button
+{
+   background-color:transparent;
+   border:none;
+ position: relative;
+ top: -50vh;
+ left: 2vw;
+
+ &::before{
+   content: ">";
+   width: 0;
+   height: 0;
+   color: white;
+   top: 0;
+   left: 1vw;
+   position: absolute;
+   font-size: 6rem;
+   cursor: pointer;
+}
+
+&:hover{
+ transform: scale(1.1);
+}   
+     @include responsive (mobile){
+  
+ &::before{
+  font-size: 3rem;
+  left: -4vh;
+         }
+            }
+     @include responsive (tab){
+left: 28vw;
+top: -44vh;
+ &::before{
+  content: ">";
+  font-size: 3rem;  
+  left: -8vw;
+ }}}
+
+.overlay {
+ position: absolute;
+ top: 38vh;
+ left:12vw;
+ width: 77vw;
+ height: 77vh;
+ background-color:rgba(0, 0, 0, 0.050);
+ color: black;
+ margin: 10px;
+ opacity: 0;
+ &:hover {
+   opacity: 1;
+   cursor: pointer;
+
+   @include responsive (tab){
+     background-color:rgba(0, 0, 0, 0.050);
+     width: 34vw;
+     left: 33vw;
+     top: 26vh;
+ }
+ }
+  .desc{
+  position: relative;
+  top: 4vh;
+  left: 0;
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: bolder;
+  }
+  @include responsive (tab){
+    font-size: 10px;
+    text-align: right;
+  }
+
+}
+.img{
+  position: relative;
+  top: 8vh;
+  width: 500px;
+  height: 300px;
+  @include responsive (tab){
+  width: 200px;
+  height: 500px;
+  position: relative;
+  top: 3vh;
+  }
+  @include responsive (mobile){
+    width: 200px;
+    height: 400px;
+    top: 1vh;
+    }
+    @include responsive (bigmobile){
+      width: 200px;
+      height: 400px;
+      top: 1vh;
+      }
+      @include responsive (laptop){
+        height:  300px;
+        }
+}

@@ -19,3 +19,29 @@
     flex-direction: row
 }
 
+@mixin flex-column-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+@mixin  responsive ($breakpoint) {
+
+
+     @if $breakpoint == laptop  {
+      @media only screen and (max-width: 900px) {@content};
+                    }
+
+      @if $breakpoint == tab {
+      @media only screen and (max-width: 800px) {@content};
+       }
+           @if $breakpoint == mobile  {
+        @media only screen and (max-width: 500px) {@content};
+         }
+
+         @if $breakpoint == bigmobile {
+            @media only screen and (max-width: 650px) {@content};
+                          }
+                                                  
+}

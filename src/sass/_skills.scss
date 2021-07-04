@@ -1,0 +1,72 @@
+.program, .lang, .others{
+    height: 44vh;
+    width: 25vw;
+    background-color: black;
+    color: white;
+    text-align: center;
+    line-height: 6vh;
+    
+    @include responsive (tab){
+        height: 66vh;
+    }
+    @include responsive (mobile){
+        width: 44vw;
+        height: 55vh;
+        white-space: pre;
+    margin: 10%;
+    }   
+}
+.skill-father{
+    @include flex-row-between;
+    margin: 15% auto;
+    @include responsive (mobile){
+        @include flex-column-between;
+    }
+}
+.img-skills{
+    height: 3vh;
+    width: 5vw;
+    margin-top: 1vh;
+    float: left;
+    @include responsive (tab){
+        position: relative;
+        top: 2vh;
+        height: 3vh;
+        width: 3vw;     
+    }
+    @include responsive (mobile){      
+    position: relative;
+    left: -4vh;
+    height: 3vh;
+        width: 3vw;     
+    }  
+}
+h2{
+    text-align: left;
+
+    @include responsive (tab){
+        line-height: 66px;
+        font-size: 0.8rem;
+        text-align: center;
+        white-space: 4px;
+    }
+    @include responsive (mobile){
+        line-height: 77px;
+        font-size: 0.8rem;
+        text-align: left;
+        height: 8vh;
+        width: 16vw;
+        }
+    }
+.h-skills{
+    background-color:purple;
+    @include responsive (tab){
+        width: 12vw;
+        height: 6vh;
+    }
+    @include responsive (mobile){
+        width: 22vw;
+        height: 6vh;
+        text-align: center;
+    }
+}

@@ -1,15 +1,28 @@
-@media (min-width: 1921px){
+
 .home{
     @include flex-column-between;
     height: 10vh;
-    width: 44vw;
+    width: 55vw;
     margin: auto;
     position: relative;
     top: 4vh;
+    @include responsive (tab){
+        width: 88vw;
+    }
+    @include responsive (mobile){
+        width: 88vw;
+    }
     }
     .home1{
         color:white;
         font-size: 3rem;
+        @include responsive (tab){
+            font-size: 1.5rem;
+        }
+        @include responsive (mobile){
+            font-size: 1.5rem;
+            
+        }
     }
     
     .home :nth-of-type(1){
@@ -52,115 +65,3 @@
             transform: scale(2);
         }
     }
-}
-@media (max-width: 1920px){
-.home{
-    @include flex-column-between;
-    height: 10vh;
-    width: 66vw;
-    margin: auto;
-    position: relative;
-    top: 4vh;
-    }
-    .home1{
-        color:white;
-        font-size: 2rem;
-    }
-    
-    .home :nth-of-type(1){
-    animation: fall 1s  1s ease-in-out;  
-    }
-    
-    .home :nth-of-type(2){
-        animation: fall 2s   ease-in-out;  
-    }
-    
-    .home :nth-of-type(3){
-        animation: fall 3s ease-in-out;  
-    }
-    
-    .home :nth-of-type(4){
-        animation: fall 4s ease-in-out;  
-    }
-    
-    @keyframes fall {
-      0%{
-          opacity: 0;
-      }
-      50%{
-          transition: 800ms;
-      }
-      60%{
-        opacity: 0;
-    }
-      75%{
-          transform: translatey(-44px);
-      }
-    }
-
-    .cv{
-        font: 2rem sans-serif;
-        text-decoration: none;
-        margin-top: 2vh;
-        margin-left: 1vw;
-        &:hover{
-            color: red;
-            transform: scale(2);
-        }
-    }
-}
-@media (max-width: 700px){
-.home{
-    @include flex-column-between;
-    height: 10vh;
-    width: 66vw;
-    margin: auto;
-    position: relative;
-    top: 4vh;
-    }
-    .home1{
-        color: white;
-        font-size: 2rem;
-    }
-    
-    .home :nth-of-type(1){
-    animation: fall 1s  1s ease-in-out;  
-    }
-    
-    .home :nth-of-type(2){
-        animation: fall 2s   ease-in-out;  
-    }
-    
-    .home :nth-of-type(3){
-        animation: fall 3s ease-in-out;  
-    }
-    
-    .home :nth-of-type(4){
-        animation: fall 4s ease-in-out;  
-    }
-    
-    @keyframes fall {
-      0%{
-          opacity: 0;
-      }
-      50%{
-          transition: 800ms;
-      }
-      60%{
-        opacity: 0;
-    }
-      75%{
-          transform: translatey(-44px);
-      }
-    }
-    .cv{
-        font: 2rem sans-serif;
-        text-decoration: none;
-        margin-top: 2vh;
-        margin-left: 1vw;
-        &:hover{
-            color: red;
-            transform: scale(2);
-        }
-    }   
-}

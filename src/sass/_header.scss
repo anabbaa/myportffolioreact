@@ -1,4 +1,24 @@
-@media (min-width: 1921px){
+.a-logo, .n-logo{
+    font-size: 1rem;
+    color: white;
+    font-size: 6rem;
+    text-shadow: 5px 5px 1px  black ;
+
+}
+.n-logo{
+    position: relative;
+    left: -4vh;
+    color: black;
+    text-shadow: 5px 5px 1px white ;
+
+}
+.n-logo{
+    transform: rotate(44deg);
+    text-shadow: 5px 5px 1px rgba(0, 0, 0, 0.404) ;
+
+}
+
+@media (min-width: 800px){
     .head{
         height: 12vh;
         width: 100vw;
@@ -18,32 +38,38 @@
             background-color: lightgray;   
         }
     }
-    
-    .nav{
-        width: 90%;
+    nav{
+        width: 10%;
         position: relative;
-        left: 26vw;
+        left: 33vw;
         text-decoration: none;
+      
+
     }
     .nav-ul{
         display: flex;
         list-style: none;
         text-decoration: none;
+        width: 10%;
+
     }
     .nav-li{     
-        display: inline;
-           margin: 2rem;
+        display: flex;
+        margin: 1.3rem;
         list-style: none;
         color: black;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-family: 'Bebas Neue', cursive;
+    height: 1vh;
+    width: 100%;
     }
     .a{
         list-style: none;
         text-decoration: none;
     }
+    
 }
-@media (max-width: 1921px){
+@media (max-width: 800px){
         .head{
         height: 12vh;
         width: 100vw;
@@ -65,30 +91,36 @@
     }
     
     .nav{
-        width: 95%;
+        width: 10%;
         position: relative;
-        left: 33vw;
+        left: -4vw;
         text-decoration: none;
+      
+
     }
     .nav-ul{
         display: flex;
         list-style: none;
         text-decoration: none;
+        width: 10%;
+
     }
     .nav-li{     
-        display: inline;
-           margin: 1rem;
+        display: flex;
+        margin: 1.3rem;
         list-style: none;
         color: black;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-family: 'Bebas Neue', cursive;
+    height: 1vh;
+    width: 100%;
     }
     .a{
         list-style: none;
         text-decoration: none;
     }
 }
-@media (max-width: 700px){
+@media (max-width: 500px){
     .head{
         height: 12vh;
         width: 100vw;
@@ -107,30 +139,46 @@
             width: 66vw;
             background-color: lightgray;   
         }
+        .a-logo, .n-logo{
+            
+            font-size: 3rem;
+            
+        
+        }
     }
     
     .nav{
-        width: 90%;
-        position: relative;
-        left: 22vw;
+        width: 30%;
+    left: -1vh;
         text-decoration: none;
-    }
+    
     .nav-ul{
-        display: flex;
+      
         list-style: none;
         text-decoration: none;
-    }
+        width: 10%;
+       
+        
+    
     .nav-li{     
-        display: inline;
-           margin: 1rem;
+display: flex;
+margin: 1rem;
+    
         list-style: none;
         color: black;
     font-size: 1rem;
     font-family: 'Bebas Neue', cursive;
+    height: 1vh;
+    width: 100%;
+    
         
-    }
+    
     .a{
         list-style: none;
         text-decoration: none;
+    
     }
+}
+    }
+}
 }

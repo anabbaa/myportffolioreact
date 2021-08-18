@@ -1,5 +1,4 @@
 .a-logo, .n-logo{
-    font-size: 1rem;
     color: white;
     font-size: 6rem;
     text-shadow: 5px 5px 1px  black ;
@@ -17,6 +16,15 @@
     text-shadow: 5px 5px 1px rgba(0, 0, 0, 0.404) ;
 
 }
+@media (max-width: 1024px){
+    nav{
+width: 70%;
+        text-decoration: none;
+      
+
+    }
+
+}
 
 @media (min-width: 800px){
     .head{
@@ -24,7 +32,6 @@
         width: 100vw;
         background-color: lightgray;
         position: relative;
-        @include flex-row-start;
         &:before{
             position: absolute;
             content: "";
@@ -39,7 +46,6 @@
         }
     }
     nav{
-        width: 10%;
         position: relative;
         left: 33vw;
         text-decoration: none;
@@ -50,18 +56,21 @@
         display: flex;
         list-style: none;
         text-decoration: none;
-        width: 10%;
 
     }
     .nav-li{     
         display: flex;
-        margin: 1.3rem;
+        margin: 1rem;
         list-style: none;
-        color: black;
+      font-family: 'Bebas Neue', cursive;
+
+        color:black;
     font-size: 1.5rem;
-    font-family: 'Bebas Neue', cursive;
     height: 1vh;
     width: 100%;
+    position: relative;
+    top: -4vh;
+    
     }
     .a{
         list-style: none;
@@ -69,7 +78,7 @@
     }
     
 }
-@media (max-width: 800px){
+@media (max-width: 870px){
         .head{
         height: 12vh;
         width: 100vw;
@@ -95,6 +104,7 @@
         position: relative;
         left: -4vw;
         text-decoration: none;
+        width: 100%;
       
 
     }
@@ -102,55 +112,41 @@
         display: flex;
         list-style: none;
         text-decoration: none;
-        width: 10%;
+       
 
     }
     .nav-li{     
         display: flex;
-        margin: 1.3rem;
+        margin: 1rem ;
         list-style: none;
         color: black;
     font-size: 1.5rem;
     font-family: 'Bebas Neue', cursive;
     height: 1vh;
     width: 100%;
+    
     }
     .a{
         list-style: none;
         text-decoration: none;
     }
 }
-@media (max-width: 500px){
-    .head{
-        height: 12vh;
-        width: 100vw;
-        background-color: lightgray;
-        position: relative;
-        @include flex-row-start;
-        &:before{
-            position: absolute;
-            content: "";
-            top: 33%;
-            right: 50%;
-            left: 20%;
-            bottom: 0;
-            border-radius: 50%;
-            height: 12vh;
-            width: 66vw;
-            background-color: lightgray;   
-        }
+@media (max-width: 712px){
+    
         .a-logo, .n-logo{
             
-            font-size: 3rem;
-            
+            font-size: 2rem;
+            position: relative;
+            top: -3vh;
         
         }
-    }
+    
     
     .nav{
         width: 30%;
-    left: -1vh;
+    left: -8vh;
         text-decoration: none;
+        width: 100%;
     
     .nav-ul{
       
@@ -181,4 +177,91 @@ margin: 1rem;
 }
     }
 }
+}
+@media (max-width: 420px){
+    
+    
+
+    .a-logo, .n-logo{
+        font-size: 2rem;
+        position: relative;
+        top: -3vh;
+    
+    }
+    
+        nav{
+            position: fixed;
+            width: 0;
+            &::after{
+content: "<<";
+width: 0;
+position: absolute;
+      height: 0;
+      color: black;
+      top: 5vh;
+      left: 16vw;
+      right: 0vw;
+      position: absolute;
+      font-size: 2rem;
+      cursor: pointer;
+      animation: nav 900ms infinite ease-in-out;
+
+
+      @keyframes nav {
+          from{
+            transform: scale(1);
+
+
+          }
+          to{
+            transform: scale(0.5);
+
+
+          }
+          
+      }
+            }
+          }
+          .nav-ul{
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 10%;
+            width: 33%;
+            margin-bottom: -22vh;
+          }
+          .nav-li{
+            display: flex;
+         border: 1rem solid white; 
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-size: 1rem;
+            color: white;
+            text-align: center;
+            width: 14vw;
+            height: 8vh;
+            max-width: auto;
+
+          }
+          .a{
+            
+            display: flex;
+            align-items: center;
+            text-align: center;
+            height: 3rem;
+            transition: 400ms ease;
+            margin: auto;
+            opacity: (0);
+            
+
+          }
+          nav:hover .a{
+            filter: grayscale(0%);
+            opacity: (1);
+          }
+          
 }

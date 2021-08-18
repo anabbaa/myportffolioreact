@@ -1,21 +1,21 @@
-@media only screen and  (min-width: 800px){
+@media   (min-width: 1020px){
     .footer-father{
-        height: 16vh;
-        width: 100vw;
+        height: 12vh;
+        width: 100%;
         display: block;
-        background-color: black;
+        background-color:black;
         position: relative;
         bottom: 0;
-        margin: 44% auto;
-    }
+   top: 77vh;
+ }
     .icon-father{
         position: relative;
-        left: 90vw;
         top: 6vh;
+        margin-left: 88vw;
     }
     .icon{
         color: white;
-        font-size: 2rem;
+        font-size: 1rem;
         list-style: none;
         text-decoration: none;
     }
@@ -24,7 +24,13 @@
         height: 6vh;
         color:white;
         @include flex-row-between;
-        margin-bottom: 2vh;
+        position: relative;
+        top: 1vh;
+        font-size: 1rem;
+    }
+    .reference-mid{
+        position: relative;
+        left: 6vh;
     }
     .date{
         background-color: transparent;
@@ -51,19 +57,23 @@
     }
     }
     
+        
     
-    @media only screen and (max-width: 800px){
+    
+    @media only screen and (max-width: 1024px){
         .footer-father{
             height: 16vh;
             width: 100vw;
             display: block;
-            background-color:black;
-            margin: 100% auto;
+            background-color: black;
+            position: relative;
+            top: 77vh;
         }
         .icon-father{
             position: relative;
-            left: 90vw;
-            top: 6vh;
+            margin-left: 99vw;
+         
+            top: 1vh;
         }
         .icon{
             color: white;
@@ -74,17 +84,19 @@
             right: 8vw;
         }
         .reference-mid{
-            font-size: 1rem;
-            width: 8vw;
-            height: 2vh;
             position: relative;
-            left: 8vw;
+            left: 22vw;
         }
+      
         .reference{
-            width: 44vw;
-            height: 1vh;
-            color:white;
+            width: 66vw;
+            color: white;
+            position: relative;
+            top: -6vh;
             @include flex-row-between;
+        }
+        .reference-an{
+            width: 14vw;
         }
         h1{
             font-size: 1rem;
@@ -98,6 +110,8 @@
             border: none;
             outline: none;
             color: white;
+            position: relative;
+            left: 12vw;
         
         }
         .heart{
@@ -118,18 +132,46 @@
             }
         }
      }
-    @media only screen and (max-width: 500px){
+     @media only screen and (max-width: 800px){
+         .footer-father{
+             height: 14vh;
+             position: relative;
+             top: 77vh;
+         }
+.reference-mid{
+    position: relative;
+    top: -6vh;
+    right: 77vw;
+    color:white;
+}
+.reference-an{
+    position: relative;
+    top: -10vh;
+}
+.date{
+    position: relative;
+    left: 12vw;
+    top: -6vw;
+    color: white;
+}
+.reference{
+   width: 33vw;
+}
+     }
+    @media (max-width: 500px){
         .footer-father{
-            height: 16vh;
+            height: 18vh;
             width: 100vw;
-            display: block;
+         
             background-color:black;
-            margin: 100% auto;
+            position: relative;
+            top: 77vh;
         }
         .icon-father{
             position: relative;
-            left: 90vw;
-            top: 6vh;
+            margin-left: 99vw;
+         
+            top: 1vh;
         }
         .icon{
             color: white;
@@ -138,14 +180,22 @@
             text-decoration: none;
             position: relative;
             right: 8vw;
+        }.reference-mid{
+            width: 88vw;
+            height: 2vh;
+            top: -14vh;
         }
+        
+      
         .reference{
-            width: 44vw;
-            height: 1vh;
-            color:white;
-            @include flex-row-between;
+            width: 22vw;
+            color: white;
+            position: relative;
+            top: 2vh;
+            font-size: 1rem;
         }
-        h1, h2{
+        
+        h1{
             font-size: 1rem;
             width: 8vw;
             height: 2vh;
@@ -157,6 +207,9 @@
             border: none;
             outline: none;
             color: white;
+            position: relative;
+            left: 12vw;
+            top: -6vh;
         
         }
         .heart{
@@ -176,4 +229,16 @@
                 transform: scale(0.5);
             }
         }
+    }
+    @media (max-width: 320px){
+.reference{
+    position: relative;
+    color: white;
+    top: -2vh;
+}
+.reference-mid{
+    position: relative;
+    top: -12vh;
+    color: white;
+}
     }

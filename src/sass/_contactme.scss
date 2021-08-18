@@ -14,14 +14,14 @@
     border-bottom: 1px solid red;
     height: 4vh;
     width: 22vw;
-    font-size: 2rem;
+    font-size: 1rem;
     font-weight: bolder;
     text-align: center;
 }
 .send {
     margin-top: 2vh;
 height: 4vh;
-width: 8vw;
+width: 16vw;
 background-color: rgb(0, 174, 255);
 font-size: 1.5rem;
 text-align: center;
@@ -48,14 +48,14 @@ text-align: center;
 .send {
     margin-top: 2vh;
 height: 4vh;
-width: 8vw;
+width: 16vw;
 background-color: rgb(0, 174, 255);
 font-size: 1.5rem;
 text-align: center;
 }
 }
 
-@media (max-width: 700px){
+@media (max-width: 800px){
 .contact-father{
     @include flex-column-between;
     margin: auto;
@@ -72,13 +72,40 @@ text-align: center;
     width: 48vw;
     font-size: 1rem;
     font-weight: bolder;
+
 }
 .send {
     margin-top: 2vh;
 height: 4vh;
-width: 16vw;
+width: 18vw;
 background-color: rgb(0, 174, 255);
 font-size: 1.5rem;
 text-align: center;
+}
+textarea{
+    width: 44vw;
+    height: 66vh;
+    margin-top: 1vh;
+    
+}
+}
+@media (max-width: 400px){
+.send{
+    width: 28vw;
+}
+.email,.name{
+    font-size: 10px;
+}
+}
+@media (max-width: 300px){
+    .send{
+        width: 34vw;
+    }
+textarea{
+    width: 77vw;
+    height: 44vh;
+}
+.name, .email{
+    font-size: 10px;
 }
 }

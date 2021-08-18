@@ -27,7 +27,9 @@
 }
 
 @mixin  responsive ($breakpoint) {
-
+    @if $breakpoint == screen {
+        @media only screen and (max-width: 1025px) {@content};
+                                     }
 
      @if $breakpoint == laptop  {
       @media only screen and (max-width: 900px) {@content};
@@ -41,7 +43,11 @@
          }
 
          @if $breakpoint == bigmobile {
-            @media only screen and (max-width: 650px) {@content};
+            @media only screen and (max-width: 660px) {@content};
                           }
+          
+         @if $breakpoint == minmobile {
+             @media only screen and (max-width: 400px) {@content};
+                                          }
                                                   
 }

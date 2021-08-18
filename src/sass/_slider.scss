@@ -45,12 +45,13 @@
         transform: scale(1.1);
             }
           }
-          @include responsive (mobile){
+          @include responsive (bigmobile){
             left: 70vw;   
             top: 28vh;
-  
+
         &::before{
             font-size: 3rem;
+            margin-left: 14vw;
         }
         
         &:hover{
@@ -59,7 +60,11 @@
             }
             @include responsive (tab){
 top: 27vh;
-            }}
+            }
+            
+          }
+          
+          
 
 .left-button
 {
@@ -68,6 +73,7 @@ top: 27vh;
  position: relative;
  top: -50vh;
  left: 2vw;
+ 
 
  &::before{
    content: ">";
@@ -84,12 +90,16 @@ top: 27vh;
 &:hover{
  transform: scale(1.1);
 }   
-     @include responsive (mobile){
+     @include responsive (bigmobile){
   
  &::before{
   font-size: 3rem;
-  left: -4vh;
-         }
+margin-left: -14vw;
+     }
+
+&:hover{
+  transform: scale(1.1);
+ }   
             }
      @include responsive (tab){
 left: 28vw;
@@ -98,7 +108,25 @@ top: -44vh;
   content: ">";
   font-size: 3rem;  
   left: -8vw;
- }}}
+ }
+
+ &:hover{
+  transform: scale(1.1);
+ }   }
+ @include responsive (minmobile){
+
+  &::before{
+    content: ">";
+    font-size: 2rem;  
+    left: -26vw;
+   }
+
+&:hover{
+  transform: scale(1.1);
+ }   
+}
+ }
+
 
 .overlay {
  position: absolute;
@@ -129,32 +157,25 @@ top: -44vh;
   text-align: center;
   font-weight: bolder;
   }
-  @include responsive (tab){
-    font-size: 10px;
-    text-align: right;
-  }
+
 
 }
 .img{
   position: relative;
-  top: 8vh;
+  top: 10vh;
   width: 500px;
   height: 300px;
   @include responsive (tab){
-  width: 200px;
+  width: 250px;
   height: 500px;
   position: relative;
   top: 3vh;
   }
-  @include responsive (mobile){
-    width: 200px;
-    height: 400px;
-    top: 1vh;
-    }
+  
     @include responsive (bigmobile){
       width: 200px;
       height: 400px;
-      top: 1vh;
+      top: 7vh;
       }
       @include responsive (laptop){
         height:  300px;

@@ -15,6 +15,11 @@
         white-space: pre;
     margin: 10%;
     }   
+    @include responsive (minmobile){
+        width: 55vw;
+    
+        
+    }
 }
 .skill-father{
     @include flex-row-between;
@@ -40,6 +45,7 @@
     height: 3vh;
         width: 3vw;     
     }  
+    
 }
 h2{
     text-align: left;
@@ -68,5 +74,10 @@ h2{
         width: 22vw;
         height: 6vh;
         text-align: center;
+    }
+    @include responsive (minmobile){
+        width: 33vw;
+        text-align: center;
+        
     }
 }

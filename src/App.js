@@ -22,26 +22,16 @@ function App() {
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);
-    }, 2000);
+    }, 10000);
   }, []);
   if (load) return <Loading />;
 
   return (
     <Router>
       <Header />
-     
-
-    
       <Switch>   
         <Route path="/" exact component={Home} /> 
         <Route path="/home" exact component={Home} /> 
-
-
-
-
-
- 
-     
       <Route
           path="/aboutme"
           exact

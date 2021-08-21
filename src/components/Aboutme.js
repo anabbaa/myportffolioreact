@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 const Aboutme = ({datame})=>{
-    console.log(process.env);
     return (
         <React.Fragment>
         <div className="about-father">

@@ -25,13 +25,18 @@ function App() {
     }, 2000);
   }, []);
   if (load) return <Loading />;
+  <Home />
 
   return (
     <Router>
       <Header />
+      
+
+    
       <Switch>   
-        <Route path="/" exact component={Home} /> 
-        <Route path="/home" exact component={Home} /> 
+      <Route  path="/" exact component={Home}/>
+
+
       <Route
           path="/aboutme"
           exact
@@ -48,7 +53,6 @@ function App() {
         <Route path={() => "/main" || "/admin" || "/any-other-word"}>
         </Route>  
         <Soon />
- 
       </Switch>
     </Router>
   );       

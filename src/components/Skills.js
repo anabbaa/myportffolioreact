@@ -6,13 +6,21 @@ return (
     <React.Fragment>
         <div className="skill-father">
         <div className="program"><h1 className="h-skills"> programming</h1>
-        <h2><img className="img-skills" src={`${process.env.PUBLIC_URL}/${dataskills[0].img1}`} alt="html"/> HTML
+        <h2><img className="img-skills" src={`${process.env.PUBLIC_URL}/${dataskills[0].img1}`} alt="html"/> HTML5
         </h2>
+        <h2><img className="img-skills"src={`${process.env.PUBLIC_URL}/${dataskills[0].imgcss}`} />CSS3</h2>
         <h2> <img className="img-skills"src={`${process.env.PUBLIC_URL}/${dataskills[0].img2}`} alt="sass"/>Sass</h2>
         <h2>  <img className="img-skills"src={`${process.env.PUBLIC_URL}/${dataskills[0].img3}`} alt="jv"/>Javascript</h2>
+        <h2><img className="img-skills"src={`${process.env.PUBLIC_URL}/${dataskills[0].imgdom}`} />DOM</h2>
         <h2><img className="img-skills"src={`${process.env.PUBLIC_URL}/${dataskills[0].img4}`} />React</h2>  
         <h2> <img className="img-skills"src={`${process.env.PUBLIC_URL}/${dataskills[0].img5}`} alt="node"/>Node.js</h2>
-        <h2><img className="img-skills"src={`${process.env.PUBLIC_URL}/${dataskills[0].img6}`} />Bootstrap</h2>
+
+        <h2><img className="img-skills"src={`${process.env.PUBLIC_URL}/${dataskills[0].imgexpress}`} />Express</h2>
+        <h2><img className="img-skills"src={`${process.env.PUBLIC_URL}/${dataskills[0].imgmongo}`} />Mongo</h2>
+
+        <h2><img className="img-skills"src={`${process.env.PUBLIC_URL}/${dataskills[0].imghandelbar}`} />HANDELBARS</h2>
+        <h2><img className="img-skills"src={`${process.env.PUBLIC_URL}/${dataskills[0].imgejs}`} />EJS</h2>
+        <h2><img className="img-skills"src={`${process.env.PUBLIC_URL}/${dataskills[0].imgmysql}`} />MYSQL</h2>
         </div>
         <div className="lang"><h1  className="h-skills"> Languages</h1>
         <h2> <img className="img-skills"src={`${process.env.PUBLIC_URL}/${dataskills[0].img7}`} alt="ar"/>Arabic: Native</h2>

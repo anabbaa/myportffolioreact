@@ -1,4 +1,4 @@
-.program, .lang, .others{
+.lang, .others{
     height: 44vh;
     width: 25vw;
     background-color: black;
@@ -20,6 +20,27 @@
     
         
     }
+}
+.program{
+    height: 77vh;
+    width: 25vw;
+    background-color: black;
+    color: white;
+    text-align: center;
+    line-height: 6vh;
+    @include responsive (tab){
+        height: 66vh;
+    }
+    @include responsive (mobile){
+        width: 44vw;
+        height: 55vh;
+        white-space: pre;
+    margin: 10%;
+    }   
+    @include responsive (minmobile){
+        width: 55vw;
+    }
+
 }
 .skill-father{
     @include flex-row-between;

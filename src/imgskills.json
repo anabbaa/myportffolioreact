@@ -2,11 +2,18 @@
 [
     {
         "img1": "./img/html.png",
+        "imgcss": "./img/css3.png",
         "img2": "./img/sass.png",
         "img3": "./img/js.png",
+        "imgdom": "./img/dom.png",
         "img4": "./img/react.png",
         "img5": "./img/node.png",
         "img6": "./img/boostrap.jpeg",
+        "imgexpress": "./img/express.png",
+        "imgmongo": "./img/mongo.png",
+        "imghandelbar": "./img/handelbar.png",
+        "imgejs": "./img/ejs.png",
+        "imgmysql": "./img/mysql.png",
         "img7": "./img/arabic.jpeg",
         "img8": "./img/eng.png",
         "img9": "./img/german.png",

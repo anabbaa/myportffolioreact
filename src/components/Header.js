@@ -7,8 +7,8 @@ const Header = ()=>{
    
    <div className="head">
      <div className="logo"><span className="a-logo">A</span><spasn className="n-logo">N</spasn></div>
-<nav className="nav">
-    <ul className="nav-ul">
+<nav className="nav-ul">
+    <ul className="nav-li">
     <li className="a" onClick={()=>history.push("/")}>Home</li>
     <li className="a" onClick={()=>history.push("/aboutme")}>About Me</li>
     <li className="a" onClick={()=>history.push("/projects")}>Projects</li>

@@ -1,265 +1,138 @@
+
+  .mobileNav{
+    display: none
+}
 .a-logo, .n-logo{
     color: white;
-    font-size: 6rem;
+    font-size: 5rem;
     text-shadow: 5px 5px 1px  black ;
-
 }
 .n-logo{
     position: relative;
     left: -4vh;
     color: black;
     text-shadow: 5px 5px 1px white ;
-
 }
 .n-logo{
     transform: rotate(44deg);
     text-shadow: 5px 5px 1px rgba(0, 0, 0, 0.404) ;
-
 }
-@media (max-width: 1024px){
-    nav{
-width: 70%;
-        text-decoration: none;
-      
-
-    }
-
-}
-
-@media (min-width: 800px){
-    .head{
-        height: 12vh;
-        width: 100vw;
-        background-color: lightgray;
-        position: relative;
-        &:before{
-            position: absolute;
-            content: "";
-            top: 33%;
-            right: 50%;
-            left: 20%;
-            bottom: 0;
-            border-radius: 50%;
-            height: 12vh;
-            width: 66vw;
-            background-color: lightgray;   
-        }
-    }
-    nav{
-        position: relative;
-        left: 33vw;
-        text-decoration: none;
-      
-
-    }
-    .nav-ul{
-        display: flex;
-        list-style: none;
-        text-decoration: none;
-
-    }
-    .nav-li{     
-        display: flex;
-        margin: 1rem;
-        list-style: none;
-      font-family: 'Bebas Neue', cursive;
-
-        color:black;
-    font-size: 1.5rem;
-    height: 1vh;
-    width: 100%;
-    position: relative;
-    top: -4vh;
-    
-    }
-    .a{
-        list-style: none;
-        text-decoration: none;
-    }
-    
-}
-@media (max-width: 870px){
-        .head{
-        height: 12vh;
-        width: 100vw;
-        background-color: lightgray;
-        position: relative;
-        @include flex-row-start;
-        &:before{
-            position: absolute;
-            content: "";
-            top: 33%;
-            right: 50%;
-            left: 20%;
-            bottom: 0;
-            border-radius: 50%;
-            height: 12vh;
-            width: 66vw;
-            background-color: lightgray;   
-        }
-    }
-    
-    .nav{
-        width: 10%;
-        position: relative;
-        left: -4vw;
-        text-decoration: none;
-        width: 100%;
-      
-
-    }
-    .nav-ul{
-        display: flex;
-        list-style: none;
-        text-decoration: none;
-       
-
-    }
-    .nav-li{     
-        display: flex;
-        margin: 1rem ;
-        list-style: none;
-        color: black;
-    font-size: 1.5rem;
-    font-family: 'Bebas Neue', cursive;
-    height: 1vh;
-    width: 100%;
-    
-    }
-    .a{
-        list-style: none;
-        text-decoration: none;
-    }
-}
-@media (max-width: 712px){
-    
-        .a-logo, .n-logo{
-            
-            font-size: 2rem;
+nav{
+width: 100%;
             position: relative;
-            top: -3vh;
-        
+            left: 33vw;
         }
-    
-    
-    .nav{
-        width: 30%;
-    left: -8vh;
-        text-decoration: none;
-        width: 100%;
-    
-    .nav-ul{
-      
-        list-style: none;
-        text-decoration: none;
-        width: 10%;
-       
-        
-    
-    .nav-li{     
-display: flex;
-margin: 1rem;
-    
-        list-style: none;
-        color: black;
-    font-size: 1rem;
-    font-family: 'Bebas Neue', cursive;
-    height: 1vh;
-    width: 100%;
-    
-        
-    
-    .a{
-        list-style: none;
-        text-decoration: none;
-    
-    }
-}
-    }
-}
-}
-@media (max-width: 420px){
-    
-    
-
-    .a-logo, .n-logo{
-        font-size: 2rem;
-        position: relative;
-        top: -3vh;
-    
-    }
-    
-        nav{
-            position: fixed;
-            width: 0;
-            &::after{
-content: "<<";
-width: 0;
-position: absolute;
-      height: 0;
-      color: black;
-      top: 5vh;
-      left: 16vw;
-      right: 0vw;
-      position: absolute;
-      font-size: 2rem;
-      cursor: pointer;
-      animation: nav 900ms infinite ease-in-out;
-
-
-      @keyframes nav {
-          from{
-            transform: scale(1);
-          }
-          to{
-            transform: scale(0.5);
-
-
-          }
-          
-      }
+        .head{
+            height: 12vh;
+            width: 100%;
+            background-color: lightgray;
+            position: relative;
+            border: 1px solid black;
+            &:before{
+                position: absolute;
+                content: "";
+                top: 33%;
+                right: 50%;
+                left: 20%;
+                bottom: 0;
+                border-radius: 50%;
+                height: 12vh;
+                width: 66vw;
+                background-color: lightgray;   
             }
-          }
-          .nav-ul{
-            padding: 0;
-            margin: 0;
+        }
+        .nav-li{     
             display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            height: 10%;
-            width: 33%;
-            margin-bottom: -22vh;
-          }
-          .nav-li{
-            display: flex;
-         border: 1rem solid white; 
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            font-size: 1rem;
-            color: white;
-            text-align: center;
-            width: 14vw;
-            height: 8vh;
-            max-width: auto;
+            list-style: none;
+        height: 1vh;
+        position: relative;
+        top: -8vh;
+        }
+        .a{
+            list-style: none;
+            font-family: Rowdies;
+            text-decoration: none;
+            margin: 1rem;
+            font-size: 1.2rem;
+        }
+@media (max-width: 1200px){
+    
+    nav{
+        width: 100%;
+        left: 22vw;
+    }
+.a{
+    margin: 10px;
+}
+}
+@media (max-width: 900px){
+    nav{
+        left: 16vw;
+    }
+}
+@media (max-width: 800px){
+    .a-logo, .n-logo{
+        font-size: 3rem;
+    }
+    nav{
+        width: 100%;
+        left: 11vw;
+        top: 9vh;
+    }
+    .a{
+        font-size: 1rem;
+    }  
+}
+@media (max-width: 650px){
+    .head{
+    
+        &:before{
+            display: none;
+        }
+    }
+    .a-logo, .n-logo{
+        font-size: 3rem;
+    }
+    .n-logo{
+        position: relative;
+        left: -1vw;
+    }
+    nav{
+        width: 100%;
+        left: -1vw;
+        top: 9.5vw;
+    }
+    .a{
+        font-size: 0.8rem;
+    }
+}
+@media (max-width: 425px){
+    
+    .desktopHeader{
+        display: none;
+    }
+    .mobileNav{
+        display: inline;
+    }
+    .hamburgerMenu{
+        color: white;
+        font-size: 2rem;
+    }
+    .head{
+        height: 33vh;
+        width:44vw;
+    }
+        .a-logo, .n-logo{
+            font-size: 2rem;
+    }
+    .nav{
+        width: 20%;
+    }
+    .nav-li{     
+        display: block;
+        list-style: none;
+    height: 38vh;
+    top: -4vh;
+    }
 
-          }
-          .a{
-            
-            display: flex;
-            align-items: center;
-            text-align: center;
-            height: 3rem;
-            transition: 400ms ease;
-            margin: auto;
-            opacity: (0);
-            
-
-          }
-          nav:hover .a{
-            filter: grayscale(0%);
-            opacity: (1);
-          }
-          
 }

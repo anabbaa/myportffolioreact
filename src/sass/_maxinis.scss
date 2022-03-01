@@ -3,7 +3,6 @@
     justify-content: flex-start;
     align-items: center;
     flex-direction: row;
-
 }
 
 @mixin flex-column-between{
@@ -27,9 +26,9 @@
 }
 
 @mixin  responsive ($breakpoint) {
-    @if $breakpoint == screen {
+    @if $breakpoint == bigScreen {
         @media only screen and (max-width: 1025px) {@content};
-                                     }
+ }
 
      @if $breakpoint == laptop  {
       @media only screen and (max-width: 900px) {@content};
@@ -48,6 +47,5 @@
           
          @if $breakpoint == minmobile {
              @media only screen and (max-width: 400px) {@content};
-                                          }
-                                                  
+} 
 }

@@ -12,6 +12,8 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Data from "./images-.json";
 import Datame from "./meimg.json";
 import Dataskills from "./imgskills.json";
+import MobileNavbar from "./components/MobileNavbar";
+import DesktopNavbar from "./components/DesktopNavbar";
 
 function App() {
   const [data , setData] = useState(Data);
@@ -29,14 +31,10 @@ function App() {
 
   return (
     <Router>
-      <Header />
-      
-
-    
+      <DesktopNavbar />
+      <MobileNavbar />
       <Switch>   
       <Route  path="/" exact component={Home}/>
-
-
       <Route
           path="/aboutme"
           exact

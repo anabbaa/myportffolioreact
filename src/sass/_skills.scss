@@ -16,10 +16,12 @@
     margin: 10%;
     }   
     @include responsive (minmobile){
-        width: 55vw;
-    
+        width: 55vw; 
+    }
+    @include responsive (bigScreen){
         
     }
+
 }
 .program{
     height: 77vh;

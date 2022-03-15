@@ -1,181 +1,181 @@
-// .container {  
-//     width: 75vw;
-//     height: 55vh;
-//     border: 2px solid lightgray;
-//     text-align: center;
-//     background-color: black;
-//     @include responsive (tab){
-//       height: 50vh;
-//     }
+
+  .slider-father{
+      height: 100vh;
+      width: 90vw;
+      border: 1px solid red;
+    //   margin-top: 8vh;
+      @include flex-column-between;
     
-//   }
-//   .right-button
-//    {
-//       background-color:transparent;
-//       border:none;
-//     position: relative;
-//     top: 36vh;
-//     left: 90vw;
-//     &::before{
-//       content: "<";
-//       width: 0;
-//       height: 0;
-//       color: white;
-//       top: 0;
-//       left: 1vw;
-//       position: absolute;
-//       font-size: 6rem;
-//       cursor: pointer;
-//   }
+
+  }
+  .slider{
+      height: 100%;
+      width: 50%;
+    @include flex-row-between;
+    background-color: #000000;
+    position: relative;
+    @include responsive(laptop){
+        width: 80%;
+    }
+
+  }
+  .right-button
+   {
+      background-color:transparent;
+      border: 1px solid red;
+      position: relative;
+    &::before{
+      content: "<";
+      left: -6vw;
+      width: 0;
+      position: absolute;
+      height: 0;
+      color: white;
+      font-size: 6rem;
+      cursor: pointer;
+  }
   
-//   &:hover{
-//     transform: scale(1.1);
-//         }
-//         @include responsive (tab){
-//           left: 72vw;   
-//           top: 31vh;
+  &:hover{
+    transform: scale(1.1);
+        }
+        @include responsive (tab){
+          left: 72vw;   
+          top: 31vh;
   
-//       &::before{
-//           font-size: 3rem;
-//       }
+      &::before{
+          font-size: 3rem;
+      }
       
-//       &:hover{
-//         transform: scale(1.1);
-//             }
-//           }
-//           @include responsive (bigmobile){
-//             left: 70vw;   
-//             top: 28vh;
+      &:hover{
+        transform: scale(1.1);
+            }
+          }
+          @include responsive (bigmobile){
+            left: 70vw;   
+            top: 28vh;
 
-//         &::before{
-//             font-size: 3rem;
-//             margin-left: 14vw;
-//         }
+        &::before{
+            font-size: 3rem;
+            margin-left: 14vw;
+        }
         
-//         &:hover{
-//           transform: scale(1.1);
-//               }
-//             }
-//             @include responsive (tab){
-// top: 27vh;
-//             }
+        &:hover{
+          transform: scale(1.1);
+              }
+            }
+            @include responsive (tab){
+top: 27vh;
+            }
             
-//           }
+          }
           
           
 
-// .left-button
-// {
-//    background-color:transparent;
-//    border:none;
-//  position: relative;
-//  top: -50vh;
-//  left: 2vw;
- 
+.left-button
+{
+   background-color:transparent;
+   border:none;
+   position: relative;
+ &::before{
+   content: ">";
+   width: 0;
+   height: 0;
+   color: white;
+   position: absolute;
+   font-size: 6rem;
+   left: 3vw;
+   cursor: pointer;
+}
 
-//  &::before{
-//    content: ">";
-//    width: 0;
-//    height: 0;
-//    color: white;
-//    top: 0;
-//    left: 1vw;
-//    position: absolute;
-//    font-size: 6rem;
-//    cursor: pointer;
-// }
-
-// &:hover{
-//  transform: scale(1.1);
-// }   
-//      @include responsive (bigmobile){
+&:hover{
+ transform: scale(1.1);
+}   
+     @include responsive (bigmobile){
   
-//  &::before{
-//   font-size: 3rem;
-// margin-left: -14vw;
-//      }
+ &::before{
+  font-size: 3rem;
+margin-left: -14vw;
+     }
 
-// &:hover{
-//   transform: scale(1.1);
-//  }   
-//             }
-//      @include responsive (tab){
-// left: 28vw;
-// top: -44vh;
-//  &::before{
-//   content: ">";
-//   font-size: 3rem;  
-//   left: -8vw;
-//  }
+&:hover{
+  transform: scale(1.1);
+ }   
+            }
+     @include responsive (tab){
+left: 28vw;
+top: -44vh;
+ &::before{
+  content: ">";
+  font-size: 3rem;  
+  left: -8vw;
+ }
 
-//  &:hover{
-//   transform: scale(1.1);
-//  }   }
-//  @include responsive (minmobile){
+ &:hover{
+  transform: scale(1.1);
+ }   }
+ @include responsive (minmobile){
 
-//   &::before{
-//     content: ">";
-//     font-size: 2rem;  
-//     left: -26vw;
-//    }
+  &::before{
+    content: ">";
+    font-size: 2rem;  
+    left: -26vw;
+   }
 
-// &:hover{
-//   transform: scale(1.1);
-//  }   
-// }
-//  }
-
-
-// .overlay {
-//  position: absolute;
-//  top: 38vh;
-//  left:12vw;
-//  width: 77vw;
-//  height: 77vh;
-//  background-color:rgba(0, 0, 0, 0.050);
-//  color: black;
-//  margin: 10px;
-//  opacity: 0;
-//  &:hover {
-//    opacity: 1;
-//    cursor: pointer;
-
-//    @include responsive (tab){
-//      background-color:rgba(0, 0, 0, 0.050);
-//      width: 34vw;
-//      left: 33vw;
-//      top: 26vh;
-//  }
-//  }
-//   .desc{
-//   position: relative;
-//   top: 4vh;
-//   left: 0;
-//   font-size: 1.5rem;
-//   text-align: center;
-//   font-weight: bolder;
-//   }
+&:hover{
+  transform: scale(1.1);
+ }   
+}
+ }
 
 
-// }
-// .img{
-//   position: relative;
-//   top: 10vh;
-//   width: 500px;
-//   height: 300px;
-//   @include responsive (tab){
-//   width: 250px;
-//   height: 500px;
-//   position: relative;
-//   top: 3vh;
-//   }
+.overlay {
+ position: absolute;
+ width: 27.5vw;
+ height: 55vh;
+ top: 22vh;
+ background-color:rgba(0, 0, 0, 0.050);
+ color: #ffffff;
+ opacity: 5;
+ &:hover {
+   opacity: 1;
+   cursor: pointer;
+
+   @include responsive (tab){
+     background-color:rgba(0, 0, 0, 0.050);
+     width: 34vw;
+     left: 33vw;
+     top: 26vh;
+ }
+ }
+  .desc{
+  position: relative;
+  top: 4vh;
+  left: 0;
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: bolder;
+  }
+
+
+}
+.img{
+  position: relative;
+  top: 10vh;
+  width: 500px;
+  height: 300px;
+  @include responsive (tab){
+  width: 250px;
+  height: 500px;
+  position: relative;
+  top: 3vh;
+  }
   
-//     @include responsive (bigmobile){
-//       width: 200px;
-//       height: 400px;
-//       top: 7vh;
-//       }
-//       @include responsive (laptop){
-//         height:  300px;
-//         }
-// }
+    @include responsive (bigmobile){
+      width: 200px;
+      height: 400px;
+      top: 7vh;
+      }
+      @include responsive (laptop){
+        height:  300px;
+        }
+}

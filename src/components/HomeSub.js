@@ -4,10 +4,10 @@ const HomeSub =()=>{
     return (
       <React.Fragment>
         <div className="home">
-        <p className="home1">Hey</p>
-        <p className="home1">I am Ahmed Nabbaa</p>
-        <p className="home1">Welcome to my page</p>
-        <p className="home1">enjoy</p>
+        <p >Hey</p>
+        <p >I am Ahmed Nabbaa</p>
+        <p >Welcome to my page</p>
+        <p >enjoy</p>
         <a className="cv" href="./Ahmed Nabbaa CV.pdf" download>
         My CV
       </a>

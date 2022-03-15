@@ -1,28 +1,11 @@
-
 .home{
     @include flex-column-between;
-    height: 10vh;
-    width: 55vw;
-    margin: auto;
-    position: relative;
-    top: 4vh;
-    @include responsive (tab){
-        width: 88vw;
-    }
-    @include responsive (mobile){
-        width: 88vw;
-    }
-    }
-    .home1{
-        color:white;
-        font-size: 3rem;
-        @include responsive (tab){
-            font-size: 1.5rem;
-        }
-        @include responsive (mobile){
-            font-size: 1.5rem;
-            
-        }
+    height: 50vh;
+    width: 100vw;
+    color:white;
+    font-size: 3rem;
+    @include responsive(mobile){
+        font-size: 1rem;
     }
     
     .home :nth-of-type(1){
@@ -58,10 +41,9 @@
     .cv{
         font: 2rem sans-serif;
         text-decoration: none;
-        margin-top: 2vh;
-        margin-left: 1vw;
         &:hover{
             color: red;
             transform: scale(2);
         }
     }
+}

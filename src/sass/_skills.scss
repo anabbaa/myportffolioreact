@@ -1,106 +1,67 @@
-.lang, .others{
-    height: 44vh;
-    width: 25vw;
-    background-color: black;
-    color: white;
-    text-align: center;
-    line-height: 6vh;
-    
-    @include responsive (tab){
-        height: 66vh;
-    }
-    @include responsive (mobile){
-        width: 44vw;
-        height: 55vh;
-        white-space: pre;
-    margin: 10%;
-    }   
-    @include responsive (minmobile){
-        width: 55vw; 
-    }
-    @include responsive (bigScreen){
+
+// .skill-son{
+//     width: 80vw;
+//     @include flex-row-between;
+// }
+// .program, .lang, .others{
+//     @include flex-column-start;
+//     height: auto;
+//     width: 18vw;
+//     background-color: black;
+//     color: white;
+//     line-height: 6vh;
+//     border: 1px solid red;
+// }
+// .program{
+//     @include responsive(bigScreen){
+
+//     }
+// }
+
+
+// .h-skills{
+//     background-color:purple;
+//     height: auto;
+//     width: inherit;
+//     text-align: center;
+//     font-size: 2rem;
+//     position: absolute;
+//     @include responsive(bigScreen){
         
-    }
+//     }
+//     @include responsive (tab){
 
-}
-.program{
-    height: 77vh;
-    width: 25vw;
-    background-color: black;
-    color: white;
-    text-align: center;
-    line-height: 6vh;
-    @include responsive (tab){
-        height: 66vh;
-    }
-    @include responsive (mobile){
-        width: 44vw;
-        height: 55vh;
-        white-space: pre;
-    margin: 10%;
-    }   
-    @include responsive (minmobile){
-        width: 55vw;
-    }
-
-}
-.skill-father{
-    @include flex-row-between;
-    margin: 15% auto;
-    @include responsive (mobile){
-        @include flex-column-between;
-    }
-}
-.img-skills{
-    height: 3vh;
-    width: 5vw;
-    margin-top: 1vh;
-    float: left;
-    @include responsive (tab){
-        position: relative;
-        top: 2vh;
-        height: 3vh;
-        width: 3vw;     
-    }
-    @include responsive (mobile){      
-    position: relative;
-    left: -4vh;
-    height: 3vh;
-        width: 3vw;     
-    }  
-    
-}
-h2{
-    text-align: left;
-
-    @include responsive (tab){
-        line-height: 66px;
-        font-size: 0.8rem;
-        text-align: center;
-        white-space: 4px;
-    }
-    @include responsive (mobile){
-        line-height: 77px;
-        font-size: 0.8rem;
-        text-align: left;
-        height: 8vh;
-        width: 16vw;
-        }
-    }
-.h-skills{
-    background-color:purple;
-    @include responsive (tab){
-        width: 12vw;
-        height: 6vh;
-    }
-    @include responsive (mobile){
-        width: 22vw;
-        height: 6vh;
-        text-align: center;
-    }
-    @include responsive (minmobile){
-        width: 33vw;
-        text-align: center;
+//     }
+//     // @include responsive (mobile){
+//     //     width: 22vw;
+//     //     height: 6vh;
+//     //     text-align: center;
+//     // }
+//     // @include responsive (minmobile){
+//     //     width: 33vw;
+//     //     text-align: center;
         
-    }
-}
+//     // }
+// }
+// .img-skills{
+//     height: 3vh;
+//     width: 5vw;
+//     margin-top: 1vh;
+//     float: left;
+//     @include responsive(tab){
+//         position: relative;
+//         top: 0.5vh;
+//     }
+//     @include responsive (mobile){      
+//     position: relative;
+//     left: -4vh;
+//     height: 3vh;
+//         width: 3vw;     
+//     }  
+// }
+// h2{
+//     @include responsive(tab){
+//         font-size: 1rem;
+    
+//     }
+// }

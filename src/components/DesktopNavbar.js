@@ -6,12 +6,7 @@ const DesktopNavbar = ()=>{
             <div className="desktopHeader">
               < Header /> 
             </div>
-
-
-</React.Fragment>
-
-        
+</React.Fragment>   
     )
-
 }
 export default DesktopNavbar;

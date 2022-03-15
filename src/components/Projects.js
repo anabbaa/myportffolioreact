@@ -2,11 +2,8 @@ import React, {useState} from "react";
 import { Link } from "react-router-dom";
 import Slider from "./slider/Slider";
 
-
-
 const Projects = (props)=>{
     const [val, setVal] = useState(0);
-
 
     const images = props.data.map((item,)=>{
         const {

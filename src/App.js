@@ -1,7 +1,6 @@
 import React, {useState, useEffect} from "react";
 import Footer from "./components/Footer";
 import Aboutme from "./components/Aboutme";
-import Header from "./components//Header";
 import Home from "./components/Home";
 import Contact from "./components/Contact";
 import Projects from "./components/Projects";

@@ -1,244 +1,92 @@
-@media   (min-width: 1020px){
-    .footer-father{
-        height: 12vh;
-        width: 100%;
-        display: block;
-        background-color:black;
-        position: relative;
-        bottom: 0;
-   top: 77vh;
- }
-    .icon-father{
-        position: relative;
-        top: 6vh;
-        margin-left: 88vw;
+.footer{
+    height: 86vh;
+    width: 100vw;
+    @include flex-row-between;
+    @include responsive(minmobile){
+        height: 93vh;
     }
-    .icon{
-        color: white;
-        font-size: 1rem;
-        list-style: none;
-        text-decoration: none;
+    
+
+
+.footer-father{
+    align-self: flex-end;
+    height: 12vh;
+    width: 100%;
+    background-color:black;
+    @include flex-row-between;
+    @include responsive(minmobile){
+        height: 18vh;
+        border: 1px solid red;
     }
-    .reference{
-        width: 66vw;
-        height: 6vh;
-        color:white;
-        @include flex-row-between;
-        position: relative;
-        top: 1vh;
-        font-size: 1rem;
+
+.reference{
+    width: 20%;
+    height: 6vh;
+    color:white;
+    @include flex-row-between;
+
+}
+.reference-an{
+    font-size: 1rem;
+}
+.heart{
+    color:red;
+    animation: heart 1s infinite ease-in-out;
+    height: 4vh;
+    width: 4vw;
+    position: relative;
+    left: 4vh;
+}
+
+@keyframes heart{
+    0%{
+        transform: scale(1);
     }
-    .reference-mid{
-        position: relative;
-        left: 6vh;
+    50%{
+        transform: scale(0.5);
     }
+}
+}
+.date-father{
+    width: 79%;
+    @include flex-row-center;
+    @include responsive(tab){
+        @include flex-row-end;
+
+    }
+    @include responsive(bigmobile){
+        text-align: center;
+    }
+
+ 
+
+    
     .date{
         background-color: transparent;
         border: none;
         outline: none;
         color: white;
     }
-    .heart{
-        color:red;
-        animation: heart 1s infinite ease-in-out;
-        height: 4vh;
-        width: 4vw;
-        position: relative;
-        left: 4vh;
+    .reference-mid{
+        color: #ffffff;
+        @include responsive(bigmobile){
+        font-size: 1rem;
+        }
+    
     }
-    
-    @keyframes heart{
-        0%{
-            transform: scale(1);
-        }
-        50%{
-            transform: scale(0.5);
-        }
-    }
-    }
-    
-        
-    
-    
-    @media only screen and (max-width: 1024px){
-        .footer-father{
-            height: 16vh;
-            width: 100vw;
-            display: block;
-            background-color: black;
-            position: relative;
-            top: 77vh;
-        }
-        .icon-father{
-            position: relative;
-            margin-left: 99vw;
-         
-            top: 1vh;
-        }
-        .icon{
-            color: white;
-            font-size: 1rem;
-            list-style: none;
-            text-decoration: none;
-            position: relative;
-            right: 8vw;
-        }
-        .reference-mid{
-            position: relative;
-            left: 22vw;
-        }
-      
-        .reference{
-            width: 66vw;
-            color: white;
-            position: relative;
-            top: -6vh;
-            @include flex-row-between;
-        }
-        .reference-an{
-            width: 14vw;
-        }
-        h1{
-            font-size: 1rem;
-            width: 8vw;
-            height: 2vh;
-            position: relative;
-            left: 8vw;
-        }
-        .date{
-            background-color: transparent;
-            border: none;
-            outline: none;
-            color: white;
-            position: relative;
-            left: 12vw;
-        
-        }
-        .heart{
-            color: red;
-            animation: heart 1s infinite ease-in-out;
-            height: 4vh;
-            width: 4vw;
-            position: relative;
-            left: 1vh;
-        }
-        
-        @keyframes heart{
-            0%{
-                transform: scale(1);
-            }
-            50%{
-                transform: scale(0.5);
-            }
-        }
-     }
-     @media only screen and (max-width: 800px){
-         .footer-father{
-             height: 14vh;
-             position: relative;
-             top: 77vh;
-         }
-.reference-mid{
-    position: relative;
-    top: -6vh;
-    right: 77vw;
-    color:white;
 }
-.reference-an{
-    position: relative;
-    top: -10vh;
-}
-.date{
-    position: relative;
-    left: 12vw;
-    top: -6vw;
+.icon-father{
+    width: 1%;
+    @include flex-row-end;
+    @include responsive(minmobile){
+        @include flex-column-center;
+
+    }
+.icon{
     color: white;
+    font-size: 1rem;
+    list-style: none;
+    text-decoration: none;
 }
-.reference{
-   width: 33vw;
 }
-     }
-    @media (max-width: 500px){
-        .footer-father{
-            height: 18vh;
-            width: 100vw;
-         
-            background-color:black;
-            position: relative;
-            top: 77vh;
-        }
-        .icon-father{
-            position: relative;
-            margin-left: 99vw;
-         
-            top: 1vh;
-        }
-        .icon{
-            color: white;
-            font-size: 1rem;
-            list-style: none;
-            text-decoration: none;
-            position: relative;
-            right: 8vw;
-        }.reference-mid{
-            width: 88vw;
-            height: 2vh;
-            top: -14vh;
-        }
-        
-      
-        .reference{
-            width: 22vw;
-            color: white;
-            position: relative;
-            top: 2vh;
-            font-size: 1rem;
-        }
-        
-        h1{
-            font-size: 1rem;
-            width: 8vw;
-            height: 2vh;
-            position: relative;
-            left: 8vw;
-        }
-        .date{
-            background-color: transparent;
-            border: none;
-            outline: none;
-            color: white;
-            position: relative;
-            left: 12vw;
-            top: -6vh;
-        
-        }
-        .heart{
-            color: red;
-            animation: heart 1s infinite ease-in-out;
-            height: 4vh;
-            width: 4vw;
-            position: relative;
-            left: 1vh;
-        }
-        
-        @keyframes heart{
-            0%{
-                transform: scale(1);
-            }
-            50%{
-                transform: scale(0.5);
-            }
-        }
-    }
-    @media (max-width: 320px){
-.reference{
-    position: relative;
-    color: white;
-    top: -2vh;
 }
-.reference-mid{
-    position: relative;
-    top: -12vh;
-    color: white;
-}
-    }

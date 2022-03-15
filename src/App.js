@@ -52,6 +52,7 @@ function App() {
         <Soon />
       </Switch>
     </Router>
+  
   );       
 }
 export default App;

@@ -10,50 +10,8 @@ body{
     }
     .back-soon{
         position: relative;
-        left: 48vw;
-    top: 24vh;
         color: black;
         font-size: 1.5rem;
         color: blue;
     }
-    @media (min-width: 800px){
-        .soon{
-            position: relative;
-          margin-left: 44vw;
-            top: 12vw;
-            font-size: 2rem;
-            color: white;
-        }
-    }
-@media (max-width: 800px){
-
-   .soon{ 
-       left: 46vw;
-    font-size: 1.5rem;
-    position: relative;
-    color: white;
-    top: 22vh;
     
-
-   }
-   .back-soon{
-       position: relative;
-       top:  44vh;
-      
-   }
-   
-}
-
-@media (max-width: 500px){
-
-    .soon{ 
-        left: 44vw;
-     font-size: 1.5rem;
-     position: relative;
-     color:white;
-     width: 1vw;
-     height: 2vh;
- 
-    }
-    
- }

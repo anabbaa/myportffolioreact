@@ -1,5 +1,6 @@
 .contact-father{
     height: 80vh;
+    width: 100vw;
     @include flex-column-between;
 
 .name, .email{
@@ -22,9 +23,8 @@ font-size: 1.5rem;
 text-align: center;
 }
 textarea{
-    @include responsive(tab){
-        height: 50vh;
-        width: 50vw;
-    }
+    width: 50vw;
+    height: 50vh;
+
 }
 }

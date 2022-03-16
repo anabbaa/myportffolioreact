@@ -4,7 +4,7 @@ const HomeSub =()=>{
     return (
       <React.Fragment>
         <div className="home">
-        <p >Hey</p>
+        <p >Hi</p>
         <p >I am Ahmed Nabbaa</p>
         <p >Welcome to my page</p>
         <p >enjoy</p>

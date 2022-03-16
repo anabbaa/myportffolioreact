@@ -23,8 +23,9 @@ studied English liturature in Syria but now iam going to change all my entire li
   and i have a volunteer cotract with in Födern&Wohnen.
 See you soon my guys ofcourse in the market.
             </p>
+            <Link className="back-soon" to="/home" style={{textDecoration: "none"}}>Back</Link>
+
         </div>
-        <Link className="back-soon" to="/home" style={{textDecoration: "none"}}>Back</Link>
         </React.Fragment>
     );
 };

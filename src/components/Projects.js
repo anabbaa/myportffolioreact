@@ -15,13 +15,14 @@ const Projects = (props)=>{
         }= item;
     return (
 
-        <div>
-               <a  key={id} href={a}><img className="img"  src={`${process.env.PUBLIC_URL}/${img}`}
-                width="500px" height="500px" alt={title}/></a>
-
-              < div className="overlay">
+        <div className="overlay-father" > 
+               <a  key={id} href={a}>
+               <img className="img"  src={`${process.env.PUBLIC_URL}/${img}`}
+                width="500px" height="500px" alt={title} />
+                 < div className="overlay">
                   <div className="desc">{description}</div>
                   </div>
+                </a>
         </div>
     )
     });
@@ -38,11 +39,8 @@ const Projects = (props)=>{
       <button className="left-button" onClick={() => setVal(val - 1)} disabled={val === 0}>   
       </button>
       </div>
+      <Link className="back-soon" to="/" style={{ textDecoration: "none" }}> Back</Link>
     </div>
-                
-                <Link className="back-soon" to="/" style={{ textDecoration: "none" }}>
-        Back
-      </Link>
 </React.Fragment>
     )
 }

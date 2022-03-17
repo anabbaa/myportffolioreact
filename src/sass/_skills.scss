@@ -1,71 +1,49 @@
+.skill-father{
+    @include flex-column-center;
+    height: 100vh;
+    @include responsive(bigmobile){
+        height: 150vh;
+        @include flex-column-between;
+    }
 
-// .skill-son{
-//     width: 80vw;
-//     @include flex-row-between;
-// }
-// .program, .lang, .others{
-//     @include flex-column-start;
-//     height: auto;
-//     width: 18vw;
-//     background-color: black;
-//     color: white;
-//     line-height: 6vh;
-//     border: 1px solid red;
-// }
-// .program{
-//     @include responsive(bigScreen){
+.skill-son{
+    width: 100vw;
+    height: 100vh;
+    @include flex-row-evently;
+    @include responsive(bigmobile){
+        @include flex-column-between;
+        height: 150vh;
+    }
 
-//     }
-// }
+.program, .lang, .others{
+    @include flex-column-start;
+    height: auto;
+    width: auto;
+    background-color: black;
+    color: white;
+    line-height: 6vh;
 
-
-// .h-skills{
-//     background-color:purple;
-//     height: auto;
-//     width: inherit;
-//     text-align: center;
-//     font-size: 2rem;
-//     position: absolute;
-//     @include responsive(bigScreen){
-        
-//     }
-//     @include responsive (tab){
-
-//     }
-//     // @include responsive (mobile){
-//     //     width: 22vw;
-//     //     height: 6vh;
-//     //     text-align: center;
-//     // }
-//     // @include responsive (minmobile){
-//     //     width: 33vw;
-//     //     text-align: center;
-        
-//     // }
-// }
-// .img-skills{
-//     height: 3vh;
-//     width: 5vw;
-//     margin-top: 1vh;
-//     float: left;
-//     @include responsive(tab){
-//         position: relative;
-//         top: 0.5vh;
-//     }
-//     @include responsive (mobile){      
-//     position: relative;
-//     left: -4vh;
-//     height: 3vh;
-//         width: 3vw;     
-//     }  
-// }
-// h2{
-//     @include responsive(tab){
-//         font-size: 1rem;
-    
-//     }
-// }
+.h-skills{
+    background-color:purple;
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+}
 .img-skills{
-height: 2vh;
-width: 2vw;
+    height: 3vh;
+    width: 2vw;
+    float: left;
+    @include flex-row-center;
+    @include responsive(mobile){
+        width: 4vw;
+    }
+    @include responsive(minmobile){
+        width: 8vw;
+    }
+}
+h2{
+    @include flex-row-center;
+}
+}
+}
 }

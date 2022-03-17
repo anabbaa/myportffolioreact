@@ -1,6 +1,6 @@
 @mixin flex-row-start{
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: flex-start;
     flex-direction: row;
 }
@@ -32,6 +32,12 @@
 @mixin flex-row-between {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    flex-direction: row
+}
+@mixin flex-row-evently {
+    display: flex;
+    justify-content: space-evenly;
     align-items: center;
     flex-direction: row
 }

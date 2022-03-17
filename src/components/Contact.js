@@ -12,12 +12,10 @@ const Contact=()=>{
             <input className="email" type="text"  placeholder="Plöease write your email here"     />
             <textarea  cols="88" rows="22"        />
             <input className="send" type="submit" value="submit" onSubmit={handleSubmit}/>  
-        </div>
-
-        <Link className="back-soon" to="/home" style={{ textDecoration: "none" }}>
+            <Link className="back-soon" to="/home" style={{ textDecoration: "none" }}>
         Back
         </Link>
-
+        </div>
         </React.Fragment>
     )
 }

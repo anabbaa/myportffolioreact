@@ -33,9 +33,12 @@ return (
         <h2> <img className="img-skills"src={`${process.env.PUBLIC_URL}/${dataskills[0].img12}`} alt="office"/>M.S Office</h2>
         <h2> <img className="img-skills"src={`${process.env.PUBLIC_URL}/${dataskills[0].img13}`} alt="code"/>M.S Code</h2>
         <h2> <img className="img-skills"src={`${process.env.PUBLIC_URL}/${dataskills[0].img14}`} alt="hub"/>Github</h2></div>
+
         </div>
-        </div>
+
         <Link className="back-soon" to="/" style={{textDecoration: "none"}}>Back</Link>
+
+        </div>
         </React.Fragment>
 )
 }

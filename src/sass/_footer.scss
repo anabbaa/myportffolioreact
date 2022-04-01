@@ -4,11 +4,9 @@
     @include flex-row-between;
     @include responsive(mobile){
         height: 93vh;
-        width: 95vw;
+        width: 100vw;
     }
     
-
-
 .footer-father{
     align-self: flex-end;
     height: 12vh;
@@ -18,8 +16,7 @@
     @include responsive(minmobile){
         height: 18vh;
     }
-  
-
+    
 .reference{
     width: 20%;
     height: 6vh;

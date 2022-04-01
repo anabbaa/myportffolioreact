@@ -6,18 +6,14 @@ import Contact from "./components/Contact";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
 import Soon from "./components/Soon";
-// import Soon from "./components/Soon";
 import Loading from "./components/Loading";
 import {BrowserRouter as Router , Switch, Route } from "react-router-dom";
-
 import Data from "./images-.json";
 import Datame from "./meimg.json";
 import Dataskills from "./imgskills.json";
 import MobileNavbar from "./components/MobileNavbar";
 import DesktopNavbar from "./components/DesktopNavbar";
 import { BrowserRouter } from "react-router-dom/cjs/react-router-dom.min";
-import Header from "./components/Header";
-
 
 function App() {
   const [data , setData] = useState(Data);
@@ -25,6 +21,7 @@ function App() {
   const [dataskills , setDataskills] = useState(Dataskills);
   const [load , setLoading] = useState(true);
 
+  //this function for loading 
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);
@@ -32,6 +29,7 @@ function App() {
   }, []);
   if (load) return <Loading />;
   <Home/>
+  
   return (
     <BrowserRouter>
      <Router>

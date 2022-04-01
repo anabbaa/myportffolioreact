@@ -3,6 +3,7 @@ import Header from "./Header";
 import { AiOutlineMenu } from 'react-icons/ai';
 import {AiOutlineClose} from 'react-icons/ai';
 const MobileNavbar =()=>{
+    // this componet is for responsive Hamburger Menue
     //this button for open and close hamburger menue
     const [nav, setNav ] = useState(false);
     const handelNav =()=>{

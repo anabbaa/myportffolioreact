@@ -27,8 +27,6 @@ nav a.active{
             width: 99.2vw;
             background-color: lightgray;
             position: relative;
-            border: 1px solid black;
-            border: 1px solid red;
             @include responsive(tab){
                 width: 100vw;
               }

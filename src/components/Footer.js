@@ -10,7 +10,6 @@ const Footer=()=>{
     return(
         <div className="footer">
         <div className="footer-father">
-            
              <div className="reference">
              <h1 className="reference-an" >Made with <div class="heart">❤️</div>By AHMED Nabbaa</h1> 
              </div>

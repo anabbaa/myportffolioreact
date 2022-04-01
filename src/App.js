@@ -6,13 +6,18 @@ import Contact from "./components/Contact";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
 import Soon from "./components/Soon";
+// import Soon from "./components/Soon";
 import Loading from "./components/Loading";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import {BrowserRouter as Router , Switch, Route } from "react-router-dom";
+
 import Data from "./images-.json";
 import Datame from "./meimg.json";
 import Dataskills from "./imgskills.json";
 import MobileNavbar from "./components/MobileNavbar";
 import DesktopNavbar from "./components/DesktopNavbar";
+import { BrowserRouter } from "react-router-dom/cjs/react-router-dom.min";
+import Header from "./components/Header";
+
 
 function App() {
   const [data , setData] = useState(Data);
@@ -26,33 +31,35 @@ function App() {
     }, 2000);
   }, []);
   if (load) return <Loading />;
-  <Home />
-
+  <Home/>
   return (
-    <Router>
-      <DesktopNavbar />
-      <MobileNavbar />
-      <Switch>   
-      <Route  path="/" exact component={Home}/>
-      <Route
-          path="/aboutme"
-          exact
-          component={() => <Aboutme datame={Datame} />}
-        />
-      <Route
-          path="/projects"
-          exact
-          component={() => <Projects data={Data} />}  />
-          <Route path="/skills" exact
-           component={()=><Skills dataskills={Dataskills}/> } />
-        <Route path="/contact" exact component={Contact} />
-        <Route path="/footer" exact component={Footer} />
-        <Route path={() => "/main" || "/admin" || "/any-other-word"}>
-        </Route>  
-        <Soon />
-      </Switch>
+    <BrowserRouter>
+     <Router>
+     <DesktopNavbar />
+    <MobileNavbar />
+    <Switch>   
+    <Route path="/myportffolioreact" exact component={Home}  />
+    <Route path="/" exact component={Home}  />
+    <Route path="/home" exact component={Home}  />    
+    <Route
+        path="/aboutme"
+        exact
+        component={() => <Aboutme datame={Datame} />}
+      />
+    <Route
+        path="/projects"
+        exact
+        component={() => <Projects data={Data} />}  />
+        <Route path="/skills" exact
+         component={()=><Skills dataskills={Dataskills}/> } />
+      <Route path="/contact" exact component={Contact} />
+      <Route path="/footer" exact component={Footer} />
+      <Route path={() => "/main" || "/admin" || "/any-other-word"}>
+      <Soon />
+      </Route>  
+    </Switch>
     </Router>
-  
+  </BrowserRouter>
   );       
 }
 export default App;

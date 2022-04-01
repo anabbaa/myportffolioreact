@@ -4,7 +4,7 @@
 }
 .a-logo, .n-logo{
     color: white;
-    font-size: 5rem;
+    font-size: 4rem;
     text-shadow: 5px 5px 1px  black ;
 }
 .n-logo{
@@ -17,15 +17,21 @@
     transform: rotate(44deg);
     text-shadow: 5px 5px 1px rgba(0, 0, 0, 0.404) ;
 }
-nav{
-width: 100%;
-        }
+nav a.active{
+    border-bottom: 2px solid #000;
+    margin-bottom: 1vh;
+}
+
         .head{
             height: 12vh;
-            width: 100%;
+            width: 99.2vw;
             background-color: lightgray;
             position: relative;
             border: 1px solid black;
+            border: 1px solid red;
+            @include responsive(tab){
+                width: 100vw;
+              }
             &:before{
                 position: absolute;
                 content: "";
@@ -39,22 +45,38 @@ width: 100%;
                 background-color: lightgray;   
             }
         }
+        
         .nav-li{     
             list-style: none;
             width: 100%;
         height: 1vh;
         @include flex-row-center;
         position: relative;
-        top: -2vw;
+        top: -0.5vw;
         }
         .a{
-            list-style: none;
             font-family: Rowdies;
-            text-decoration: none;
             font-size: 1.5rem;
             margin: 1rem;
             cursor: pointer;
+            list-style: none;
+
         }
+        .anchor{
+            text-decoration: none;
+            color: #000;
+        }
+        
+        @media (max-width: 900px){
+            .a{
+                font-size: 1.3rem;
+            }
+            .nav-li{
+                top: -3vh;
+            }
+
+        }
+        
 
 @media (max-width: 800px){
     .a-logo, .n-logo{
@@ -65,7 +87,6 @@ width: 100%;
     }  
     .nav-li{
         top: -1vh;
-
     }
 }
 @media (max-width: 650px){
@@ -82,10 +103,7 @@ width: 100%;
         position: relative;
         left: -1vw;
     }
-    nav{
-        width: 100%;
-        left: -1vw;
-    }
+
     .nav-li{
     height: 4vh;
     }
@@ -93,7 +111,7 @@ width: 100%;
         font-size: 0.8rem;
     }
 }
-@media (max-width: 492px){
+@media (max-width: 513px){
     
     .desktopHeader{
         display: none;
@@ -103,23 +121,25 @@ width: 100%;
     }
     .hamburgerMenu{
         color: white;
-        font-size: 2rem;
+        font-size: 2rem;;
     }
     .head{
-        height: 33vh;
-        width:44vw;
+        width: auto;
+        height: auto;
     }
         .a-logo, .n-logo{
             font-size: 2rem;
     }
     .nav{
-        width: 20%;
+        width: 1vw;
+      
+        border: 1px solid red;
     }
     .nav-li{     
         display: block;
         list-style: none;
-    height: 38vh;
-    top: -4vh;
+    height: auto;
+
     }
 
 }

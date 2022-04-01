@@ -14,9 +14,9 @@ const Projects = (props)=>{
             description,
         }= item;
     return (
-
+        /*this over lay to show title of project when clicking on it  */
         <div className="overlay-father" > 
-               <a  key={id} href={a}>
+               <a  key={id} href={a} target="_blank" >
                <img className="img"  src={`${process.env.PUBLIC_URL}/${img}`}
                 width="500px" height="500px" alt={title} />
                  < div className="overlay">
@@ -26,22 +26,18 @@ const Projects = (props)=>{
         </div>
     )
     });
-    return (
-        <React.Fragment>
+    return (  
              <div className="slider-father">
                  <div className="slider">
       <button className="right-button" onClick={() => setVal(val + 1)}
        disabled={images.length -1 === val} >
       </button>
-
             <Slider images={images[val]} />
-
       <button className="left-button" onClick={() => setVal(val - 1)} disabled={val === 0}>   
       </button>
       </div>
       <Link className="back-soon" to="/" style={{ textDecoration: "none" }}> Back</Link>
     </div>
-</React.Fragment>
     )
 }
 export default Projects

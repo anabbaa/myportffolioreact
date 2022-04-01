@@ -3,8 +3,8 @@ import Header from "./Header";
 import { AiOutlineMenu } from 'react-icons/ai';
 import {AiOutlineClose} from 'react-icons/ai';
 const MobileNavbar =()=>{
+    //this button for open and close hamburger menue
     const [nav, setNav ] = useState(false);
-
     const handelNav =()=>{
         setNav(!nav);
     }
@@ -18,8 +18,6 @@ return (
                 {nav? closeButton:hamurgerButton}
                 {nav && <Header />}
             </div>
-    
-    
         </div>
     </React.Fragment>
 )

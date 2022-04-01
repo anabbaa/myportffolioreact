@@ -3,10 +3,12 @@ import { Link } from "react-router-dom";
 const Soon = () => {
     return( 
         <React.Fragment>
-        <h1 className="soon">Coming Soon</h1>
+            <div className="soon-father">
+        <h1 className="soon">Bad Request</h1>
     <Link className="back-soon" to="/home" style={{ textDecoration: "none" }}>
         Back
         </Link>
+        </div>
         </React.Fragment>
         )
   };

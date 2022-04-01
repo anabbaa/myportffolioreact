@@ -1,18 +1,18 @@
 .skill-father{
-    @include flex-column-center;
     height: 100vh;
+    @include flex-row-evently;
     @include responsive(bigmobile){
-        height: 150vh;
+        height: 170vh;
         @include flex-column-between;
     }
 
 .skill-son{
-    width: 100vw;
+    width: 99vw;
     height: 100vh;
     @include flex-row-evently;
     @include responsive(bigmobile){
         @include flex-column-between;
-        height: 150vh;
+        height: 170vh;
     }
 
 .program, .lang, .others{
@@ -22,7 +22,6 @@
     background-color: black;
     color: white;
     line-height: 6vh;
-
 .h-skills{
     background-color:purple;
     width: 100%;
@@ -44,6 +43,13 @@
 h2{
     @include flex-row-center;
 }
+
 }
 }
+}
+.back{
+    @include flex-row-center;
+    height: 1vh;
+    width: 99vw;
+
 }

@@ -1,9 +1,10 @@
 .footer{
-    height: 86vh;
+    height: 88vh;
     width: 100vw;
     @include flex-row-between;
-    @include responsive(minmobile){
+    @include responsive(mobile){
         height: 93vh;
+        width: 95vw;
     }
     
 
@@ -16,8 +17,8 @@
     @include flex-row-between;
     @include responsive(minmobile){
         height: 18vh;
-        border: 1px solid red;
     }
+  
 
 .reference{
     width: 20%;

@@ -1,17 +1,16 @@
 
   .slider-father{
       height: 100vh;
-      width: 98vw;
+      width: 99vw;
       @include flex-column-between;
   
   .slider{
       height: 50%;
-      width: 50%;
+      width: auto;
     @include flex-row-between;
     background-color: #000000;
     position: relative;
     @include responsive(bigscreen){
-        width: 50%;
         height: 70%;
     }
   
@@ -29,13 +28,18 @@
       cursor: pointer;
   
   @include responsive(bigscreen){
-      left: -3vw;
+      left: -6vw;
   }
+    
+  @include responsive(tab){
+    left: -8vw;
+}
   @include responsive(bigmobile){
-    left: -5vw;
+    left: -10vw;
 }
 @include responsive(mobile){
-    left: -8vw;
+    left: -11vw;
+    font-size: 4rem;
 }
 @include responsive(minmobile){
     left: -13vw;
@@ -60,6 +64,9 @@
    font-size: 6rem;
    left: 1vw;
    cursor: pointer;
+   @include responsive(mobile){
+    font-size: 4rem;
+}
 
 &:hover{
  transform: scale(1.1);

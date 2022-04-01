@@ -10,8 +10,7 @@ const HomeSub =()=>{
         <p >enjoy</p>
         <a className="cv" href="./Ahmed Nabbaa CV.pdf" download>
         My CV
-      </a>
-      
+      </a>    
         </div>
       </React.Fragment>
     )

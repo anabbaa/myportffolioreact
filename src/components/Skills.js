@@ -15,10 +15,8 @@ return (
              <h2><img className="img-skills"src={`${process.env.PUBLIC_URL}/${dataskills[0].imgdom}`} />DOM</h2>
              <h2><img className="img-skills"src={`${process.env.PUBLIC_URL}/${dataskills[0].img4}`} />React</h2>  
              <h2> <img className="img-skills"src={`${process.env.PUBLIC_URL}/${dataskills[0].img5}`} alt="node"/>Node.js</h2>
-
              <h2><img className="img-skills"src={`${process.env.PUBLIC_URL}/${dataskills[0].imgexpress}`} />Express</h2>
              <h2><img className="img-skills"src={`${process.env.PUBLIC_URL}/${dataskills[0].imgmongo}`} />Mongo</h2>
-
              <h2><img className="img-skills"src={`${process.env.PUBLIC_URL}/${dataskills[0].imghandelbar}`} />HANDELBARS</h2>
              <h2><img className="img-skills"src={`${process.env.PUBLIC_URL}/${dataskills[0].imgejs}`} />EJS</h2>
              <h2><img className="img-skills"src={`${process.env.PUBLIC_URL}/${dataskills[0].imgmysql}`} />MYSQL</h2>
@@ -33,11 +31,10 @@ return (
         <h2> <img className="img-skills"src={`${process.env.PUBLIC_URL}/${dataskills[0].img12}`} alt="office"/>M.S Office</h2>
         <h2> <img className="img-skills"src={`${process.env.PUBLIC_URL}/${dataskills[0].img13}`} alt="code"/>M.S Code</h2>
         <h2> <img className="img-skills"src={`${process.env.PUBLIC_URL}/${dataskills[0].img14}`} alt="hub"/>Github</h2></div>
-
         </div>
-
+        </div>
+        <div className="back">
         <Link className="back-soon" to="/" style={{textDecoration: "none"}}>Back</Link>
-
         </div>
         </React.Fragment>
 )

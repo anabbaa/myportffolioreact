@@ -13,4 +13,9 @@ on my project i used slide images with a link goes for every project
 ![Screenshot from 2022-05-26 16-40-20](https://user-images.githubusercontent.com/75792585/170515732-f5015b07-39c8-4edd-97c1-7cf75dee564a.png)
 
 # skills #
+![Screenshot from 2022-05-26 16-40-32](https://user-images.githubusercontent.com/75792585/170516111-73897892-969c-42e9-8515-52a531ce5345.png)
+
+# my contacts #
+its on the footer
+
 

@@ -10,4 +10,7 @@ my home page looks like
 
 # Project #
 on my project i used slide images with a link goes for every project
+![Screenshot from 2022-05-26 16-40-20](https://user-images.githubusercontent.com/75792585/170515732-f5015b07-39c8-4edd-97c1-7cf75dee564a.png)
+
+# skills #
 

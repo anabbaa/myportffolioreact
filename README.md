@@ -17,5 +17,7 @@ on my project i used slide images with a link goes for every project
 
 # my contacts #
 its on the footer
+![Screenshot from 2022-05-26 16-40-42](https://user-images.githubusercontent.com/75792585/170516344-78728759-08ef-4392-a056-845741fa620c.png)
 
+and the web is responsive
 

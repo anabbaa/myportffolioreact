@@ -15,14 +15,15 @@ const Aboutme = ({datame})=>{
             </div>
           
             <p className="about-text">
-Hi my name is Ahmed Nabbaa i come from Syria i live in Germany now. I have 
-studied English liturature in Syria but now iam going to change all my entire life
- by enreing the life of coding thanks to DCI institue in Germany who gives
-  me this chance in the beggoing may be its a little bit changable but when you 
-  fall in love  with it you cant live without codingh even in your dreams ...you code.
-  beside development iam a founder member in a assembly in Hamburg called Amalona
-  and i have a volunteer cotract with in Födern&Wohnen.
-See you soon my guys ofcourse in the market.
+            I have studied English Literature in my home country Syria. In 2008 I graduated with a 
+            Bachelor degree  and I have worked for four years as an English teacher there. In 2015 I 
+            moved to Germany and In 2020, I decided to change my career and dive into Web Development - 
+            a field that has been totally new for me. So I attended Full Stack Web Development. 
+            After that I have noticed how important it is to know about the other side of Information Technology
+            such as servers, hardware, networking, testing,  security and deployment in general. 
+         So I decided to further pursue  my interest in technology by studying to become an AWS Cloud practitioner
+            with the DCI  in August 2022.Now I have already graduated from two intensive training courses from DCI
+            and want to start searching for an internship or a job in Web Development or Cloud Practitioner to kick start my career.
             </p>
             <Link className="back-soon" to="/home" style={{textDecoration: "none"}}>Back</Link>
         </div>

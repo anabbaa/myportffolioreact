@@ -1,12 +1,10 @@
 
   .slider-father{
       height: 100vh;
-      width: 99vw;
       @include flex-column-between;
   
   .slider{
       height: 50%;
-      width: auto;
     @include flex-row-between;
     background-color: #000000;
     position: relative;

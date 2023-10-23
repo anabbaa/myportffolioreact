@@ -1,7 +1,6 @@
 .home{
     @include flex-column-between;
     height: 88vh;
-    width: 100vw;
     color:white;
     font-size: 3rem;
     :nth-of-type(1){

@@ -25,6 +25,7 @@ nav a.active{
         .head{
             height: 12vh;
             width: 99.2vw;
+            border: 1px solid red;
             background-color: lightgray;
             position: relative;
             @include responsive(tab){
@@ -46,7 +47,7 @@ nav a.active{
         
         .nav-li{     
             list-style: none;
-            width: 100%;
+            width: 90%;
         height: 1vh;
         @include flex-row-center;
         position: relative;
@@ -130,8 +131,6 @@ nav a.active{
     }
     .nav{
         width: 1vw;
-      
-        border: 1px solid red;
     }
     .nav-li{     
         display: block;

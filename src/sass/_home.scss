@@ -40,7 +40,8 @@
 
     .cv{
         font: 2rem sans-serif;
-        text-decoration: none;
+        background-color:  rgba(0, 0, 0, 0.010);
+        color: rgb(0, 119, 255);
         &:hover{
             color: red;
             transform: scale(2);

@@ -1,6 +1,7 @@
 .footer{
-    height: 88vh;
-    width: 100vw;
+    height: 12vh;
+    width: 99vw;
+    margin: 10vw auto;
     @include flex-row-between;
     @include responsive(mobile){
         height: 93vh;
@@ -16,17 +17,18 @@
     @include responsive(minmobile){
         height: 18vh;
     }
-    
-.reference{
-    width: 20%;
-    height: 6vh;
-    color:white;
-    @include flex-row-between;
+    .reference{
+        width: 10%;
+        height: 6vh;
+        margin-left: 2vw;
+        color:white;
+        @include flex-row-between; 
+    }
+    .reference-an{
+        font-size: 1rem;
+        text-align: center;
+    }
 
-}
-.reference-an{
-    font-size: 1rem;
-}
 .heart{
     color:red;
     animation: heart 1s infinite ease-in-out;
@@ -46,18 +48,14 @@
 }
 }
 .date-father{
-    width: 79%;
+    width: 80%;
     @include flex-row-center;
     @include responsive(tab){
         @include flex-row-end;
-
     }
     @include responsive(bigmobile){
         text-align: center;
     }
-
- 
-
     
     .date{
         background-color: transparent;
@@ -65,17 +63,23 @@
         outline: none;
         color: white;
     }
+    .reference-mid-father{
+        width: 50%;
+        @include flex-row-end;
+
+    }
     .reference-mid{
         color: #ffffff;
+
         @include responsive(bigmobile){
         font-size: 1rem;
-        }
-    
+        } 
     }
 }
 .icon-father{
-    width: 1%;
-    @include flex-row-end;
+    width: 10%;
+    margin-right: 2vw;
+    @include flex-row-between;
     @include responsive(minmobile){
         @include flex-column-center;
 

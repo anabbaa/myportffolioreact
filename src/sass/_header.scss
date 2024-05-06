@@ -22,15 +22,14 @@ nav a.active{
     margin-bottom: 1vh;
 }
 
-        .head{
-            height: 12vh;
-            width: 99,9vw;
-            border: 1px solid red;
-            background-color: lightgray;
-            position: relative;
+.head{
+    height: 12vh;
+    width: 99,9vw;
+    background-color: lightgray;
+    position: relative;
             @include responsive(tab){
                 width: 100vw;
-              }
+            }
             &:before{
                 position: absolute;
                 content: "";
@@ -47,7 +46,7 @@ nav a.active{
         
         .nav-li{     
             list-style: none;
-            width: 90%;
+            width: 100%;
         height: 1vh;
         @include flex-row-center;
         position: relative;

@@ -11,9 +11,9 @@
     @include responsive(bigscreen){
         height: 70%;
     }
-  
+    
   .right-button
-   {
+  {
       background-color:transparent;
       position: relative;
     &::before{
@@ -21,7 +21,7 @@
       left: -4vw;
       top: -8vh;
       position: absolute;
-      color: white;
+      color: #000;
       font-size: 6rem;
       cursor: pointer;
   
@@ -57,7 +57,7 @@
  &::before{
    content: ">";
    top: -8vh;
-   color: white;
+   color: #000;
    position: absolute;
    font-size: 6rem;
    left: 1vw;
@@ -75,10 +75,9 @@
     width: 30vw;
     height: 35vh;
     position: relative;
- 
 
 .overlay {
-    position: absolute;
+  position: absolute;
  width: 30vw;
  height:30vh;
  background-color:rgba(0, 0, 0, 0.050);
@@ -93,7 +92,7 @@
   text-align: center;
   font-weight: bolder;
   position: relative;
-  top: -3vh;
+  top: -4vh;
   }
   @include responsive(tab){
     top: -5vh;

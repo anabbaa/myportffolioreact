@@ -1,7 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Footer from "./Footer";
 
-const Contact=()=>{
+const Contact=({incFooter})=>{
     const handleSubmit = (e) => {
         e.preventDefault();
       };
@@ -12,10 +13,11 @@ const Contact=()=>{
             <input className="email" type="text"  placeholder="Please write your email here"     />
             <textarea  cols="88" rows="22"        />
             <input className="send" type="submit" value="submit" onSubmit={handleSubmit}/>  
-            <Link className="back-soon" to="/home" style={{ textDecoration: "none" }}>
+        {!incFooter &&    <Link className="back-soon" to="/home" style={{ textDecoration: "none" }}>
         Back
-        </Link>
+        </Link>}
         </div>
+        <Footer />
         </React.Fragment>
     )
 }

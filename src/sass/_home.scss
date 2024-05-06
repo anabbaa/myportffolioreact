@@ -1,54 +1,55 @@
 .home{
-    @include flex-column-between;
+    @include flex-column-center;
     height: 88vh;
-    color:white;
+    width: 98vw;
+    color: #000000;
     font-size: 3rem;
-    :nth-of-type(1){
-        animation: fall 1s ease-in-out;  
-        }
-         :nth-of-type(2){
-        animation: fall 2s ease-in-out;  
+    .welcome-father{
+        @include flex-row-evently;
+        width: calc(98vw - 28);
     }
-    
-    :nth-of-type(3){
-        animation: fall 3s ease-in-out;  
-    }
-    
-    :nth-of-type(4){
-        animation: fall 4s ease-in-out;  
-    }
-    
-        
     @include responsive(mobile){
         font-size: 1rem;
     }
     
-    @keyframes fall {
-      0%{
-          opacity: 0;
-      }
-      50%{
-          transition: 800ms;
-      }
-      60%{
-        opacity: 0;
-    }
-      75%{
-          transform: translatey(-44px);
-      }
-    }
-
     .cv{
         font: 2rem sans-serif;
-        background-color:  rgba(0, 0, 0, 0.010);
-        color: rgb(0, 119, 255);
+        outline: none;
+        border: none;
+        border-radius: 22px 33px 22px 11px;
+
+        cursor: grab;
+         background-color:#000000 ;
+        color: rgb(87, 87, 131);
         &:hover{
             color: red;
             transform: scale(2);
         }
     }
+    .myimg-father{
+        width: 30vw;
+    }
+    .typing-father{
+        width: 60vw;
+    }
+    
+    .my-img{
+        width: 20vw;
+    
+        margin-top: 4vh;
+    }
     p::first-letter{
         color: red;
         font-size: 3.8rem;
     }
+   
+    
+    
+}
+.aboutme-home-father{
+    width: 20vw;
+    @include flex-row-evently
+}
+.aboutme-home{
+    font-size: 3rem;
 }

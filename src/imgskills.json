@@ -1,27 +1,145 @@
 
 [
     {
-        "img1": "./img/html.png",
-        "imgcss": "./img/css3.png",
-        "img2": "./img/sass.png",
-        "img3": "./img/js.png",
-        "imgdom": "./img/dom.png",
-        "img4": "./img/react.png",
-        "img5": "./img/node.png",
-        "img6": "./img/boostrap.jpeg",
-        "imgexpress": "./img/express.png",
-        "imgmongo": "./img/mongo.png",
-        "imghandelbar": "./img/handelbar.png",
-        "imgejs": "./img/ejs.png",
-        "imgmysql": "./img/mysql.png",
-        "img7": "./img/arabic.jpeg",
-        "img8": "./img/eng.png",
-        "img9": "./img/german.png",
-        "img10": "./img/win.webp",
-        "img11": "./img/linuk.jpeg",
-        "img12": "./img/office.jpg",
-        "img13": "./img/code.ico",
-        "img14": "./img/github.png"
+        "id": "0",
+        "title": "HTM5",
+        "img": "./img/html.png"
+    },
+    {
+        "id": "1",
+        "title": "CSS3",
+        "img": "./img/css3.png"
+    },
+    {
+        "id": "2",
+        "title": "SASS",
+        "img": "./img/sass.png"
+    },
+    {
+        "id": "3",
+        "title": "JS",
+        "img": "./img/js.png" 
+    },
+    
+    {
+        "id": "4",
+        "title": "REaCT",
+        "img": "./img/react.png"   
+    },
+    {
+        "id": "5",
+        "title": "NODE.JS",
+        "img": "./img/node.png" 
+    },
+    {
+        "id": "6",
+        "title": "BOOSTRAB",
+        "img": "./img/boostrap.jpeg" 
+    },
+    {
+        "id": "7",
+        "title": "EXPRESS",
+        "img": "./img/express.png"
+    },
+    {
+        "id": "8",
+        "title": "MONGOOSE",
+        "img": "./img/mongo.png"
+    },
+    {
+        "id": "9",
+        "title": "HANDELBAR",
+        "img": "./img/handelbar.png"
+    },
+    {
+        "id": "10",
+        "title": "EJS", 
+        "img": "./img/ejs.png"
+    },
+    {
+        "id": "11",
+        "title": "MYSQL",
+        "img": "./img/mysql.png"
+    },
+    {
+        "id": "12",
+        "title": "TYPESCRIPT",
+        "img": "./img/typescript.svg"
+    },
+    {
+        "id": "13",
+        "title": "DOCKER",
+        "img": "./img/docker.svg"
+    },
+    {
+        "id": "14",
+        "title": "KUBERNETES",
+        "img": "./img/kubernetes.svg"
+    },
+    {
+        "id": "15",
+        "title": "GITHUB ACTIONS",
+        "img": "./img/github-actions.svg"
+    },
+    {
+        "id": "16",
+        "title": "REDUX",
+        "img": "./img/redux.svg"
+    },
+    {
+        "id": "17",
+        "title": "JEST",
+        "img": "./img/jest.svg"
+    },
+    {
+        "id": "18",
+        "title": "NOSQL",
+        "img": "./img/nosql.jpg"
+    },
+    {
+        "id": "19",
+        "title": "AWS",
+        "img": "./img/aws.svg"
+    },
+    {
+        "id": "20",
+        "title": "ARABIC",
+        "img": "./img/arabic.jpeg"
+    },
+    {
+        "id": "21",
+        "title": "ENGLISH",
+        "img": "./img/eng.png"
 
+    },
+    {
+        "id": "22",
+        "title": "GERMAN",
+        "img": "./img/german.png"
+    },
+    {
+        "id": "23",
+        "title": "WINDOWS",
+        "img": "./img/windows.svg"
+    },
+    {
+        "id": "24",
+        "title": "LINUX",
+        "img": "./img/linuk.jpeg"
+    },
+    {
+        "id": "25",
+        "title": "MS-OFFICE",
+        "img": "./img/ms-office.svg"
+    },
+    {
+        "id": "26",
+        "title": "MS-CODE",
+        "img": "./img/visual-studio-code.svg"
+    },
+    {
+        "id": "27",
+        "title": "GITHUB",
+        "img": "./img/github.jpg"
     }
 ]

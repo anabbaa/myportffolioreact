@@ -1,50 +1,87 @@
 .skill-father{
-    height: 100vh;
-    @include flex-row-evently;
+    width: 90vw;
+    @include flex-column-between;
     @include responsive(bigmobile){
         height: 170vh;
         @include flex-column-between;
     }
 
 .skill-son{
-    width: 99vw;
-    height: 100vh;
+    width: 80vw;
     @include flex-row-evently;
     @include responsive(bigmobile){
         @include flex-column-between;
         height: 170vh;
     }
-
-.program, .lang, .others{
+    .img-father {
+        @include flex-row-evently;
+        .img-wrapper{
+            width: 7vw;
+            @include flex-column-center;
+            .img-skills{
+                height: 5vh;
+                width: 3vw;
+                float: left;
+                @include responsive(mobile){
+                    width: 4vw;
+                }
+                @include responsive(minmobile){
+                    width: 8vw;
+                }
+            }
+        }
+        h2{
+            @include flex-row-center;
+        }
+    }
+        
+        
+.program, .lang, .others, .scrollSkills, .scrollLang, .scrollOthers
+{
     @include flex-column-start;
     height: auto;
-    width: auto;
-    background-color: black;
+    width:20vw;
+    background-color: rgb(141, 136, 136);
     color: white;
     line-height: 6vh;
+    margin-top: 4vh;
+
 .h-skills{
     background-color:purple;
     width: 100%;
     text-align: center;
     font-size: 2rem;
 }
-.img-skills{
-    height: 3vh;
-    width: 2vw;
-    float: left;
-    @include flex-row-center;
-    @include responsive(mobile){
-        width: 4vw;
-    }
-    @include responsive(minmobile){
-        width: 8vw;
-    }
-}
-h2{
-    @include flex-row-center;
 }
 
+.program {
+    margin-top: 4vh;
+    animation: left 2s ease-in;
 }
+.scrollSkills{
+    animation: left1 3s  ease-in-out;
+    
+}
+.scrollLang{
+    animation: down 2s ease-in-out;
+
+
+}
+.scrollOthers{
+    animation: right 2s ease-in-out;
+
+
+}
+.others{
+    animation: right 2s ease-in-out;
+}
+.lang{
+    animation: down 4s ease-in-out;
+}
+.github{
+    width: 3vw;
+    height: 3vh;
+    }
 }
 }
 .back{
@@ -52,4 +89,75 @@ h2{
     height: 1vh;
     width: 99vw;
 
+}
+
+@keyframes left  {
+    0%{
+        opacity: 0;
+    }
+    25%{
+        opacity: 0;
+        position: relative;
+        left: -10vw;
+    }
+    
+    75%{
+        transition: 100ms ease-in-out;
+        display: block;
+        position: relative;
+        left: 0;
+    }
+}
+@keyframes left1  {
+    0%{
+        position: relative;
+        left: -10vw;
+opacity: 0;
+        
+    }
+    
+    75%{
+        transition: 100ms ease-in-out;
+        position: relative;
+        left: 0;
+    }
+}
+
+
+@keyframes right  {
+    0%{
+        display: none;
+    }
+    25%{
+        display: none;
+        position: relative;
+        right: -10vw;
+    }
+    
+    75%{
+        transition: 100ms ease-in-out;
+        display: block;
+        position: relative;
+        right: 0;
+    }
+}
+
+@keyframes down  {
+    0%{
+        display: none;
+    }
+    25%{
+        display: none;
+        position: relative;
+        top: -33vw;
+    }
+    
+    
+    75%{
+        transition: 100ms ease-in-out;
+        display: block;
+        position: relative;
+        top: 0;
+    }
+    
 }

@@ -8,10 +8,11 @@ const Header = ()=>{
     <ul className="nav-li">
       <NavLink className="anchor" to="/home"><li className="a">Home</li></NavLink>
       <NavLink className="anchor" to="/aboutme"><li  className="a">About Me</li></NavLink>
-      <NavLink className="anchor" to="/projects"><li  className="a">My rojects</li></NavLink>
+      <NavLink className="anchor" to="/projects"><li  className="a">My Projects</li></NavLink>
       <NavLink className="anchor" to="/skills"><li  className="a">Skills</li></NavLink>
+      <NavLink className="anchor" to="/badget"><li  className="a">My Badgets</li></NavLink>
       <NavLink className="anchor" to="/contact"><li  className="a">Contact Me</li></NavLink>
-      <NavLink className="anchor" to="/footer"><li  className="a">My Contacts</li></NavLink>
+
       </ul>
     </nav>
     </div>

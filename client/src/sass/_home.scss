@@ -1,0 +1,44 @@
+.home{
+    @include flex-column-center;
+    height: 88vh;
+    width: 98vw;
+    color: #000000;
+    font-size: 3rem;
+    .welcome-father{
+        @include flex-row-evently;
+        width: calc(98vw - 28);
+    }
+    @include responsive(mobile){
+        font-size: 1rem;
+    }
+    .myimg-father{
+        width: 30vw;
+        .my-img{
+            width: 20vw;
+        
+            margin-top: 4vh;
+        }
+    }
+    .typing-father{
+        width: 60vw;
+        p::first-letter{
+            color: red;
+            font-size: 3.8rem;
+        }
+    }
+    .cv{
+        font: 2rem sans-serif;
+        outline: none;
+        border: none;
+        height: 8vh;
+        width: 20vw;
+        border-radius: 80px ;
+        cursor: pointer;
+        background-color:#7a7777 ;
+        color: #ffff;
+        &:hover{
+            color: red;
+            transform: scale(2);
+        }
+    }
+}

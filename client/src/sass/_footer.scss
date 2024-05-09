@@ -1,0 +1,88 @@
+.footer{
+    height: 12vh;
+    width: 99vw;
+    margin: 10vw auto;
+    @include flex-row-between;
+    @include responsive(mobile){
+        height: 93vh;
+        width: 100vw;
+    }
+    
+.footer-father{
+    align-self: flex-end;
+    height: 12vh;
+    width: 100%;
+    background-color:black;
+    @include flex-row-between;
+    @include responsive(minmobile){
+        height: 18vh;
+    }
+    .reference{
+        width: 10%;
+        height: 6vh;
+        margin-left: 2vw;
+        color:white;
+        @include flex-row-between; 
+        .reference-an{
+            font-size: 1rem;
+            text-align: center;
+        }
+        .heart{
+            color:red;
+            animation: heart 1s infinite ease-in-out;
+            height: 4vh;
+            width: 4vw;
+            position: relative;
+            left: 4vh;
+        }
+    }
+}
+.date-father{
+    width: 80%;
+    @include flex-row-center;
+    @include responsive(tab){
+        @include flex-row-end;
+    }
+    @include responsive(bigmobile){
+        text-align: center;
+    }
+    .reference-mid-father{
+        width: 50%;
+        @include flex-row-end;
+        .reference-mid{
+            color: #ffffff;
+            @include responsive(bigmobile){
+            font-size: 1rem;
+            } 
+        }
+        .date{
+            background-color: transparent;
+            border: none;
+            outline: none;
+            color: white;
+        }
+    }
+}
+.icon-father{
+    width: 10%;
+    margin-right: 2vw;
+    @include flex-row-between;
+    @include responsive(minmobile){
+    @include flex-column-center;
+    }
+.icon{
+    color: white;
+    font-size: 1rem;
+    list-style: none;
+    text-decoration: none;
+}
+}
+@keyframes heart{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(0.5);
+    }
+}
+}

@@ -1,0 +1,137 @@
+.skill-father{
+    width: 90vw;
+    height: 150vh;
+    @include flex-column-between;
+    @include responsive(bigmobile){
+        height: 170vh;
+        @include flex-column-between;
+    }
+    .skills-title{
+        height: 2vh;
+        font-size: 2rem;
+        font-weight: bolder;
+    }
+
+.skill-son{
+    width: 80vw;
+    height: 90vh;
+    @include flex-row-evently;
+    @include responsive(bigmobile){
+        @include flex-column-between;
+        height: 170vh;
+    }
+    .img-father {
+        @include flex-row-evently;
+        .img-wrapper{
+            width: 7vw;
+            @include flex-column-center;
+            .img-skills{
+                height: 5vh;
+                width: 3vw;
+                float: left;
+                @include responsive(mobile){
+                    width: 4vw;
+                }
+                @include responsive(minmobile){
+                    width: 8vw;
+                }
+            }
+        }
+        h2{
+            @include flex-row-center;
+        }
+    }
+        
+.program, .lang, .others, .scrollSkills, .scrollLang, .scrollOthers
+{
+    @include flex-column-start;
+    height: auto;
+    width:20vw;
+    background-color: rgb(141, 136, 136);
+    color: white;
+    line-height: 6vh;
+    margin-bottom: -14vh;
+    font-family: 'Times New Roman', Times, serif;
+
+.h-skills{
+    background-color:purple;
+    width: 100%;
+    text-align: center;
+    font: 2rem'Times New Roman', Times, serif;
+}
+}
+.program , .scrollSkills {
+    margin-top: 4vh;
+    animation: left 2s ease-in;
+}
+.scrollLang , .lang{
+    animation: down 3s ease-in-out;
+}
+.scrollOthers , .others{
+    animation: right 3s ease-in-out;
+}
+.github{
+    width: 3vw;
+    height: 3vh;
+    }
+}
+}
+.back{
+    @include flex-row-center;
+    height: 1vh;
+    width: 99vw;
+
+}
+
+@keyframes left  {
+    0%{
+        opacity: 0;
+    }
+    25%{
+        opacity: 0;
+        position: relative;
+        left: -10vw;
+    }
+    
+    75%{
+        transition: 100ms ease-in-out;
+        display: block;
+        position: relative;
+        left: 0;
+    }
+}
+
+@keyframes right  {
+    0%{
+        display: none;
+    }
+    25%{
+        display: none;
+        position: relative;
+        right: -10vw;
+    }
+    
+    75%{
+        transition: 100ms ease-in-out;
+        display: block;
+        position: relative;
+        right: 0;
+    }
+}
+
+@keyframes down  {
+    0%{
+        display: none;
+    }
+    25%{
+        display: none;
+        position: relative;
+        top: -33vw;
+    }
+    75%{
+        transition: 100ms ease-in-out;
+        display: block;
+        position: relative;
+        top: 0;
+    }
+}

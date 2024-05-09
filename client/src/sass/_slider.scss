@@ -1,0 +1,116 @@
+
+  .slider-father{
+      height: 100vh;
+      width: 98vw;
+      @include flex-column-between;
+      .projects-title{
+        height: 2vh;
+        font-size: 2rem ;
+        font-weight: bolder;
+      }
+  .slider{
+      height: 60%;
+    @include flex-row-between;
+    background-color: #000000;
+    position: relative;
+    @include responsive(bigscreen){
+        height: 70%;
+    }
+    
+  .right-button
+  {
+      background-color:transparent;
+      position: relative;
+    &::before{
+      content: "<";
+      left: -4vw;
+      top: -8vh;
+      position: absolute;
+      color: #000;
+      font-size: 6rem;
+      cursor: pointer;
+  
+  @include responsive(bigscreen){
+      left: -6vw;
+  }
+    
+  @include responsive(tab){
+    left: -8vw;
+}
+  @include responsive(bigmobile){
+    left: -10vw;
+}
+@include responsive(mobile){
+    left: -11vw;
+    font-size: 4rem;
+}
+@include responsive(minmobile){
+    left: -13vw;
+}
+  
+  &:hover{
+    transform: scale(1.1);
+        }
+        }
+    }
+
+.left-button
+{
+   background-color:transparent;
+   border:none;
+   position: relative;
+ &::before{
+   content: ">";
+   top: -8vh;
+   color: #000;
+   position: absolute;
+   font-size: 6rem;
+   left: 1vw;
+   cursor: pointer;
+   @include responsive(mobile){
+    font-size: 4rem;
+}
+
+&:hover{
+ transform: scale(1.1);
+}   
+ }
+ }
+ .overlay-father{
+    width: 30vw;
+    height: 35vh;
+    position: relative;
+
+.overlay {
+  position: absolute;
+ width: 30vw;
+ height:30vh;
+ background-color:rgba(0, 0, 0, 0.050);
+ color: #ffffff;
+ opacity: 0;
+ &:hover {
+   opacity: 1;
+   cursor: pointer;
+ }
+  .desc{
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: bolder;
+  position: relative;
+  top: -4vh;
+  }
+  @include responsive(tab){
+    top: -5vh;
+  }
+  @include responsive(minmobile){
+    top: -10vh;
+  }
+}
+.img{
+  width: 30vw;
+  position: absolute;
+  height: 30vh;
+}
+  }
+}
+  }

@@ -1,0 +1,39 @@
+.badget-father{
+    width: 98vw;
+    height:100vh;
+    animation: fallBudget 3s ease-in-out;
+    @include flex-row-center;
+    
+    .badget-img{
+        height: auto;
+        max-width: 100%;
+        margin-top: 8vh;
+        &:hover{
+            transition: all 500ms ease-in;
+            transform: scale(1.2);
+        }
+    }
+    .scrollBadgetFather{
+        animation: fallBudget 1.5s ease-in-out;
+        
+    }
+    @keyframes fallBudget {
+        0%{
+            opacity: 0;
+        }
+        50%{
+            transition: 300ms;
+        }
+        60%{
+          opacity: 0;
+      }
+        75%{
+            transform: translatey(-44px);
+        }
+      }
+
+}
+
+
+
+

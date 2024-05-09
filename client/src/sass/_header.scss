@@ -1,0 +1,145 @@
+
+.mobileNav{
+    display: none
+}
+.a-logo, .n-logo{
+    color: white;
+    font-size: 4rem;
+    text-shadow: 5px 5px 1px  black ;
+}
+.n-logo{
+    position: relative;
+    left: -4vh;
+    color: black;
+    text-shadow: 5px 5px 1px white ;
+}
+.n-logo{
+    transform: rotate(44deg);
+    text-shadow: 5px 5px 1px rgba(0, 0, 0, 0.404) ;
+}
+nav a.active{
+    border-bottom: 2px solid #000;
+    margin-bottom: 1vh;
+}
+
+.head{
+    height: 12vh;
+    width: 99,9vw;
+    background-color: lightgray;
+    position: relative;
+            @include responsive(tab){
+                width: 100vw;
+            }
+            &:before{
+                position: absolute;
+                content: "";
+                top: 33%;
+                right: 50%;
+                left: 20%;
+                bottom: 0;
+                border-radius: 50%;
+                height: 12vh;
+                width: 66vw;
+                background-color: lightgray;   
+            }
+        }
+        nav{
+            width: 100%;
+    @include flex-row-center;
+
+        }
+        
+        .nav-li{     
+            list-style: none;
+            width: 100%;
+        height: 1vh;
+        @include flex-row-center;
+        position: relative;
+        top: -1vw;
+        }
+        .a{
+            font-family: Rowdies;
+            font-size: 1.5rem;
+            margin: 1.8rem;
+            cursor: pointer;
+            list-style: none;
+
+        }
+        .anchor{
+            text-decoration: none;
+            color: #000;
+        }
+        
+        @media (max-width: 900px){
+            .a{
+                font-size: 1.3rem;
+            }
+            .nav-li{
+                top: -3vh;
+            }
+
+        }
+        
+
+@media (max-width: 800px){
+    .a-logo, .n-logo{
+        font-size: 3rem;
+    }
+    .a{
+        font-size: 1rem;
+    }  
+    .nav-li{
+        top: -1vh;
+    }
+}
+@media (max-width: 650px){
+    .head{
+    
+        &:before{
+            display: none;
+        }
+    }
+    .a-logo, .n-logo{
+        font-size: 3rem;
+    }
+    .n-logo{
+        position: relative;
+        left: -1vw;
+    }
+
+    .nav-li{
+    height: 4vh;
+    }
+    .a{
+        font-size: 0.8rem;
+    }
+}
+@media (max-width: 513px){
+    
+    .desktopHeader{
+        display: none;
+    }
+    .mobileNav{
+        display: inline;
+    }
+    .hamburgerMenu{
+        color: white;
+        font-size: 2rem;;
+    }
+    .head{
+        width: auto;
+        height: auto;
+    }
+        .a-logo, .n-logo{
+            font-size: 2rem;
+    }
+    .nav{
+        width: 1vw;
+    }
+    .nav-li{     
+        display: block;
+        list-style: none;
+    height: auto;
+
+    }
+}

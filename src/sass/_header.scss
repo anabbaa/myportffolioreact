@@ -24,11 +24,20 @@ nav a.active{
 
 .head{
     height: 12vh;
-    width: 99,9vw;
+    width: 99vw;
     background-color: lightgray;
     position: relative;
             @include responsive(tab){
                 width: 100vw;
+            }
+            @include responsive(greatscreen){
+                width: 98.8vw;
+            }
+            @include responsive(bigscreen){
+                width: 98.6vw;
+            }
+            @include responsive(bigscreen){
+                width: 98.5vw;
             }
             &:before{
                 position: absolute;
@@ -55,8 +64,9 @@ nav a.active{
         height: 1vh;
         @include flex-row-center;
         position: relative;
-        top: -1vw;
+        top: -1.5vw;
         }
+
         .a{
             font-family: Rowdies;
             font-size: 1.5rem;
@@ -70,9 +80,10 @@ nav a.active{
             color: #000;
         }
         
-        @media (max-width: 900px){
+        @media (max-width: 1000px){
             .a{
                 font-size: 1.3rem;
+                margin: 1rem;
             }
             .nav-li{
                 top: -3vh;

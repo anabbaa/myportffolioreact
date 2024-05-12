@@ -50,7 +50,7 @@ useEffect(() => {
                 <div className="img-wrapper">
                 <img className="img-skills" src={`${process.env.PUBLIC_URL}/${img}`} alt={title} />
                 </div>
-                <h2>{title}</h2>
+                <h2 className="title">{title}</h2>
             </div>
         )
     });
@@ -66,7 +66,7 @@ useEffect(() => {
                 <div className="img-wrapper">
                     <img className="img-skills" src={`${process.env.PUBLIC_URL}/${img}`} alt={title}/>
                 </div>
-                <h2>{title}</h2>
+                <h2 className="title">{title}</h2>
             </div>
         )
     });
@@ -83,7 +83,7 @@ useEffect(() => {
                     <img className={ i === 4  ? "github":"img-skills" } 
                     src={`${process.env.PUBLIC_URL}/${img}`} alt={title} />
                 </div>
-                <h2>{title}</h2>
+                <h2 className="title">{title}</h2>
             </div>
         )
     });

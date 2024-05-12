@@ -44,8 +44,10 @@ const handleDownload = (url, filename) => {
         <TypeWriter />
         </div>
         </div>
+        <div className="cv-father">
         <button className="cv" onClick={() => {handleDownload(url, 'CV.pdf')
 }}>Download MY CV</button>
+</div>
         </div>
 
         <Aboutme incFooter={true} />  

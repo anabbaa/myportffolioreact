@@ -26,6 +26,10 @@
             font-size: 3.8rem;
         }
     }
+    .cv-father{
+        height: 4vh;
+        width: 90vw;
+        @include flex-row-center;
     .cv{
         font: 2rem sans-serif;
         outline: none;
@@ -40,5 +44,6 @@
             color: red;
             transform: scale(2);
         }
+    }
     }
 }

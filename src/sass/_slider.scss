@@ -1,22 +1,37 @@
 
+.project-title-father{
+  height: 6vh;
+  width: 20vw;
+  @include flex-column-end;
+  @include responsive(greatscreen){
+    height: 22vh;
+  }
+  @include responsive(bigscreen){
+    height: 55vh;
+  }
+  @include responsive(laptop){
+    height: 66vh;
+    position: relative;
+    top: 20vh;
+  }
+.contact-title{
+  width: 20vw;
+  height: 1vh;
+  font-size: 2rem;
+  font-weight: bolder;
+  @include flex-row-center
+}
+}
   .slider-father{
       height: 100vh;
-      width: 98vw;
+      width: 90vw;
       @include flex-column-between;
-      .projects-title{
-        height: 2vh;
-        font-size: 2rem ;
-        font-weight: bolder;
-      }
+    
   .slider{
       height: 60%;
     @include flex-row-between;
     background-color: #000000;
     position: relative;
-    @include responsive(bigscreen){
-        height: 70%;
-    }
-    
   .right-button
   {
       background-color:transparent;
@@ -33,7 +48,6 @@
   @include responsive(bigscreen){
       left: -6vw;
   }
-    
   @include responsive(tab){
     left: -8vw;
 }
@@ -47,7 +61,6 @@
 @include responsive(minmobile){
     left: -13vw;
 }
-  
   &:hover{
     transform: scale(1.1);
         }

@@ -30,7 +30,7 @@ const Projects = ({incFooter})=>{
     });
     return (  
         <React.Fragment>
-            <div className="contact-title-father">
+            <div className="project-title-father">
                 <p className="contact-title" >My Projects</p>
                 </div>
 

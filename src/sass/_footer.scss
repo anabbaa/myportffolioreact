@@ -1,11 +1,20 @@
 .footer{
     height: 12vh;
-    width: 99vw;
+    width: 98vw;
     margin: 10vw auto;
     @include flex-row-between;
     @include responsive(mobile){
         height: 93vh;
         width: 100vw;
+    }
+    @include responsive(greatscreen){
+        width: 98.8vw;
+    }
+    @include responsive(bigscreen){
+        width: 98.6vw;
+    }
+    @include responsive(bigscreen){
+        width: 98.5vw;
     }
     
 .footer-father{
@@ -38,7 +47,7 @@
     }
 }
 .date-father{
-    width: 80%;
+    width: 50%;
     @include flex-row-center;
     @include responsive(tab){
         @include flex-row-end;
@@ -46,8 +55,14 @@
     @include responsive(bigmobile){
         text-align: center;
     }
-    .reference-mid-father{
+    @include responsive(bigscreen){
         width: 50%;
+    }
+    @include responsive(greatscreen){
+        width: 70%;
+    }
+    .reference-mid-father{
+        width: 70%;
         @include flex-row-end;
         .reference-mid{
             color: #ffffff;

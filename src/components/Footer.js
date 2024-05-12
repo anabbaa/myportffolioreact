@@ -12,7 +12,7 @@ const Footer=()=>{
         <div className="footer">
         <div className="footer-father">
             <div className="reference">
-            <h1 className="reference-an" >Made by <div class="heart">❤️</div>By AHMED Nabbaa</h1> 
+            <h1 className="reference-an" >Made by <div class="heart">❤️</div>AHMED Nabbaa</h1> 
             </div>
             
         <div className="date-father">

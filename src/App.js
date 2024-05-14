@@ -10,10 +10,12 @@ import Loading from "./components/Loading";
 import {BrowserRouter as Router , Switch, Route } from "react-router-dom";
 import MobileNavbar from "./components/MobileNavbar";
 import DesktopNavbar from "./components/DesktopNavbar";
-import { BrowserRouter } from "react-router-dom/cjs/react-router-dom.min";
+
 
 function App() {
   const [load , setLoading] = useState(true);
+
+
 
   //this function for loading 
   useEffect(() => {

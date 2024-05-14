@@ -8,16 +8,12 @@ import Badget from "./components/Badget";
 import Soon from "./components/Soon";
 import Loading from "./components/Loading";
 import {BrowserRouter as Router , Switch, Route } from "react-router-dom";
-import Data from "./images-.json";
 import MobileNavbar from "./components/MobileNavbar";
 import DesktopNavbar from "./components/DesktopNavbar";
 import { BrowserRouter } from "react-router-dom/cjs/react-router-dom.min";
 
-
 function App() {
   const [load , setLoading] = useState(true);
-
-  
 
   //this function for loading 
   useEffect(() => {

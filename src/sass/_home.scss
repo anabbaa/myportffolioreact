@@ -6,7 +6,7 @@
     font-size: 3rem;
     .welcome-father{
         @include flex-row-evently;
-        width: calc(98vw - 28);
+        width: calc(98 - 28);
     }
     @include responsive(mobile){
         font-size: 1rem;

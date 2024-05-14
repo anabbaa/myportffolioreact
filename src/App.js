@@ -25,7 +25,6 @@ function App() {
   <Home />
 
   return (
-    <BrowserRouter>
      <Router>
      <DesktopNavbar />
     <MobileNavbar />
@@ -44,7 +43,6 @@ function App() {
       </Route>  
     </Switch>
     </Router>
-  </BrowserRouter>
   );       
 }
 export default App;

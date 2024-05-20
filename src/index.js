@@ -4,17 +4,17 @@ import "./sass/main.scss"
 import App from './App';
 import { HashRouter as Router } from 'react-router-dom';
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
 // ReactDOM.render(
-//   <Router>
+//   <React.StrictMode>
 //     <App />
-//   </Router>,
+//   </React.StrictMode>,
 //   document.getElementById('root')
 // );
+ReactDOM.render(
+  <Router>
+    <App />
+  </Router>,
+  document.getElementById('root')
+);
 
 

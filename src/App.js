@@ -7,7 +7,8 @@ import Skills from "./components/Skills";
 import Badget from "./components/Badget";
 import Soon from "./components/Soon";
 import Loading from "./components/Loading";
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { HashRouter as Router, Route, Switch } from 'react-router-dom';
+
 
 import MobileNavbar from "./components/MobileNavbar";
 import DesktopNavbar from "./components/DesktopNavbar";

@@ -7,7 +7,7 @@ import Skills from "./components/Skills";
 import Badget from "./components/Badget";
 import Soon from "./components/Soon";
 import Loading from "./components/Loading";
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 import MobileNavbar from "./components/MobileNavbar";
 import DesktopNavbar from "./components/DesktopNavbar";
@@ -29,19 +29,19 @@ function App() {
      <Router>
      <DesktopNavbar />
     <MobileNavbar />
-    <Routes >   
-    <Route path="/myportffolioreact" element={<Home/>} />
-    <Route path="/" element={<Home/>}  />
-    <Route path="/home" element={<Home/>}  />    
-    <Route  path="/aboutme" element={< Aboutme />} />
-    <Route path="/projects" element={<Projects />}/>
-    <Route path="/skills" element={<Skills />} /> 
-    <Route path="/badget" element={<Badget />} /> 
-    <Route path="/contact" element={<Contact />} />
-    <Route path="/main" element={<Soon />} />
-        <Route path="/admin" element={<Soon />} />
-        <Route path="/any-other-word" element={<Soon />} />
-    </Routes>
+    <Switch >   
+    <Route path="/myportffolioreact" exact component={Home} />
+    <Route path="/" exact component={Home}/>
+    <Route path="/home" exact component={Home} />  
+    <Route  path="/aboutme" exact component={Aboutme} />
+    <Route path="/projects" exact component={Projects}/>
+    <Route path="/skills" exact component={Skills} /> 
+    <Route path="/badget" exact component={Badget} /> 
+    <Route path="/contact" exact component={Contact} />
+    <Route path="/main" exact component={Soon} />
+        <Route path="/admin" exact component={Soon} />
+        <Route path="/any-other-word"exact component={Soon} />
+    </Switch>
     </Router>
   );       
 }

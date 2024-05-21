@@ -38,9 +38,9 @@ function App() {
     <Route path="/skills" exact component={Skills} /> 
     <Route path="/badget" exact component={Badget} /> 
     <Route path="/contact" exact component={Contact} />
-    <Route path="/main" exact component={Soon} />
-        <Route path="/admin" exact component={Soon} />
-        <Route path="/any-other-word"exact component={Soon} />
+    <Route path={() => "/main" || "/admin" || "/any-other-word"}>
+          <Soon />
+        </Route>
     </Switch>
     </Router>
   );       

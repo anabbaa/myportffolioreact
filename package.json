@@ -44,11 +44,6 @@
       "react-app/jest"
     ]
   },
-    "env": {
-      "browser": true,
-      "node": true,
-      "jest": true
-    },
   "browserslist": {
     "production": [
       ">0.2%",
@@ -60,14 +55,6 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "@babel/plugin-proposal-private-property-in-object": "^7.16.5",
-    "customize-cra": "^1.0.0",
-    "eslint-plugin-jsx-a11y": "^6.8.0",
-    "eslint-plugin-react": "^7.34.1",
-    "gh-pages": "^6.1.1",
-    "react-app-rewired": "^2.2.1"
   }
 }
 

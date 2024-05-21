@@ -1,5 +1,5 @@
-const { override, disableChunk } = require('customize-cra');
+// const { override, disableChunk } = require('customize-cra');
 
-module.exports = override(
-disableChunk(),
-);
+// module.exports = override(
+// disableChunk(),
+// );

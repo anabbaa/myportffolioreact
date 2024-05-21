@@ -39,16 +39,16 @@
     "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
-    "extends": "react-app",
-    "plugins": [
-      "jsx-a11y"
-    ],
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
     "env": {
       "browser": true,
       "node": true,
       "jest": true
-    }
-  },
+    },
   "browserslist": {
     "production": [
       ">0.2%",
@@ -70,3 +70,5 @@
     "react-app-rewired": "^2.2.1"
   }
 }
+
+

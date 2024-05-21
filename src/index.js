@@ -4,6 +4,7 @@ import "./sass/main.scss"
 import App from './App';
 import { HashRouter as Router } from 'react-router-dom';
 
+
 ReactDOM.render(
   <React.StrictMode>
     <App />
@@ -11,9 +12,9 @@ ReactDOM.render(
   document.getElementById('root')
 );
 // ReactDOM.render(
-//   <Router>
+//   <BrowserRouter basename="/myportffolioreact">
 //     <App />
-//   </Router>,
+//   </BrowserRouter>,
 //   document.getElementById('root')
 // );
 

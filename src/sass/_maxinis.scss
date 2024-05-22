@@ -95,7 +95,7 @@
         }
     
     @if $breakpoint == bigscreen {
-        @media only screen and (max-width: 1200px){@content};
+        @media only screen and (max-width: 1224px){@content};
         }
         
     @if $breakpoint == laptop {

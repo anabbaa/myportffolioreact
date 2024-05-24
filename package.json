@@ -31,11 +31,11 @@
     "web-vitals": "^1.1.2"
   },
   "scripts": {
-      "start": "react-scripts start",
-      "build": "react-scripts build",
-      "test": "react-scripts test",
-      "eject": "react-scripts eject",
-      "deploy": "npm run build && aws s3 sync build/ s3://your-bucket-name --delete"
+    "start": "react-scripts --openssl-legacy-provider start",
+    "build": "react-scripts --openssl-legacy-provider build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "deploy": "npm run build && aws s3 sync build/ s3://your-bucket-name --delete"    
   },
   "eslintConfig": {
     "extends": [

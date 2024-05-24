@@ -14,14 +14,14 @@ const Footer=()=>{
             <div className="reference">
             <h1 className="reference-an" >Made by <div class="heart">❤️</div>AHMED Nabbaa</h1> 
             </div>
-            
-        <div className="date-father">
             <div className="reference-mid-father">
         <h2 className="reference-mid">All copyrights reserved ® </h2>
-            <input className="date" type="text" value= {displaydate}   readonly="true"/>
+        <div className="date">
+            <input className="date-input" type="text" value= {displaydate}   readonly="true"/>
             </div>
             </div>
-
+            
+            
             <div className="icon-father">
                 <a className="icon" href="https://www.facebook.com/ahmed.nabaa.an/">  < FaFacebookF /></a>
                 <a className="icon" href= "https://github.com/anabbaa" ><FaGithub  /></a>

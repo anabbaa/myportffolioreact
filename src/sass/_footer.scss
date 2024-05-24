@@ -1,6 +1,6 @@
 .footer{
     height: 12vh;
-    width: 99.98w;
+    width: 99.2vw;
     margin: 10vw auto;
     @include flex-row-between;
     @include responsive(mobile){
@@ -11,11 +11,15 @@
         width: 98.8vw;
     }
     @include responsive(bigscreen){
+        width: 98.7vw;
+    }
+    @include responsive(superGreatScreen){
         width: 98.6vw;
     }
-    @include responsive(bigscreen){
-        width: 98.5vw;
+    @include responsive(tab){
+        width: 98vw;
     }
+    
     
 .footer-father{
     align-self: flex-end;
@@ -35,48 +39,44 @@
         .reference-an{
             font-size: 1rem;
             text-align: center;
+            @include flex-column-center;
+            @include responsive(minmobile){
+                font-size: 0.8rem;
+            }
         }
         .heart{
             color:red;
             animation: heart 1s infinite ease-in-out;
             height: 4vh;
             width: 4vw;
-            position: relative;
-            left: 4vh;
+        
         }
     }
 }
-.date-father{
-    width: 50%;
-    @include flex-row-center;
-    @include responsive(tab){
-        @include flex-row-end;
-    }
-    @include responsive(bigmobile){
-        text-align: center;
-    }
-    @include responsive(bigscreen){
-        width: 50%;
-    }
-    @include responsive(greatscreen){
-        width: 70%;
-    }
     .reference-mid-father{
-        width: 70%;
-        @include flex-row-end;
+        width: 75vw;
+        @include flex-row-center;
         .reference-mid{
             color: #ffffff;
+            max-width: 95%;    
+            text-align: right;
             @include responsive(bigmobile){
             font-size: 1rem;
             } 
+            @include responsive(minmobile){
+                font-size: 0.8rem;
+            }
         }
         .date{
-            background-color: transparent;
+            max-width: 5%;      
+            .date-input{
+                background-color: transparent;
             border: none;
             outline: none;
             color: white;
+            }
         }
-    }
+    
 }
 .icon-father{
     width: 10%;
@@ -85,6 +85,9 @@
     @include responsive(minmobile){
     @include flex-column-center;
     }
+    @include responsive(mobile){
+        @include flex-column-center;
+        }
 .icon{
     color: white;
     font-size: 1rem;

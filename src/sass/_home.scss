@@ -1,22 +1,36 @@
 .home{
     @include flex-column-center;
-    height: 88vh;
+    height: 90vh;
     width: 98vw;
     color: #000000;
     font-size: 3rem;
+    @include responsive(laptop){
+        height: 80vh;
+    }
+    @include responsive(bigmobile){
+        height: 60vh;
+    }
+    @include responsive(minmobile){
+        height: 40vh;
+    }
+    
     .welcome-father{
         @include flex-row-evently;
-        width: calc(98 - 28);
+        width: 98vw;
+        height: 80vh;
+    }
+    @include responsive(bigmobile){
+        font-size: 1rem;
     }
     @include responsive(mobile){
         font-size: 1rem;
     }
     .myimg-father{
         width: 30vw;
+        height: auto;
         .my-img{
-            width: 20vw;
-        
-            margin-top: 4vh;
+            height: auto;
+            max-width: 100%;
         }
     }
     .typing-father{
@@ -27,9 +41,16 @@
         }
     }
     .cv-father{
-        height: 4vh;
+        height: 10vh;
         width: 90vw;
         @include flex-row-center;
+        @include responsive(tab){
+            height: 20vh;
+        @include flex-column-start-center;
+        }
+        @include responsive(mobile){
+            height: 40vh;
+        }
     .cv{
         font: 2rem sans-serif;
         outline: none;
@@ -43,6 +64,24 @@
         &:hover{
             color: red;
             transform: scale(2);
+        }
+        @include responsive(laptop){
+            width: 25vw;
+            height: 10vh;
+        }
+        @include responsive(tab){
+            border: 1px solid red;;
+        }
+        @include responsive(bigmobile){
+            width: 32vw;
+            font-size: 1rem;
+        }
+        
+        @include responsive(mobile){
+            width: 40vw;
+        }
+        @include responsive(minmobile){
+            width: 50vw;   
         }
     }
     }

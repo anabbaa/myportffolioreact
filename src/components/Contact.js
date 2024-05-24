@@ -10,10 +10,10 @@ const Contact=({incFooter})=>{
 
   return (
     <React.Fragment>
+        <div className="contact-father">
         <div className="contact-title-father">
         <p className="contact-title" >Contact Me</p>
         </div>  
-        <div className="contact-father">
 
     <form onSubmit={handleSubmit}>
     <div className="name-email-father">
@@ -42,7 +42,6 @@ const Contact=({incFooter})=>{
             <Link className="back-soon" to="/home" style={{textDecoration: "none"}}>Go to Home</Link>
         </div>}
         <Footer />
-       
         </React.Fragment>
   )};
 export default Contact;  

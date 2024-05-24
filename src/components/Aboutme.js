@@ -5,11 +5,11 @@ const Aboutme = ({incFooter })=>{
 
     return (
         <React.Fragment>
-            <div className="contact-title-father">
-                <p className="contact-title" >About Me</p>
-            </div>
 
         <div className="about-father">
+        <div className="aboutme-title-father">
+                <p className="aboutme-title" >About Me</p>
+            </div>
             <h1 className="header-about">AHMED NABBAA</h1>
             <p className="about-text">
             I have studied English Literature in my home country Syria. In 2008 I graduated with a 

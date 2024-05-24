@@ -1,9 +1,26 @@
+.badget-title-father{
+    height: 33vh;
+    width: 10vw;
+    border: 1px solid red;
+    @include flex-column-end;
+    align-self: flex-start;
+    .badget-title{
+        width: 20vw;
+        height: 1vh;
+        font-size: 2rem;
+        font-weight: bolder;
+        @include flex-row-center
+    }
+}
 .badget-father{
-    width: 90vw;
-    height:100vh;
+    width: 98vw;
+    height:150vh;
     animation: fallBudget 3s ease-in-out;
     @include flex-row-center;
-    
+    border: 1px solid black;
+    @include responsive(mobile){
+        height: 50vh;
+    }
     .badget-img{
         height: auto;
         max-width: 100%;
@@ -25,12 +42,12 @@
             transition: 300ms;
         }
         60%{
-          opacity: 0;
-      }
+        opacity: 0;
+    }
         75%{
             transform: translatey(-44px);
         }
-      }
+    }
 
 }
 

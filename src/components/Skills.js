@@ -90,11 +90,11 @@ useEffect(() => {
 
 return (
     <React.Fragment>
-        <div className="contact-title-father">
-            <p className="contact-title" >My Skills</p>
-        </div>
 
         <div className="skill-father">
+        <div className="skills-title-father">
+            <p className="skills-title" >My Skills</p>
+        </div>
             <div className="skill-son">
             <div ref={elementRef} className={reachedPoint ? "scrollSkills":"program"}>
                 <h2 className="h-skills"> programming </h2>

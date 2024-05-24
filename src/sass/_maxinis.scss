@@ -105,15 +105,13 @@
     @if $breakpoint == tab {
         @media only screen and (max-width: 800px) {@content};
         }
+        @if $breakpoint == bigmobile {
+            @media only screen and (max-width: 660px) {@content};
+            }
 
     @if $breakpoint == mobile  {
         @media only screen and (max-width: 500px) {@content};
         }
-
-    @if $breakpoint == bigmobile {
-        @media only screen and (max-width: 660px) {@content};
-        }
-
     @if $breakpoint == minmobile {
         @media only screen and (max-width: 400px) {@content};
         } 

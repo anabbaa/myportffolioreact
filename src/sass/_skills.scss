@@ -1,7 +1,22 @@
+
+.skills-title-father{
+    height: 14vh;
+    width: 20vw;
+    @include flex-column-start;
+    align-self: flex-start;
+.skills-title{
+    width: 20vw;
+    height: 1vh;
+    font-size: 2rem;
+    font-weight: bolder;
+    @include flex-row-center
+}
+}
 .skill-father{
     width: 98vw;
-    height: 150vh;
+    height: 120vh;
     @include flex-column-between;
+
     @include responsive(bigmobile){
         height: 170vh;
         @include flex-column-between;

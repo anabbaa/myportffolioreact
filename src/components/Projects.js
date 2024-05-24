@@ -30,11 +30,13 @@ const Projects = ({incFooter})=>{
     });
     return (  
         <React.Fragment>
+            
+
+            <div className="slider-father">
             <div className="project-title-father">
                 <p className="contact-title" >My Projects</p>
                 </div>
-
-            <div className="slider-father">
+                <div className="slider-son">
                 <div className="slider">
                     <button className="right-button" onClick={() => setVal(val + 1)}
                     disabled={images.length -1 === val} >
@@ -42,6 +44,7 @@ const Projects = ({incFooter})=>{
             <Slider images={images[val]} />
             <button className="left-button" onClick={() => setVal(val - 1)} disabled={val === 0}>   
             </button>
+            </div>
             </div>
             {!incFooter && 
             <Link className="back-soon" to="/" style={{ textDecoration: "none" }}> Go to Home</Link>}

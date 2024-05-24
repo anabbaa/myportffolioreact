@@ -5,9 +5,13 @@
     form{
     @include flex-column-between;
     max-width: 100%;
+    border: 1px solid red;
     height: auto;
    border-radius: 10px;
    background-color: #f2f2f2;
+   @include responsive(bigscreen){
+    width: 90%;
+}
     }
     .name-email-father{
         width: 100%;
@@ -25,10 +29,19 @@
     box-sizing: border-box;
     height: 4vh;
     width: 50%;
+    @include responsive(mobile){
+        width: 75%;
+    }
+    
     font: 1.5rem 'Times New Roman', Times, serif;
     text-align: center;
     &::placeholder{
         font: 1.5rem 'Times New Roman', Times, serif;
+    }
+    @include responsive(minmobile){
+        &::placeholder{
+            font-size: 1rem
+        }
     }
 }
 .send {
@@ -44,20 +57,35 @@ textarea{
     font-size: 1.5rem;
     width: 40vw;
     height: 44vh;
+  
     &::placeholder{
         font: 1.5rem 'Times New Roman', Times, serif;
         text-align: center;
     }
+    @include responsive(tab){
+        width: 79vw;
+    }
 }
 }
 .contact-title-father{
-    height: 6vh;
+    height: 44vh;
     width: 20vw;
-    @include flex-column-end;
+    @include flex-column-center;
+    align-self: flex-start;
+    @include responsive(tab){
+        width: 33vw;
+    }
+    @include responsive(mobile){
+        width: 45vw; 
+    }
+    @include responsive(mobile){
+        width: 60vw; 
+        border: 1px solid red;
+    }
+    
 
 .contact-title{
-    width: 20vw;
-    height: 1vh;
+    
     font-size: 2rem;
     font-weight: bolder;
     @include flex-row-center

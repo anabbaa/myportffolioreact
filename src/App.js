@@ -8,8 +8,6 @@ import Badget from "./components/Badget";
 import Soon from "./components/Soon";
 import Loading from "./components/Loading";
 import { HashRouter as Router, Route, Switch } from 'react-router-dom';
-
-
 import MobileNavbar from "./components/MobileNavbar";
 import DesktopNavbar from "./components/DesktopNavbar";
 
@@ -27,8 +25,8 @@ function App() {
   <Home />
 
   return (
-     <Router>
-     <DesktopNavbar />
+    <Router>
+    <DesktopNavbar />
     <MobileNavbar />
     <Switch >   
     <Route path="/myportffolioreact" exact component={Home} />

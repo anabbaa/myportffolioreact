@@ -4,7 +4,6 @@ import Badgets from "../badgets.json";
 import Footer from"./Footer";
 const Badget = ({incFooter})=>{
 
-
   const [reachedPointBadget, setReachedPointBadget] = useState(false);
   const elementRefBadget = useRef(null);
 
@@ -29,15 +28,11 @@ const Badget = ({incFooter})=>{
         resetData(); // Reset data or convert to false
       }
     };
-
     window.addEventListener('scroll', handleScroll);
-
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
   }, [reachedPointBadget]); // Re-run the effect whenever reachedPoint changes
-
-
 
     const badge = Badgets.map((obj, i)=>{
         const {
@@ -56,11 +51,10 @@ const Badget = ({incFooter})=>{
 
     return (
         <React.Fragment>
-          <div className="contact-title-father">
-            <p className="contact-title" >My Badgets</p>
-          </div>
-
             <div  class= "badget-father">
+            <div className="badget-title-father">
+            <p className="badget-title" >My Badgets</p>
+          </div>
             {badge} 
             </div>   
 

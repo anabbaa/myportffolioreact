@@ -6,6 +6,10 @@
         height: 60vh;
 
     }
+    @include responsive (tab){
+        width: 97.6vw;
+        }
+        
     .welcome-father{
         @include flex-row-evently;
         width: 98vw;
@@ -13,11 +17,9 @@
         font-size: 3rem;
         @include responsive(mobile){
             font-size: 2rem;
-
         }
         @include responsive(minmobile){
             font-size: 1rem;
-
         }
     }
     .myimg-father{
@@ -38,15 +40,10 @@
     .cv-father{
         height: 10vh;
         width: 90vw;
-        border: 1px solid red;
         @include flex-row-center;
         @include responsive(tab){
             height: 20vh;
         @include flex-column-start-center;
-        }
-    
-        @include responsive(mobile){
-            
         }
         
     .cv{
@@ -72,6 +69,7 @@
         @include responsive(bigmobile){
             width: 32vw;
             font-size: 1rem;
+        
         }
         
         @include responsive(mobile){

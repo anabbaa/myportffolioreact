@@ -1,20 +1,19 @@
 .aboutme-title-father{
     height: 12vh;
-    width: 16vw;
-    border: 1px solid red;
-    @include flex-column-end;
+    width: 18vw;
+    @include flex-column-center;
     align-self: flex-start;
     @include responsive(laptop){
         width: 22vw;   
         }
     @include responsive(tab){
-        width: 30vw;   
+        width: 33vw;   
         }
         @include responsive(mobile){
             width: 50vw;     
             }
             @include responsive(minmobile){
-                width: 60vw;   
+                width: 66vw;   
                 }
 }
 .aboutme-title{
@@ -22,8 +21,7 @@
     font-weight: bolder;
     @include flex-row-center;
 }
-
-            
+    
 .about-father{
     @include flex-column-between;
     width: 98vw;
@@ -32,21 +30,18 @@
         height: 180vh;
         }
     @include responsive (tab){
-        height: 220vh;    
+        height: 220vh;  
+        width: 97.6vw;
         }
-    @include responsive (bigmobile){
+        @include responsive(bigmobile){
         height: 160vh; 
         }
+    
         @include responsive(mobile){
             height: 200vh;
-                    
-        
         }
-    
     @include responsive (minmobile){
-        height: 250vh;
-        
-                        
+        height: 250vh;             
         }
         .header-about-father{
             height: 22vh;
@@ -54,11 +49,7 @@
             @include responsive (laptop){
                 @include flex-row-start-center;
                 height: 33vh;
-            
-                
                 }
-                
-             
         }
         
     .header-about{
@@ -72,13 +63,9 @@
         1px 7px 1px gainsboro, 1px 8px 1px gainsboro, 1px 9px 1px gainsboro, 1px 10px 1px gainsboro ,
         1px 18px 6px rgba(16 , 16 , 16 , 0.4),  1px 22px 10px  rgba(16 , 16 , 16 , 0.2), 
         1px 25px 35px  rgba(16 , 16 , 16 , 0.2),  1px 30px 60px  rgba(16 , 16 , 16 , 0.4);
-      
-        
     }
     @include responsive(mobile){
         font-size: 10px;
-                    
-        
     }
 
 .about-text{
@@ -93,6 +80,7 @@
     white-space:pre-line;
     @include responsive (bigmobile){
 font-size: 1rem;
+width: 80vw;
     }
     @include responsive(superGreatScreen){
         width: 98vw;

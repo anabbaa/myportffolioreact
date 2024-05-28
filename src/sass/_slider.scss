@@ -3,6 +3,9 @@
   height: 100vh;
   width: 98vw;
   @include flex-column-between;
+  @include responsive (tab){
+    width: 97.6vw;
+    }
 }
   .slider-son{
       height: 100vh;
@@ -13,19 +16,17 @@
       width: 30vw;
     @include flex-row-between;
     background-color: #000000;
-
     position: relative;
     @include responsive (laptop){
       width: 50vw;
-
     }
     @include responsive(bigmobile){
       width: 80vw;
+      
     }
     
   @include responsive(mobile){
     width: 70vw;
-    
   }
   .right-button
   {
@@ -55,8 +56,9 @@
   }
 
   @include responsive(bigmobile){
-    left: -9vw;
+    // left: -9vw;
     font-size: 4rem;
+
 }
 
 @include responsive(minmobile){
@@ -84,7 +86,6 @@
    font-size: 6rem;
    left: 2vw;
    cursor: pointer;
-   
    @include responsive(greatscreen){
     left: 1vw;
 }
@@ -95,13 +96,12 @@
     left: -8vw;
   }
   @include responsive(bigmobile){
-    left: 1vw;
+    // left: 1vw;
     font-size: 4rem;
   }
   @include responsive(minmobile){
     font-size: 3rem;
   }
-
 
 &:hover{
  transform: scale(1.1);
@@ -117,6 +117,7 @@
     }
     @include responsive(bigmobile){
        width: 80vw;
+
     }
     @include responsive(mobile){
        width: 70vw;
@@ -141,7 +142,6 @@
   position: relative;
   top: -4vh;
   }
-  
   
   @include responsive(tab){
     top: -5vh;

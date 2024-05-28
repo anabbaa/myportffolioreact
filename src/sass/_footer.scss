@@ -16,10 +16,12 @@
     @include responsive(superGreatScreen){
         width: 98.6vw;
     }
-    @include responsive(tab){
-        width: 98vw;
+    @include responsive(laptop){
+        width: 98.2vw;
     }
-    
+    @include responsive(tab){
+        width: 97.6vw;    
+    }
     
 .footer-father{
     align-self: flex-end;
@@ -80,8 +82,7 @@
 }
 .icon-father{
     width: 10%;
-    margin-right: 2vw;
-    @include flex-row-between;
+    @include flex-row-evently;
     @include responsive(minmobile){
     @include flex-column-center;
     }

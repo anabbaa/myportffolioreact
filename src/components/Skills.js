@@ -98,7 +98,8 @@ return (
     <React.Fragment>
 
         <div className="skill-father">
-        <div ref={elementRef} className={reachedPoint ? "skills-title-father":"a"}>
+        <div ref={elementRef} className={reachedPoint ?
+     "skills-title-father":"skills-father-title-great-screen"}>
                 <p className="aboutme-title" >My Skills</p>
             </div>
             <div className="skill-son">

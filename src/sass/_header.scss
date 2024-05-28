@@ -42,6 +42,10 @@ nav a.active{
             @include responsive(laptop){
                 width: 98vw;
             }
+            @include responsive(tab){
+                width: 97.6vw;
+            }
+            
             &:before{
                 position: absolute;
                 content: "";

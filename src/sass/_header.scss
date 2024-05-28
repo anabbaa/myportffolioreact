@@ -6,12 +6,18 @@
     color: white;
     font-size: 4rem;
     text-shadow: 5px 5px 1px  black ;
+    @include responsive(tab){
+        font-size: 3rem;
+    }
 }
 .n-logo{
     position: relative;
     left: -4vh;
     color: black;
     text-shadow: 5px 5px 1px white ;
+    @include responsive(bigmobile){
+        left: -1vw;
+    }
 }
 .n-logo{
     transform: rotate(44deg);
@@ -45,6 +51,11 @@ nav a.active{
             @include responsive(tab){
                 width: 97.8vw;
             }
+            @include responsive(bigmobile){
+                &:before{
+                    display: none;
+                }
+            }
             
             &:before{
                 position: absolute;
@@ -62,7 +73,6 @@ nav a.active{
         nav{
             width: 100%;
     @include flex-row-center;
-
         }
         
         .nav-li{     
@@ -72,6 +82,12 @@ nav a.active{
         @include flex-row-center;
         position: relative;
         top: -1.5vw;
+        @include responsive(laptop){
+            top: -3vh;
+        }
+        @include responsive(tab){
+            top: 1vh;
+        }
         }
         .a{
             font-family: Rowdies;
@@ -79,58 +95,24 @@ nav a.active{
             margin: 1.8rem;
             cursor: pointer;
             list-style: none;
-
+            @include responsive(laptop){
+                font-size: 1rem;
+                margin: 1.5rem; 
+            }
+            @include responsive(tab){
+                margin: 1rem;    
+            }
+            @include responsive(bigmobile){
+                font-size: 0.8rem;
+                margin: 0.8rem;
+            }
         }
         .anchor{
             text-decoration: none;
             color: #000;
         }
         
-        @media (max-width: 1024px){
-            .a{
-                font-size: 1.1rem;
-                margin: 0.8rem;
-            }
-            .nav-li{
-                top: -3vh;
-            }
-        }
-        
-
-@media (max-width: 800px){
-    .a-logo, .n-logo{
-        font-size: 3rem;
-    }
-    .a{
-        font-size: 1rem;
-    }  
-    .nav-li{
-        top: -1vh;
-    }
-}
-@media (max-width: 660px){
-    .head{
-    
-        &:before{
-            display: none;
-        }
-    }
-    .a-logo, .n-logo{
-        font-size: 3rem;
-    }
-    .n-logo{
-        position: relative;
-        left: -1vw;
-    }
-
-    .nav-li{
-    height: 4vh;
-    }
-    .a{
-        font-size: 0.8rem;
-    }
-}
-@media (max-width: 513px){
+@media (max-width: 500px){
     
     .desktopHeader{
         display: none;

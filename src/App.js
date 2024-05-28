@@ -11,7 +11,6 @@ import { HashRouter as Router, Route, Switch } from 'react-router-dom';
 import MobileNavbar from "./components/MobileNavbar";
 import DesktopNavbar from "./components/DesktopNavbar";
 
-
 function App() {
   const [load , setLoading] = useState(true);
 

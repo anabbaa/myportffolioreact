@@ -87,7 +87,7 @@
 
 @mixin  responsive ($breakpoint) {
     @if $breakpoint == superGreatScreen {
-        @media only screen and (max-width: 1800px){@content};
+        @media only screen and (max-width: 1810px){@content};
         }
 
     @if $breakpoint == greatscreen {

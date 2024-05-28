@@ -50,7 +50,9 @@ useEffect(() => {
                 <div className="img-wrapper">
                 <img className="img-skills" src={`${process.env.PUBLIC_URL}/${img}`} alt={title} />
                 </div>
+                <div className="title-father">
                 <h2 className="title">{title}</h2>
+                </div>
             </div>
         )
     });
@@ -66,7 +68,9 @@ useEffect(() => {
                 <div className="img-wrapper">
                     <img className="img-skills" src={`${process.env.PUBLIC_URL}/${img}`} alt={title}/>
                 </div>
+                <div className="title-father">
                 <h2 className="title">{title}</h2>
+            </div>
             </div>
         )
     });
@@ -83,7 +87,9 @@ useEffect(() => {
                     <img className={ i === 4  ? "github":"img-skills" } 
                     src={`${process.env.PUBLIC_URL}/${img}`} alt={title} />
                 </div>
+                <div className="title-father">
                 <h2 className="title">{title}</h2>
+                </div>
             </div>
         )
     });
@@ -92,9 +98,9 @@ return (
     <React.Fragment>
 
         <div className="skill-father">
-        <div className="skills-title-father">
-            <p className="skills-title" >My Skills</p>
-        </div>
+        <div ref={elementRef} className={reachedPoint ? "skills-title-father":"a"}>
+                <p className="aboutme-title" >My Skills</p>
+            </div>
             <div className="skill-son">
             <div ref={elementRef} className={reachedPoint ? "scrollSkills":"program"}>
                 <h2 className="h-skills"> programming </h2>
@@ -110,11 +116,12 @@ return (
                 {others}
                 </div>
                 </div>
-                </div>
-                
-        {!incFooter &&   <div className="back">
+                {!incFooter &&   <div className="back">
                 <Link className="back-soon" to="/" style={{textDecoration: "none"}}>Go to Home</Link>
         </div>}
+                </div>
+                
+      
         {!incFooter && <Footer />}
         </React.Fragment>
     )

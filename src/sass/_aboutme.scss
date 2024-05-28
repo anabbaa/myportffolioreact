@@ -1,25 +1,68 @@
 .aboutme-title-father{
-    height: 4vh;
-    width: 20vw;
+    height: 12vh;
+    width: 16vw;
+    border: 1px solid red;
     @include flex-column-end;
     align-self: flex-start;
+    @include responsive(laptop){
+        width: 22vw;   
+        }
+    @include responsive(tab){
+        width: 30vw;   
+        }
+        @include responsive(mobile){
+            width: 50vw;     
+            }
+            @include responsive(minmobile){
+                width: 60vw;   
+                }
+}
 .aboutme-title{
-    width: 20vw;
-    height: 1vh;
     font-size: 2rem;
     font-weight: bolder;
-    @include flex-row-center
+    @include flex-row-center;
 }
-}
+
+            
 .about-father{
     @include flex-column-between;
     width: 98vw;
     height: 160vh;
-
- 
+    @include responsive (laptop){
+        height: 180vh;
+        }
+    @include responsive (tab){
+        height: 220vh;    
+        }
+    @include responsive (bigmobile){
+        height: 160vh; 
+        }
+        @include responsive(mobile){
+            height: 200vh;
+                    
+        
+        }
+    
+    @include responsive (minmobile){
+        height: 250vh;
+        
+                        
+        }
+        .header-about-father{
+            height: 22vh;
+            width: 90vw;
+            @include responsive (laptop){
+                @include flex-row-start-center;
+                height: 33vh;
+            
+                
+                }
+                
+             
+        }
+        
     .header-about{
         font-family: verdana;
-        height: 8vh;
         font-size: 6em;
         font-weight: 700;
         color: #f5f5f5;
@@ -29,12 +72,13 @@
         1px 7px 1px gainsboro, 1px 8px 1px gainsboro, 1px 9px 1px gainsboro, 1px 10px 1px gainsboro ,
         1px 18px 6px rgba(16 , 16 , 16 , 0.4),  1px 22px 10px  rgba(16 , 16 , 16 , 0.2), 
         1px 25px 35px  rgba(16 , 16 , 16 , 0.2),  1px 30px 60px  rgba(16 , 16 , 16 , 0.4);
-        @include responsive (laptop){
-        width: 100%;
-        }
-        @include responsive (superGreatScreen){
-            height: 8vh;
-            }
+      
+        
+    }
+    @include responsive(mobile){
+        font-size: 10px;
+                    
+        
     }
 
 .about-text{
@@ -44,11 +88,10 @@
     padding: 0 2vw;
     line-height: 4rem;
     text-indent: 10px;
-    background-color: black;/*  */
+    background-color: black;
     color: white;
     white-space:pre-line;
-    @include responsive (minmobile){
-text-align: right;
+    @include responsive (bigmobile){
 font-size: 1rem;
     }
     @include responsive(superGreatScreen){

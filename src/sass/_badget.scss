@@ -1,26 +1,20 @@
-.badget-title-father{
-    height: 33vh;
-    width: 10vw;
-    border: 1px solid red;
-    @include flex-column-end;
-    align-self: flex-start;
-    .badget-title{
-        width: 20vw;
-        height: 1vh;
-        font-size: 2rem;
-        font-weight: bolder;
-        @include flex-row-center
-    }
-}
+
 .badget-father{
     width: 98vw;
-    height:150vh;
-    animation: fallBudget 3s ease-in-out;
-    @include flex-row-center;
+    height:120vh;
+    animation: fallBudget 2s ease-in-out;
+    @include flex-column-between;
     border: 1px solid black;
+   
     @include responsive(mobile){
-        height: 50vh;
+        height: 70vh;
     }
+    .badget-son{
+        height: 50%;
+        width: 50%;
+        @include flex-row-between;
+    }
+    
     .badget-img{
         height: auto;
         max-width: 100%;
@@ -29,10 +23,10 @@
             transition: all 500ms ease-in;
             transform: scale(1.2);
         }
+    
     }
     .scrollBadgetFather{
         animation: fallBudget 1.5s ease-in-out;
-        
     }
     @keyframes fallBudget {
         0%{

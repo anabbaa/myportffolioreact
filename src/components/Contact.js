@@ -11,9 +11,9 @@ const Contact=({incFooter})=>{
   return (
     <React.Fragment>
         <div className="contact-father">
-        <div className="contact-title-father">
-        <p className="contact-title" >Contact Me</p>
-        </div>  
+        <div className="aboutme-title-father">
+                <p className="aboutme-title" >Contact Me</p>
+            </div>
 
     <form onSubmit={handleSubmit}>
     <div className="name-email-father">
@@ -37,10 +37,11 @@ const Contact=({incFooter})=>{
       />
       <button className="send" type="submit">Send</button>
     </form>
-    </div>
     {!incFooter && <div className="back">          
             <Link className="back-soon" to="/home" style={{textDecoration: "none"}}>Go to Home</Link>
         </div>}
+    </div>
+  
         <Footer />
         </React.Fragment>
   )};

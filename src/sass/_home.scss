@@ -2,28 +2,23 @@
     @include flex-column-center;
     height: 90vh;
     width: 98vw;
-    color: #000000;
-    font-size: 3rem;
-    @include responsive(laptop){
-        height: 80vh;
-    }
-    @include responsive(bigmobile){
+    @include responsive(mobile){
         height: 60vh;
+
     }
-    @include responsive(minmobile){
-        height: 40vh;
-    }
-    
     .welcome-father{
         @include flex-row-evently;
         width: 98vw;
         height: 80vh;
-    }
-    @include responsive(bigmobile){
-        font-size: 1rem;
-    }
-    @include responsive(mobile){
-        font-size: 1rem;
+        font-size: 3rem;
+        @include responsive(mobile){
+            font-size: 2rem;
+
+        }
+        @include responsive(minmobile){
+            font-size: 1rem;
+
+        }
     }
     .myimg-father{
         width: 30vw;
@@ -43,14 +38,17 @@
     .cv-father{
         height: 10vh;
         width: 90vw;
+        border: 1px solid red;
         @include flex-row-center;
         @include responsive(tab){
             height: 20vh;
         @include flex-column-start-center;
         }
+    
         @include responsive(mobile){
-            height: 40vh;
+            
         }
+        
     .cv{
         font: 2rem sans-serif;
         outline: none;
@@ -65,12 +63,11 @@
             color: red;
             transform: scale(2);
         }
-        @include responsive(laptop){
-            width: 25vw;
-            height: 10vh;
+        @include responsive(bigscreen){
+            width: 22vw;
         }
-        @include responsive(tab){
-            border: 1px solid red;;
+        @include responsive(laptop){
+            width: 28vw;
         }
         @include responsive(bigmobile){
             width: 32vw;

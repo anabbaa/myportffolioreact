@@ -52,15 +52,17 @@ const Badget = ({incFooter})=>{
     return (
         <React.Fragment>
             <div  class= "badget-father">
-            <div className="badget-title-father">
-            <p className="badget-title" >My Badgets</p>
-          </div>
+            <div className="aboutme-title-father">
+                <p className="aboutme-title" >My Badges</p>
+            </div>
+          <div className="badget-son">
             {badge} 
-            </div>   
+            </div>
 
-        {!incFooter &&    <div className="back">
+            {!incFooter &&    <div className="back">
                 <Link className="back-soon" to="/" style={{textDecoration: "none"}}>Go to Home</Link>
         </div>}
+            </div>   
         {!incFooter && <Footer /> }
         </React.Fragment>
     )

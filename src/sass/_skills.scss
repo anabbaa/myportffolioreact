@@ -1,26 +1,45 @@
-
 .skills-title-father{
-    height: 14vh;
-    width: 20vw;
-    @include flex-column-start;
+    height: 12vh;
+    width: 16vw;
+    border: 1px solid red;
+    @include flex-column-start-center;
     align-self: flex-start;
-.skills-title{
-    width: 20vw;
-    height: 1vh;
-    font-size: 2rem;
-    font-weight: bolder;
-    @include flex-row-center
-}
+    @include responsive(laptop){
+        width: 22vw;   
+        }
+    @include responsive(tab){
+        width: 30vw;   
+        }
+        @include responsive(bigmobile){
+            animation: left 3s ease-in-out;   
+            }
+       
+        @include responsive(mobile){
+            width: 50vw;     
+            }
+            @include responsive(minmobile){
+                width: 60vw;   
+                }
+        
 }
 .skill-father{
     width: 98vw;
-    height: 120vh;
+    height: 160vh;
     @include flex-column-between;
-
-    @include responsive(bigmobile){
-        height: 170vh;
-        @include flex-column-between;
+    @include responsive(superGreatScreen){
+        height: 145vh;
     }
+    @include responsive(laptop){
+        height: 150vh;
+    }
+    @include responsive(tab){
+        height: 160vh;
+        }
+        @include responsive(bigmobile){
+            height: 220vh;
+            
+            
+            }
     .skills-title{
         height: 2vh;
         font-size: 2rem;
@@ -32,21 +51,54 @@
     height: 90vh;
     @include flex-row-evently;
     @include responsive(laptop){
-    width: 90vw;
-        }
+        width: 90vw;
+
+    }
     @include responsive(bigmobile){
         @include flex-column-between;
-        height: 170vh;
-    }
+        height: 220vh;
+        }
+        
+        
     .img-father {
+        width: 20vw;
         @include flex-row-evently;
+        @include responsive(greatscreen){
+            width: 23vw;
+
+        }
+        @include responsive(bigscreen){
+            width: 26vw;
+
+        }
+        @include responsive(laptop){
+            width: 29vw;
+
+        }
+        @include responsive(bigmobile){
+            width: 50vw;
+
+        }
+        @include responsive(mobile){
+            width: 70vw;
+
+        }
+        @include responsive(minmobile){
+            width: 80vw;
+    
+        }
+
+    
+       
+
         .img-wrapper{
-            width: 7vw;
-            @include flex-column-center;
+            width: 2vw;
+            
             .img-skills{
                 height: 5vh;
                 width: 3vw;
                 float: left;
+                
                 @include responsive(mobile){
                     width: 4vw;
                 }
@@ -68,52 +120,127 @@
     background-color: rgb(141, 136, 136);
     color: white;
     line-height: 6vh;
-    margin-bottom: -14vh;
+    @include responsive(greatscreen){
+        width: 23vw;
+
+    }
     @include responsive(bigscreen){
-        width: 22vw;
-        }
-        @include responsive(greatscreen){
-            width: 22vw;
-            }
-            @include responsive(laptop){
-                width: 26vw;
-                }
+        width: 26vw;
+
+    }
+    @include responsive(laptop){
+        width: 29vw;
+
+    }
+    @include responsive(bigmobile){
+        width: 50vw;
+
+    }
+    @include responsive(mobile){
+        width: 70vw;
+
+    }
+    @include responsive(minmobile){
+        width: 80vw;
+
+    }
+        
+                    .title-father{
+                        width: 15vw;
+                        @include flex-column-center;
+                        @include responsive(greatscreen){
+                            width: 18vw;
+
+                        }
+                        @include responsive(bigscreen){
+                            width: 21vw;
+
+                        }
+                        @include responsive(laptop){
+                            width: 25vw;
+
+                        }
+                        @include responsive(bigmobile){
+                            width: 35vw;
+
+                        }
+                        @include responsive(mobile){
+                            width: 50vw;
+                
+                        }
+                        @include responsive(minmobile){
+                            width: 65vw;
+                    
+                        }
+                        
+                        
+                    }
+            
     .title{
         font-family: 'Times New Roman', Times, serif;
+        
+        @include responsive(laptop){
+            font-size: 1.2rem;
+
+        }
+        
+        
     }
 .h-skills{
     background-color:purple;
     width: 100%;
     text-align: center;
     font: 2rem'Times New Roman', Times, serif;
+    @include responsive(tab){
+        font-size: 1.8rem;
+        }
+        
 }
 }
 .program {
     margin-top: 4vh;
     animation: left 3s ease-in-out;
+    @include responsive(bigmobile){
+    animation: left 6s ease-in-out;
+
+        
+
+    }
 }
 .scrollSkills{
     margin-top: 4vh;
     animation: left1 3s ease-in-out;
+    @include responsive(bigmobile){
+        animation: down 6s ease-in-out;
+    
+            
+    
+        }
 
 }
 .scrollLang , .lang{
     animation: down 3s ease-in-out;
+    @include responsive(bigmobile){
+        animation: down 6s ease-in-out;
+    
+            
+    
+        }
 }
 .scrollOthers , .others{
     animation: right 3s ease-in-out;
+    @include responsive(bigmobile){
+        animation: right 6s ease-in-out;
+    
+            
+    
+        }
 }
 .github{
     width: 3vw;
     height: 3vh;
     }
 }
-}
-.back{
-    @include flex-row-center;
-    height: 1vh;
-    width: 99vw;
-
 }
 
 @keyframes left  {

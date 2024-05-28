@@ -1,5 +1,5 @@
 .contact-father{
-    height: 88vh;
+    height: 85vh;
     width: 98vw;
     @include flex-column-center;
     form{
@@ -29,9 +29,10 @@
     box-sizing: border-box;
     height: 4vh;
     width: 50%;
-    @include responsive(mobile){
-        width: 75%;
+    @include responsive(bigmobile){
+        width: 76%;
     }
+    
     
     font: 1.5rem 'Times New Roman', Times, serif;
     text-align: center;
@@ -57,7 +58,7 @@ textarea{
     font-size: 1.5rem;
     width: 40vw;
     height: 44vh;
-  
+    border: none;
     &::placeholder{
         font: 1.5rem 'Times New Roman', Times, serif;
         text-align: center;
@@ -65,29 +66,5 @@ textarea{
     @include responsive(tab){
         width: 79vw;
     }
-}
-}
-.contact-title-father{
-    height: 44vh;
-    width: 20vw;
-    @include flex-column-center;
-    align-self: flex-start;
-    @include responsive(tab){
-        width: 33vw;
-    }
-    @include responsive(mobile){
-        width: 45vw; 
-    }
-    @include responsive(mobile){
-        width: 60vw; 
-        border: 1px solid red;
-    }
-    
-
-.contact-title{
-    
-    font-size: 2rem;
-    font-weight: bolder;
-    @include flex-row-center
 }
 }

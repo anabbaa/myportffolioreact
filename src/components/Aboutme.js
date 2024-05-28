@@ -10,7 +10,9 @@ const Aboutme = ({incFooter })=>{
         <div className="aboutme-title-father">
                 <p className="aboutme-title" >About Me</p>
             </div>
+            <div className="header-about-father">
             <h1 className="header-about">AHMED NABBAA</h1>
+            </div>
             <p className="about-text">
             I have studied English Literature in my home country Syria. In 2008 I graduated with a 
             Bachelor degree  and I have worked for four years as an English teacher there. In 2015 I 
@@ -25,11 +27,13 @@ const Aboutme = ({incFooter })=>{
             Now I want  to start searching for an internship or a job in Web Development 
             or Cloud Developer to kick start my career. 
             </p>
-            </div>
-{!incFooter && <div className="back">          
+            {!incFooter && <div className="back">          
             <Link className="back-soon" to="/home" style={{textDecoration: "none"}}>Go to Home</Link>
         </div>}
-        {!incFooter && <Footer />}
+       
+            </div>
+            {!incFooter && <Footer />}
+
         </React.Fragment>
     );
 };

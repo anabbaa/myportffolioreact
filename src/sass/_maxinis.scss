@@ -42,7 +42,7 @@
 }
 @mixin flex-column-end-end{
     display: flex;
-    justify-content: center;
+    justify-content: end;
     align-items: flex-end;
     flex-direction: column;
 }
@@ -113,6 +113,6 @@
         @media only screen and (max-width: 500px) {@content};
         }
     @if $breakpoint == minmobile {
-        @media only screen and (max-width: 400px) {@content};
+        @media only screen and (max-width: 350px) {@content};
         } 
 }

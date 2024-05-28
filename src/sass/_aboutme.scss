@@ -83,8 +83,9 @@ font-size: 1rem;
 width: 80vw;
     }
     @include responsive(superGreatScreen){
-        width: 98vw;
+        width: 90vw;
     }
+    
 }
 p::first-letter{
     color: red;

@@ -21,7 +21,7 @@
 }
 .skills-title-father{
     @include responsive(bigmobile){
-        animation: left1 3s ease-in-out;   
+        animation: leftTitle 5s ease-in-out;   
     }
 }
 .skill-father{
@@ -64,7 +64,6 @@
         }
         @include responsive(bigscreen){
             width: 26vw;
-
         }
         @include responsive(laptop){
             width: 29vw;
@@ -78,7 +77,6 @@
         }
         @include responsive(minmobile){
             width: 80vw;
-    
         }
 
         .img-wrapper{
@@ -215,6 +213,25 @@
         left: 0;
     }
 }
+
+@keyframes leftTitle  {
+    0%{
+        opacity: 0;
+    }
+    75%{
+     opacity: 0;
+        position: relative;
+        left: -10vw;
+    }
+    
+    95%{
+        transition: 100ms ease-in-out;
+        display: flex;
+        position: relative;
+        left: 0;
+    }
+}
+
 
 @keyframes left1  {
     0%{

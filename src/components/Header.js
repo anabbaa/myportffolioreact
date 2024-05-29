@@ -10,7 +10,7 @@ const Header = ()=>{
             <NavLink className="anchor" to="/aboutme"><li  className="a">About Me</li></NavLink>
             <NavLink className="anchor" to="/projects"><li  className="a">My Projects</li></NavLink>
             <NavLink className="anchor" to="/skills"><li  className="a">Skills</li></NavLink>
-            <NavLink className="anchor" to="/badget"><li  className="a">My Badgets</li></NavLink>
+            <NavLink className="anchor" to="/badget"><li  className="a">My Badges</li></NavLink>
             <NavLink className="anchor" to="/contact"><li  className="a">Contact Me</li></NavLink>
           </ul>
         </nav>

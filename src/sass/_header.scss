@@ -24,8 +24,7 @@
     text-shadow: 5px 5px 1px rgba(0, 0, 0, 0.404) ;
 }
 nav a.active{
-    border-bottom: 2px solid #000;
-    margin-bottom: 1vh;
+    border-bottom: 2px solid #0000;
 }
 
 .head{
@@ -49,7 +48,7 @@ nav a.active{
                 width: 98.1vw;
             }
             @include responsive(tab){
-                width: 97vw;
+                width: 97.6vw;
             }
             @include responsive(bigmobile){
                 &:before{

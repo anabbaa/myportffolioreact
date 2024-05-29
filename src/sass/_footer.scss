@@ -3,24 +3,26 @@
     width: 99.2vw;
     
     @include flex-row-between;
-    @include responsive(mobile){
-        height: 93vh;
-        width: 100vw;
-    }
-    @include responsive(greatscreen){
-        width: 98.8vw;
-    }
-    @include responsive(bigscreen){
-        width: 98.7vw;
-    }
+   
     @include responsive(superGreatScreen){
         width: 98.5vw;
     }
+    @include responsive(greatscreen){
+        width: 98.5vw;
+    }
+    @include responsive(bigscreen){
+        width: 98.5vw;
+    }
+   
     @include responsive(laptop){
         width: 98.1vw;
     }
     @include responsive(tab){
         width: 97.5vw;
+    }
+    @include responsive(mobile){
+        height: 93vh;
+        
     }
     
 .footer-father{

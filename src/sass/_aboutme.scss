@@ -94,3 +94,77 @@ p::first-letter{
     text-indent: 5cm;
 }  
 }
+
+
+// /* Mini Mobile (280px - 350px) */
+// @media (min-width: 280px) and (max-width: 350px) {
+//     .responsive-element {
+//       height: auto;
+//       min-height: 158px;
+//       max-height: 197px;
+//     }
+//   }
+  
+//   /* Mobile (350px - 500px) */
+//   @media (min-width: 350px) and (max-width: 500px) {
+//     .responsive-element {
+//       height: auto;
+//       min-height: 197px;
+//       max-height: 281px;
+//     }
+//   }
+  
+//   /* Big Mobile (500px - 650px) */
+//   @media (min-width: 500px) and (max-width: 650px) {
+//     .responsive-element {
+//       height: auto;
+//       min-height: 281px;
+//       max-height: 366px;
+//     }
+//   }
+  
+//   /* Tablet (650px - 800px) */
+//   @media (min-width: 650px) and (max-width: 800px) {
+//     .responsive-element {
+//       height: auto;
+//       min-height: 488px;
+//       max-height: 600px;
+//     }
+//   }
+  
+//   /* Laptop (800px - 1024px) */
+//   @media (min-width: 800px) and (max-width: 1024px) {
+//     .responsive-element {
+//       height: auto;
+//       min-height: 450px;
+//       max-height: 576px;
+//     }
+//   }
+  
+//   /* Screen (1024px - 1200px) */
+//   @media (min-width: 1024px) and (max-width: 1200px) {
+//     .responsive-element {
+//       height: auto;
+//       min-height: 576px;
+//       max-height: 675px;
+//     }
+//   }
+  
+//   /* Big Screen (1200px - 1500px) */
+//   @media (min-width: 1200px) and (max-width: 1500px) {
+//     .responsive-element {
+//       height: auto;
+//       min-height: 675px;
+//       max-height: 844px;
+//     }
+//   }
+  
+//   /* Huge Screen (1550px - 1800px) */
+//   @media (min-width: 1550px) and (max-width: 1800px) {
+//     .responsive-element {
+//       height: auto;
+//       min-height: 873px;
+//       max-height: 1013px;
+//     }
+//   }
+  

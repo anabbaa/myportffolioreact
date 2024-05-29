@@ -8,10 +8,10 @@
         width: 98.3vw;
     }
     @include responsive(greatscreen){
-        width: 98.2w;
+        width: 98.2vw;
     }
     @include responsive(bigscreen){
-        width: 98.1vw;
+        width: 98vw;
     }
    
     @include responsive(laptop){

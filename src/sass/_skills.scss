@@ -34,6 +34,9 @@
     @include responsive(laptop){
         height: 150vh;
     }
+    @include responsive (tab){
+        width: 97.5vw;             
+        }
 
         @include responsive(bigmobile){
             height: 220vh;   

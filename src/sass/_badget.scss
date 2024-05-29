@@ -4,9 +4,13 @@
     height:120vh;
     animation: fallBudget 2s ease-in-out;
     @include flex-column-between;
+    @include responsive (tab){
+        width: 97.5vw;             
+        }
     @include responsive(mobile){
         height: 70vh;
     }
+  
   
     
     .badget-son{

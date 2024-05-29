@@ -2,6 +2,9 @@
     height: 100vh;
     width: 98vw;
     @include flex-column-center;
+    @include responsive (tab){
+        width: 97.5vw;             
+        }
     form{
     @include flex-column-between;
     max-width: 100%;

@@ -1,8 +1,11 @@
 
 .slider-father{
-  height: 90vh;
+  height: 130vh;
   width: 98vw;
   @include flex-column-between;
+  @include responsive (tab){
+    width: 97.5vw;             
+    }
 }
   .slider-son{
       height: 100vh;

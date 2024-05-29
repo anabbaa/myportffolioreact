@@ -31,6 +31,7 @@
         }
     @include responsive (tab){
         height: 290vh; 
+        width: 97.5vw;
         }
         @include responsive(bigmobile){
         height: 180vh; 

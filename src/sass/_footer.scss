@@ -5,17 +5,17 @@
     @include flex-row-between;
    
     @include responsive(superGreatScreen){
-        width: 98.3vw;
+        width: 98.5vw;
     }
     @include responsive(greatscreen){
-        width: 98.2vw;
+        width: 98.5vw;
     }
     @include responsive(bigscreen){
-        width: 97.7vw;
+        width: 98.5vw;
     }
    
     @include responsive(laptop){
-        width: 97.5vw;
+        width: 98.1vw;
     }
     @include responsive(tab){
         width: 97.5vw;

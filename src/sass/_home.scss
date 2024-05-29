@@ -42,7 +42,7 @@
     }
     .cv-father{
         height: 10vh;
-        width: 20vw;
+        width: 90vw;
         @include flex-row-center;
         @include responsive(tab){
             height: 20vh;
@@ -66,9 +66,6 @@
         @include responsive(greatscreen){
             height: auto;
             width: auto;
-        }
-        @include responsive(laptop){
-            width: 38vw;
         }
         @include responsive(bigmobile){
             width: 32vw;

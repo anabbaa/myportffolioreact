@@ -56,7 +56,7 @@
   }
 
   @include responsive(bigmobile){
-    // left: -9vw;
+    left: -9vw;
     font-size: 4rem;
 
 }
@@ -96,7 +96,7 @@
     left: -8vw;
   }
   @include responsive(bigmobile){
-    // left: 1vw;
+    left: 1vw;
     font-size: 4rem;
   }
   @include responsive(minmobile){

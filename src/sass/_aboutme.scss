@@ -27,21 +27,21 @@
     width: 98vw;
     height: 160vh;
     @include responsive (laptop){
-        height: 180vh;
+        height: 220vh;
         }
     @include responsive (tab){
-        height: 220vh;  
+        height: 245vh;  
         
         }
         @include responsive(bigmobile){
-        height: 160vh; 
+        height: 180vh; 
         }
     
         @include responsive(mobile){
-            height: 200vh;
+            height: 225vh;
         }
     @include responsive (minmobile){
-        height: 250vh;             
+        height: 280vh;             
         }
         .header-about-father{
             height: 22vh;

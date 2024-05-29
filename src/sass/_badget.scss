@@ -7,9 +7,12 @@
     @include responsive(mobile){
         height: 70vh;
     }
-    @include responsive(tab){
-        width: 97.6vw;    
-    }
+    @include responsive (tab){
+    
+        width: 97vw; 
+        
+        
+        }
     
     .badget-son{
         height: 50%;

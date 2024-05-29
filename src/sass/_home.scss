@@ -7,9 +7,12 @@
 
     }
     @include responsive (tab){
-        width: 97.6vw;
-        }
         
+        width: 97vw; 
+        
+        
+        }
+
     .welcome-father{
         @include flex-row-evently;
         width: 98vw;
@@ -65,6 +68,10 @@
         }
         @include responsive(laptop){
             width: 28vw;
+        }
+        @include responsive(tab){
+            width: 34vw;   
+            height: 8.8vh;
         }
         @include responsive(bigmobile){
             width: 32vw;

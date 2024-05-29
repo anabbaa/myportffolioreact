@@ -49,7 +49,7 @@ nav a.active{
                 width: 98.1vw;
             }
             @include responsive(tab){
-                width: 97.8vw;
+                width: 97vw;
             }
             @include responsive(bigmobile){
                 &:before{

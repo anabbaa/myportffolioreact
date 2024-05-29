@@ -4,7 +4,10 @@
   width: 98vw;
   @include flex-column-between;
   @include responsive (tab){
-    width: 97.6vw;
+    
+    width: 97vw; 
+    
+    
     }
 }
   .slider-son{

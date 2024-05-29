@@ -41,6 +41,7 @@
         }
     }
     .cv-father{
+        border: 1px solid red;
         height: 10vh;
         width: 90vw;
         @include flex-row-center;
@@ -51,7 +52,7 @@
         
     .cv{
         font: 2rem sans-serif;
-        border: 1px solid red;
+        
         outline: none;
         border: none;
         height: 8vh;

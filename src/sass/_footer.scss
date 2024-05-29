@@ -5,10 +5,10 @@
     @include flex-row-between;
    
     @include responsive(superGreatScreen){
-        width: 99vw;
+        width: 98.7vw;
     }
     @include responsive(greatscreen){
-        width: 98.7vw;
+        width: 98.6vw;
     }
     @include responsive(bigscreen){
         width: 98.5vw;

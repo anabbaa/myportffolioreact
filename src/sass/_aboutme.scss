@@ -24,7 +24,7 @@
     
 .about-father{
     @include flex-column-between;
-    width: 98vw;
+    width: 95vw;
     height: 160vh;
     @include responsive (laptop){
         height: 220vh;
@@ -36,8 +36,6 @@
         @include responsive(bigmobile){
         height: 180vh; 
         }
-
-    
         @include responsive(mobile){
             height: 225vh;
         }

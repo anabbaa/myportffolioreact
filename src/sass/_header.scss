@@ -29,30 +29,30 @@ nav a.active{
 
 .head{
     height: 12vh;
-    width: 99.2vw;
+    max-width: 100%;
     background-color: lightgray;
     position: relative;
             
             @include responsive(superGreatScreen){
                 // width: 98.5vw;
             }
-            @include responsive(greatscreen){
+            // @include responsive(greatscreen){
+            // //     width: 98.5vw;
+            //  }
+            // @include responsive(bigscreen){
             //     width: 98.5vw;
-             }
-            @include responsive(bigscreen){
-                width: 98.5vw;
-            }
-            @include responsive(laptop){
-                width: 98.1vw;
-            }
-            @include responsive(tab){
-                width: 97.5vw;
-            }
-            @include responsive(bigmobile){
-                &:before{
-                    display: none;
-                }
-            }
+            // }
+            // @include responsive(laptop){
+            //     width: 98.1vw;
+            // }
+            // @include responsive(tab){
+            //     width: 97.5vw;
+            // }
+            // @include responsive(bigmobile){
+            //     &:before{
+            //         display: none;
+            //     }
+            // }
             
             &:before{
                 position: absolute;

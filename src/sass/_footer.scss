@@ -1,6 +1,6 @@
 .footer{
     height: 12vh;
-    width: 99.2vw;
+    max-width: 100%;
     
     @include flex-row-between;
    
@@ -10,20 +10,20 @@
     @include responsive(greatscreen){
         // width: 98.5vw;
     }
-    @include responsive(bigscreen){
-        width: 98.5vw;
-    }
+    // @include responsive(bigscreen){
+    //     width: 98.5vw;
+    // }
    
-    @include responsive(laptop){
-        width: 98.1vw;
-    }
-    @include responsive(tab){
-        width: 97.5vw;
-    }
-    @include responsive(mobile){
-        height: 93vh;
+    // @include responsive(laptop){
+    //     width: 98.1vw;
+    // }
+    // @include responsive(tab){
+    //     width: 97.5vw;
+    // }
+    // @include responsive(mobile){
+    //     height: 93vh;
         
-    }
+    // }
     
 .footer-father{
     align-self: flex-end;

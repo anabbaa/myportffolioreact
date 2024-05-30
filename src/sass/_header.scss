@@ -34,11 +34,11 @@ nav a.active{
     position: relative;
             
             @include responsive(superGreatScreen){
-                width: 98.5vw;
+                // width: 98.5vw;
             }
             @include responsive(greatscreen){
-                width: 98.5vw;
-            }
+            //     width: 98.5vw;
+             }
             @include responsive(bigscreen){
                 width: 98.5vw;
             }

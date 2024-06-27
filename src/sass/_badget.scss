@@ -1,35 +1,48 @@
 
 .badget-father{
     width: 98vw;
-    height:120vh;
+    height:82vh;
     animation: fallBudget 2s ease-in-out;
     @include flex-column-between;
-    @include responsive (tab){
-        width: 97.5vw;             
-        }
-    @include responsive(mobile){
-        height: 70vh;
-    }
-  
-  
     
-    .badget-son{
+    .badget-son,  .scroll-badges-father{
         height: 50%;
         width: 50%;
         @include flex-row-between;
     }
-    
-    .badget-img{
-        max-height: 100%;
+    .img-badges-father{
+        width: 12vw;
+        @include responsive(bigmobile){
+            width: 18vw;
+        }
+        @include responsive(minmobile){
+            width: 55vw;
+        }
+    }
+    .img-badges-father-two{
+        width: 22vw;
+        @include responsive(bigmobile){
+            width: 28vw;
+        }
+        @include responsive(minmobile){
+            width: 88vw;
+        }
+    }
+    .badget-img{ 
+        width: 200%;
         max-width: 100%;
+        height: auto;
+
         &:hover{
             transition: all 500ms ease-in;
             transform: scale(1.2);
         }
     }
-    .scrollBadgetFather{
-        animation: fallBudget 1.5s ease-in-out;
+    .scroll-badges-father{
+        animation: fallBudget 3s ease-in-out;
     }
+    
+
     @keyframes fallBudget {
         0%{
             opacity: 0;
@@ -37,12 +50,13 @@
         50%{
             transition: 300ms;
         }
-        60%{
-        opacity: 0;
-    }
         75%{
-            transform: translatey(-44px);
-        }
+        opacity: 0;
+
     }
+    90%{
+        transform: translatey(-44px);
+    }
+}
 
 }

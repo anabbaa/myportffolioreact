@@ -1,12 +1,49 @@
-import React  from "react";
+import React, {useState}  from "react";
 import { Link } from "react-router-dom";
 import Footer from "./Footer";
 
 const Contact=({incFooter})=>{
 
-  const handleSubmit = async e => {
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    message: ''
+  });
+
+
+
+  const { name, email, message } = formData;
+
+  const onChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+  
+
+
+  const onSubmit = async (e) => {
     e.preventDefault();
-  }
+    try {
+      const response = await fetch('/api/messages', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(formData)
+      });
+      console.log(response);
+
+      const result = await response.json();
+      if (response.ok) {
+        alert(result.message);
+        setFormData({ name: '', email: '', message: '' });
+      } else {
+        alert('Error: ' + result.message);
+      }
+    } catch (err) {
+      console.error('Error submitting form:', err);
+      alert('Error submitting form');
+    }
+  };
 
   return (
     <React.Fragment>
@@ -15,17 +52,21 @@ const Contact=({incFooter})=>{
                 <p className="aboutme-title" >Contact Me</p>
             </div>
 
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={onSubmit}>
     <div className="name-email-father">
       <input
         type="text"
         name="name"
+        onChange={onChange}
+        value={name}
         placeholder="Please Write Your Name"
         required
       />
       <input
         type="email"
         name="email"
+        onChange={onChange}
+        value={email}
         placeholder="Please Write Your Email"
         required
       />
@@ -33,6 +74,8 @@ const Contact=({incFooter})=>{
       <textarea
         name="message"
         placeholder="Please Write Your Message"
+        onChange={onChange}
+        value={message}
         required
       />
       <button className="send" type="submit">Send</button>
@@ -46,3 +89,4 @@ const Contact=({incFooter})=>{
         </React.Fragment>
   )};
 export default Contact;  
+

@@ -34,8 +34,8 @@ function App() {
     <Route  path="/aboutme" exact component={Aboutme} />
     <Route path="/projects" exact component={Projects}/>
     <Route path="/skills" exact component={Skills} /> 
-    <Route path="/badget" exact component={Badget} /> 
-    <Route path="/contact" exact component={Contact} />
+    <Route path="/badges" exact component={Badget} /> 
+    <Route path="/contacts" exact component={Contact} />
     <Route path={() => "/main" || "/admin" || "/any-other-word"}>
           <Soon />
         </Route>

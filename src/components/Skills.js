@@ -84,7 +84,7 @@ useEffect(() => {
         return (
             <div  className="img-father" key={id}>
                 <div className="img-wrapper">
-                    <img className={ i === 4  ? "github":"img-skills" } 
+                    <img className="imd-skills"
                     src={`${process.env.PUBLIC_URL}/${img}`} alt={title} />
                 </div>
                 <div className="title-father">

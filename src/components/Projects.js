@@ -7,6 +7,22 @@ import dataProjects from "../images-.json";
 const Projects = ({incFooter})=>{
     const [val, setVal] = useState(0);
 
+
+    const sliderAdd = ()=>{
+        setVal(val + 1);
+        if (val === images.length -1 ){
+            setVal(0);
+        }
+    }
+    const sliderMinus = ()=>{
+        setVal(val -1 );
+        if (val === 0){
+            setVal(images.length -1 )
+        }
+    }
+
+
+
     const images = dataProjects.map((item,)=>{
         const {
             id,
@@ -37,11 +53,11 @@ const Projects = ({incFooter})=>{
             </div>
                 <div className="slider-son">
                 <div className="slider">
-                    <button className="right-button" onClick={() => setVal(val + 1)}
-                    disabled={images.length -1 === val} >
+                    <button className="right-button" onClick={sliderAdd}
+                >
                     </button>
             <Slider images={images[val]} />
-            <button className="left-button" onClick={() => setVal(val - 1)} disabled={val === 0}>   
+            <button className="left-button" onClick={sliderMinus}>   
             </button>
             </div>
             {!incFooter && 

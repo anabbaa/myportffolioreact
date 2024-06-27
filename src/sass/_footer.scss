@@ -1,46 +1,32 @@
 .footer{
-    height: 12vh;
-    max-width: 100%;
-    
-    @include flex-row-between;
-   
-    @include responsive(superGreatScreen){
-        // width: 98.5vw;
-    }
-    @include responsive(greatscreen){
-        // width: 98.5vw;
-    }
-    // @include responsive(bigscreen){
-    //     width: 98.5vw;
-    // }
-   
-    // @include responsive(laptop){
-    //     width: 98.1vw;
-    // }
-    // @include responsive(tab){
-    //     width: 97.5vw;
-    // }
-    // @include responsive(mobile){
-    //     height: 93vh;
-        
-    // }
-    
+    height: 16vh;
+    width: 100vw;
+    @include flex-row-between;    
 .footer-father{
     align-self: flex-end;
-    height: 12vh;
+    height: 16vh;
     width: 100%;
     background-color:black;
-    @include flex-row-between;
-    @include responsive(minmobile){
-        height: 18vh;
-    }
+    @include flex-row-evently;
     .reference{
-        width: 10%;
-        height: 6vh;
-        margin-left: 2vw;
+        width: 30%;
+        height: auto;
         color:white;
-        @include flex-row-between; 
+        padding-left: 0.1vw;
+        @include flex-row-start-center; 
+        @include responsive(laptop){
+            padding-left: 2vw;
+        }
+        @include responsive(bigmobile){  
+            width: 20%;
+            padding-left: 2vh
+            }
+            @include responsive(mobile){
+             @include flex-row-center;
+            }
+
         .reference-an{
+            width: 8vw;
             font-size: 1rem;
             text-align: center;
             @include flex-column-center;
@@ -58,21 +44,30 @@
     }
 }
     .reference-mid-father{
-        width: 75vw;
+        width: 51vw;
         @include flex-row-center;
+        @include responsive(bigmobile){
+            width: 70vw;
+            
+        }
+        @include responsive(mobile){
+        }
         .reference-mid{
             color: #ffffff;
-            max-width: 95%;    
+            max-width: 80%;  
             text-align: right;
-            @include responsive(bigmobile){
-            font-size: 1rem;
+            @include flex-row-center;
+            @include responsive(mobile){
+                font-size: 1rem;
+            
             } 
             @include responsive(minmobile){
                 font-size: 0.8rem;
             }
         }
         .date{
-            max-width: 5%;      
+            max-width: 20%;   
+            text-align: left;  
             .date-input{
                 background-color: transparent;
             border: none;
@@ -83,14 +78,12 @@
     
 }
 .icon-father{
-    width: 10%;
+    width: 20%;
     @include flex-row-evently;
-    @include responsive(minmobile){
-    @include flex-column-center;
-    }
-    @include responsive(mobile){
-        @include flex-column-center;
-        }
+        @include responsive(bigmobile){
+            width: 10%;
+            @include flex-column-start-center;
+            }
 .icon{
     color: white;
     font-size: 1rem;

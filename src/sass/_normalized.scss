@@ -17,6 +17,7 @@ html {
   scroll-behavior: smooth;
 }
 
+
 /* Sections
      ========================================================================== */
 
@@ -34,27 +35,36 @@ html {
 //   }
 //   }
   body {
-    max-width: 100%; /* This ensures the body never exceeds the width of the viewport */
-    height: 100vh;
+     max-width: 100%; /* This ensures the body never exceeds the width of the viewport */
+    max-height: 100%;
+  
 }
+
   *{
       padding: 0;
       margin: 0;
       box-sizing: border-box;
+      max-width: 100%;
   }
-
-  .back-soon{
-    position: relative;
-    top: 4vh;
+  .back{
+    height: 16vh;
+    @include flex-column-end;;
+    @include responsive(minmobile){
+      @include flex-column-center;
+  }
+    .back-soon{
       font-size: 1.5rem;
       color: blue;
+      padding-bottom: 2vh;
   }
+  }
+
   .soon-father{
     height: 100vh;
     width: 95vw;
     @include flex-column-center;
     
-  }z
+  }
   .soon{
     font-size: 3rem;
     color: #ffff;

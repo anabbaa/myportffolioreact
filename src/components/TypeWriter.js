@@ -3,9 +3,7 @@ const TypeWriter = () => {
     const [displayText, setDisplayText] = useState('');
     const [index, setIndex] = useState(-1);
 
-
     const text = "Hello , My name is Ahmed Naabbaa. Welcome to my Page , Enjoy"
-    
     useEffect(() => {
         const timer = setTimeout(() => {
         setDisplayText((prevText) => prevText + text.charAt(index));

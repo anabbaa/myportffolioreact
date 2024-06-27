@@ -1,47 +1,33 @@
 .skills-title-father, .skills-father-title-great-screen{
-    height: 12vh;
-    width: 16vw;
-    @include flex-column-start-center;
+    height: 22vh;
+    width: auto;
+    @include flex-column-start;
     align-self: flex-start;
-    @include responsive(laptop){
-        width: 22vw;   
-        }
-    @include responsive(tab){
-        width: 33vw;   
-        }
-        @include responsive(bigmobile){
-            @include flex-row-end;  
-            }
-        @include responsive(mobile){
-            width: 50vw;     
-            }
-            @include responsive(minmobile){
-                width: 66vw;   
-                }
+    padding-left: 2vw ;
+
+}
+.skills-father-title-great-screen{
+    @include responsive(bigmobile){
+        @include  flex-column-end-end;
+    }
 }
 .skills-title-father{
     @include responsive(bigmobile){
-        animation: leftTitle 5s ease-in-out;   
+        animation: leftTitle 3s ease-in-out;  
+        @include  flex-column-end-end;
     }
 }
 .skill-father{
     width: 98vw;
-    height: 160vh;
+    height: 177vh;
     @include flex-column-between;
-    @include responsive(superGreatScreen){
-        height: 145vh;
-    }
-    @include responsive(laptop){
-        height: 150vh;
-    }
-    @include responsive (tab){
-        width: 97.5vw;             
-        }
-
         @include responsive(bigmobile){
-            height: 220vh;   
+            height: 250vh;   
         }
-    
+        @include responsive(minmobile){
+            height: 300vh;
+        }
+       
     .skills-title{
         height: 2vh;
         font-size: 2rem;
@@ -49,16 +35,14 @@
     }
 
 .skill-son{
-    width: 80vw;
+    width: 97vw;
     height: 90vh;
     @include flex-row-evently;
-    @include responsive(laptop){
-        width: 90vw;
-    }
     @include responsive(bigmobile){
         @include flex-column-between;
-        height: 220vh;
+        height: 250vh;
         }
+    
         
     .img-father {
         width: 20vw;
@@ -69,33 +53,41 @@
         @include responsive(bigscreen){
             width: 26vw;
         }
-        @include responsive(laptop){
-            width: 29vw;
-        }
+    
         @include responsive(bigmobile){
-            width: 50vw;
+            width: 45vw;
 
         }
         @include responsive(mobile){
-            width: 70vw;
+            width: 65vw;
         }
         @include responsive(minmobile){
-            width: 80vw;
+            width: 85vw;
         }
 
         .img-wrapper{
-            width: 2vw;
-            .img-skills{
-                height: 5vh;
-                width: 3vw;
-                float: left;
-                @include responsive(mobile){
-                    width: 4vw;
-                }
-                @include responsive(minmobile){
-                    width: 8vw;
-                }
+            width: 3vw;
+            height: 7vh;
+            @include flex-column-start-evently;
+            @include responsive(laptop){
+                width: 5vw;
+
             }
+            @include responsive(mobile){
+                width: 7vw;
+
+            }
+            @include responsive(minmobile){
+                width: 9vw;
+
+            }
+            .img-skills{
+                height: auto;
+                width: 200%;
+                max-width: 100%;
+                float: left;
+            }
+         
         }
         h2{
             @include flex-row-center;
@@ -104,10 +96,10 @@
         
 .program, .lang, .others, .scrollSkills, .scrollLang, .scrollOthers
 {
-    @include flex-column-start;
+    @include flex-column-between;
     height: auto;
     width:20vw;
-    background-color: rgb(141, 136, 136);
+    background-color: rgb(128, 126, 126);
     color: white;
     line-height: 6vh;
     @include responsive(greatscreen){
@@ -119,14 +111,15 @@
     @include responsive(laptop){
         width: 29vw;
     }
+    
     @include responsive(bigmobile){
-        width: 50vw;
+        width: 45vw;
     }
     @include responsive(mobile){
-        width: 70vw;
+        width: 65vw;
     }
     @include responsive(minmobile){
-        width: 80vw;
+        width: 85vw;
     }
                     .title-father{
                         width: 15vw;
@@ -152,9 +145,9 @@
                     }
             
     .title{
-        font-family: 'Times New Roman', Times, serif;
-        @include responsive(laptop){
-            font-size: 1.2rem;
+        font: 1.3rem 'Times New Roman', Times, serif;
+        @include responsive(tab){
+            font-size: 1rem;
         }
     }
 .h-skills{
@@ -170,33 +163,18 @@
 .program {
     margin-top: 4vh;
     animation: left 3s ease-in-out;
-    @include responsive(bigmobile){
-    animation: left 6s ease-in-out;
-    }
+    
 }
 .scrollSkills{
     margin-top: 4vh;
     animation: left1 3s ease-in-out;
-    @include responsive(bigmobile){
-        animation: down 6s ease-in-out;
-        }
 }
 .scrollLang , .lang{
     animation: down 3s ease-in-out;
-    @include responsive(bigmobile){
-        animation: down 6s ease-in-out;
-        }
 }
 .scrollOthers , .others{
     animation: right 3s ease-in-out;
-    @include responsive(bigmobile){
-        animation: right 6s ease-in-out;
-        }
 }
-.github{
-    width: 3vw;
-    height: 3vh;
-    }
 }
 }
 

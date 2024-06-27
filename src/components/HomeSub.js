@@ -11,6 +11,7 @@ import Contact from "./Contact";
 
 const HomeSub =()=>{
   
+  
   // const url = "http://localhost:3000/CV.pdf"
 const url = `http://ahmednabbaa.de/CV.pdf`
 const handleDownload = (url, filename) => {
@@ -38,6 +39,7 @@ const handleDownload = (url, filename) => {
 <React.Fragment>
         <div className="home">
           <div className="welcome-father">
+          <div className="img-type-father">
             <div className="myimg-father">
         {myPhoto}
         </div>
@@ -45,10 +47,12 @@ const handleDownload = (url, filename) => {
         <TypeWriter />
         </div>
         </div>
+      
         <div className="cv-father">
           
         <button className="cv" onClick={() => {handleDownload(url, 'CV.pdf')
 }}>Download MY CV</button>
+</div>
 </div>
         </div>
 

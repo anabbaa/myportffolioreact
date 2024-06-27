@@ -3,9 +3,10 @@
   height: 130vh;
   width: 98vw;
   @include flex-column-between;
-  @include responsive (tab){
-    width: 97.5vw;             
-    }
+  @include responsive (minmobile){
+    height: 100vh;
+  }
+  
 }
   .slider-son{
       height: 100vh;
@@ -126,28 +127,31 @@
 .overlay {
   position: absolute;
  width: 100%;
- height: 30vh;
-  background-color:rgba(0, 0, 0, 0.050);
+ height: 35vh;
+  background-color: rgba(0 , 0, 0, 0.05);
 @include flex-column-start-center;
  color: #ffffff;
+    top: -4vh;
     opacity: 0;
+&:hover {
+  opacity: 1;
+  cursor: pointer;
+}
 
- &:hover {
-   opacity: 1;
-   cursor: pointer;
- }
+
   .desc{
   font-size: 1.5rem;
   font-weight: bolder;
   position: relative;
-  top: -4vh;
-  }
+  @include responsive(minmobile){
+    font-size: 1rem;
+}}
   
   @include responsive(tab){
     top: -5vh;
   }
-  @include responsive(minmobile){
-    top: -10vh;
+    @include responsive(minmobile){
+        font-size: 10px;
   }
 }
 .img{

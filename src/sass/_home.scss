@@ -4,32 +4,52 @@
     width: 98vw;
     @include responsive(mobile){
         height: 60vh;
-
     }
 
-
     .welcome-father{
-        @include flex-row-evently;
+        @include flex-column-center-evently;
         width: 98vw;
-        height: 80vh;
+        height: 100vh;
         font-size: 3rem;
-        @include responsive(mobile){
+        @include responsive(bigmobile){
+            @include flex-column-center-evently;
             font-size: 2rem;
+        }
+        @include responsive(mobile){
+            font-size: 1.5rem;
         }
         @include responsive(minmobile){
             font-size: 1rem;
         }
+    
+    }
+    .img-type-father{
+        @include flex-row-evently;
+        
+        width: 100%;
+        height: auto;
+        @include responsive(mobile){
+            @include flex-column-between;
+        }
     }
     .myimg-father{
-        width: 30vw;
+        width:22vw;
         height: auto;
         .my-img{
             height: auto;
+            width: 200%;
             max-width: 100%;
+            
         }
     }
     .typing-father{
-        width: 60vw;
+        width: 50vw;
+        height: auto;
+        
+        @include flex-column-between;
+
+
+        
         p::first-letter{
             color: red;
             font-size: 3.8rem;
@@ -39,18 +59,23 @@
         height: 10vh;
         width: 90vw;
         @include flex-row-center;
-        @include responsive(tab){
-            height: 20vh;
-        @include flex-column-start-center;
+        @include responsive(mobile){
+            height: 12vh;
+        @include flex-column-end;
         }
+        @include responsive(minmobile){
+        height: 16vh;
+        }
+       
         
     .cv{
         font: 2rem sans-serif;
+        @include flex-row-evently;
         
         outline: none;
         border: none;
-        height: 8vh;
-        max-width: 34vw;
+        height: auto;
+        width: auto;
         border-radius: 80px ;
         cursor: pointer;
         background-color:#7a7777 ;
@@ -60,21 +85,9 @@
             transform: scale(2);
         }
         @include responsive(greatscreen){
-            height: auto;
-            width: auto;
-        }
-        @include responsive(bigmobile){
-            width: 32vw;
-            font-size: 1rem;
-        
+            
         }
         
-        @include responsive(mobile){
-            width: 40vw;
-        }
-        @include responsive(minmobile){
-            width: 50vw;   
-        }
     }
     }
 }

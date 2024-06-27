@@ -42,10 +42,14 @@ const Badget = ({incFooter})=>{
             img
         } = obj;
         return(
-            <div key={id} ref={elementRefBadget} className={reachedPointBadget? "scrollBadgetFather": ""}>
+            // <div ref={elementRefBadget} className={reachedPointBadget? "scrollBadgetFather": ""}>
+              <div key={id} className={i === 1 ? "img-badges-father-two":"img-badges-father"}>
                 <a target='_blank' href={a} >
+                  
                     <img className="badget-img" src={`${process.env.PUBLIC_URL}/${img}`}  alt={title} /> </a>
             </div>
+            
+          
         )
     })
 
@@ -55,7 +59,7 @@ const Badget = ({incFooter})=>{
             <div className="aboutme-title-father">
                 <p className="aboutme-title" >My Badges</p>
             </div>
-          <div className="badget-son">
+          <div ref={elementRefBadget} className={reachedPointBadget? "badget-son": "scroll-badges-father"}>
             {badge} 
             </div>
 

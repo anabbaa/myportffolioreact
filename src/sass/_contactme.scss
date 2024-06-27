@@ -2,18 +2,14 @@
     height: 100vh;
     width: 98vw;
     @include flex-column-center;
-    @include responsive (tab){
-        width: 97.5vw;             
-        }
+    
     form{
     @include flex-column-between;
     max-width: 100%;
     height: auto;
+    margin-top: 2vh;
    border-radius: 10px;
    background-color: #f2f2f2;
-   @include responsive(bigscreen){
-    width: 90%;
-}
     }
     .name-email-father{
         width: 100%;
@@ -30,29 +26,27 @@
     border-bottom: 1px solid red;
     box-sizing: border-box;
     height: 4vh;
-    width: 50%;
-    @include responsive(bigmobile){
-        width: 76%;
-    }
+    max-width: 100%;
+    
     
     font: 1.5rem 'Times New Roman', Times, serif;
     text-align: center;
+    @include responsive(minmobile){
+        font-size: 1rem;
+    
+    }
     &::placeholder{
         font: 1.5rem 'Times New Roman', Times, serif;
-    }
-    @include responsive(minmobile){
-        &::placeholder{
-            font-size: 1rem
-        }
     }
 }
 .send {
     margin-top: 2vh;
-height: 6vh;
+height: auto;
 width: 100%;
 background-color: rgb(0, 174, 255);
 font: 2rem 'Times New Roman', Times, serif;
 text-align: center;
+
 }
 textarea{
     font-family: 'Times New Roman', Times, serif;

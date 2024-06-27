@@ -13,7 +13,7 @@ const HomeSub =()=>{
   
   
   // const url = "http://localhost:3000/CV.pdf"
-const url = `https://www.ahmednabbaa.de/CV.pdf`
+   const url = `https://ahmednabbaa.de/CV.pdf`
 const handleDownload = (url, filename) => {
   axios.get(url, {
     responseType: 'blob',

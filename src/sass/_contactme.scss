@@ -26,13 +26,13 @@
     border-bottom: 1px solid red;
     box-sizing: border-box;
     height: 4vh;
-    max-width: 100%;
+    width: 100%;
     
     
     font: 1.5rem 'Times New Roman', Times, serif;
     text-align: center;
     @include responsive(minmobile){
-        font-size: 1rem;
+    
     
     }
     &::placeholder{

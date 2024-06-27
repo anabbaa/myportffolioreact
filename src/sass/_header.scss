@@ -114,7 +114,6 @@ nav .active{
         width: auto;
         margin-left: 2vw;
         height: auto;
-        border: 1px solid red;
         @include flex-column-center-evently; 
         &::before{
             display: none;
